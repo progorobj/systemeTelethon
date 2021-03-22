@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace systemeTelethon
 {
-    public partial class Form2 : Form
+    public partial class Systeme : Form
     {
-        public Form2()
+        public Systeme()
         {
             InitializeComponent();
         }
