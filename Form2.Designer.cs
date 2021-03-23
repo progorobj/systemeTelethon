@@ -35,6 +35,11 @@ namespace systemeTelethon
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.gBxPrix = new System.Windows.Forms.GroupBox();
+            this.btnAfficherPrix = new System.Windows.Forms.Button();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.lblQuant = new System.Windows.Forms.Label();
+            this.txtBxMontantPrix = new System.Windows.Forms.TextBox();
+            this.lbMontantPrix = new System.Windows.Forms.Label();
             this.lbAttribuerPrix = new System.Windows.Forms.Label();
             this.gBxDon = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -88,13 +93,8 @@ namespace systemeTelethon
             this.lbPrenom = new System.Windows.Forms.Label();
             this.idComm = new System.Windows.Forms.Label();
             this.txtBxComm = new System.Windows.Forms.TextBox();
-            this.lbMontantPrix = new System.Windows.Forms.Label();
-            this.txtBxMontantPrix = new System.Windows.Forms.TextBox();
-            this.lblQuant = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.btnAfficherPrix = new System.Windows.Forms.Button();
             this.btnQuitter = new System.Windows.Forms.Button();
-            this.pnlQuitter = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.pnlInterface2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -106,7 +106,6 @@ namespace systemeTelethon
             this.tabPage2.SuspendLayout();
             this.gpBxPrix.SuspendLayout();
             this.gpBxComma.SuspendLayout();
-            this.pnlQuitter.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlInterface2
@@ -118,7 +117,7 @@ namespace systemeTelethon
             this.pnlInterface2.Controls.Add(this.tabControl1);
             this.pnlInterface2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlInterface2.Location = new System.Drawing.Point(0, -303);
-            this.pnlInterface2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlInterface2.Margin = new System.Windows.Forms.Padding(2);
             this.pnlInterface2.Name = "pnlInterface2";
             this.pnlInterface2.Size = new System.Drawing.Size(762, 882);
             this.pnlInterface2.TabIndex = 0;
@@ -127,7 +126,7 @@ namespace systemeTelethon
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(2, 750);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(725, 123);
@@ -147,12 +146,13 @@ namespace systemeTelethon
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.SteelBlue;
+            this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.gBxPrix);
             this.tabPage1.Controls.Add(this.gBxDon);
             this.tabPage1.Controls.Add(this.gBxDonnateur);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(715, 397);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Donateur";
@@ -165,13 +165,62 @@ namespace systemeTelethon
             this.gBxPrix.Controls.Add(this.txtBxMontantPrix);
             this.gBxPrix.Controls.Add(this.lbMontantPrix);
             this.gBxPrix.Controls.Add(this.lbAttribuerPrix);
-            this.gBxPrix.Location = new System.Drawing.Point(348, 232);
-            this.gBxPrix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxPrix.Location = new System.Drawing.Point(309, 232);
+            this.gBxPrix.Margin = new System.Windows.Forms.Padding(2);
             this.gBxPrix.Name = "gBxPrix";
-            this.gBxPrix.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gBxPrix.Size = new System.Drawing.Size(343, 162);
+            this.gBxPrix.Padding = new System.Windows.Forms.Padding(2);
+            this.gBxPrix.Size = new System.Drawing.Size(313, 162);
             this.gBxPrix.TabIndex = 33;
             this.gBxPrix.TabStop = false;
+            // 
+            // btnAfficherPrix
+            // 
+            this.btnAfficherPrix.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAfficherPrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAfficherPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAfficherPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAfficherPrix.Location = new System.Drawing.Point(98, 119);
+            this.btnAfficherPrix.Name = "btnAfficherPrix";
+            this.btnAfficherPrix.Size = new System.Drawing.Size(132, 28);
+            this.btnAfficherPrix.TabIndex = 33;
+            this.btnAfficherPrix.Text = "Afficher";
+            this.btnAfficherPrix.UseVisualStyleBackColor = false;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(87, 82);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(206, 22);
+            this.textBox13.TabIndex = 32;
+            // 
+            // lblQuant
+            // 
+            this.lblQuant.AutoSize = true;
+            this.lblQuant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblQuant.Location = new System.Drawing.Point(5, 82);
+            this.lblQuant.Name = "lblQuant";
+            this.lblQuant.Size = new System.Drawing.Size(78, 20);
+            this.lblQuant.TabIndex = 31;
+            this.lblQuant.Text = "Quantité :";
+            // 
+            // txtBxMontantPrix
+            // 
+            this.txtBxMontantPrix.Location = new System.Drawing.Point(87, 56);
+            this.txtBxMontantPrix.Name = "txtBxMontantPrix";
+            this.txtBxMontantPrix.Size = new System.Drawing.Size(206, 22);
+            this.txtBxMontantPrix.TabIndex = 30;
+            // 
+            // lbMontantPrix
+            // 
+            this.lbMontantPrix.AutoSize = true;
+            this.lbMontantPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMontantPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbMontantPrix.Location = new System.Drawing.Point(5, 56);
+            this.lbMontantPrix.Name = "lbMontantPrix";
+            this.lbMontantPrix.Size = new System.Drawing.Size(76, 20);
+            this.lbMontantPrix.TabIndex = 29;
+            this.lbMontantPrix.Text = "Montant :";
             // 
             // lbAttribuerPrix
             // 
@@ -195,10 +244,10 @@ namespace systemeTelethon
             this.gBxDon.Controls.Add(this.label7);
             this.gBxDon.Controls.Add(this.label6);
             this.gBxDon.Location = new System.Drawing.Point(14, 232);
-            this.gBxDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxDon.Margin = new System.Windows.Forms.Padding(2);
             this.gBxDon.Name = "gBxDon";
-            this.gBxDon.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gBxDon.Size = new System.Drawing.Size(310, 162);
+            this.gBxDon.Padding = new System.Windows.Forms.Padding(2);
+            this.gBxDon.Size = new System.Drawing.Size(287, 162);
             this.gBxDon.TabIndex = 32;
             this.gBxDon.TabStop = false;
             // 
@@ -223,7 +272,6 @@ namespace systemeTelethon
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -244,7 +292,6 @@ namespace systemeTelethon
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -295,9 +342,9 @@ namespace systemeTelethon
             this.gBxDonnateur.Controls.Add(this.label5);
             this.gBxDonnateur.Controls.Add(this.btnAjouterDonateur);
             this.gBxDonnateur.Location = new System.Drawing.Point(14, 6);
-            this.gBxDonnateur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxDonnateur.Margin = new System.Windows.Forms.Padding(2);
             this.gBxDonnateur.Name = "gBxDonnateur";
-            this.gBxDonnateur.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxDonnateur.Padding = new System.Windows.Forms.Padding(2);
             this.gBxDonnateur.Size = new System.Drawing.Size(676, 221);
             this.gBxDonnateur.TabIndex = 31;
             this.gBxDonnateur.TabStop = false;
@@ -322,9 +369,9 @@ namespace systemeTelethon
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(293, 54);
+            this.groupBox1.Location = new System.Drawing.Point(293, 46);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(370, 154);
+            this.groupBox1.Size = new System.Drawing.Size(370, 166);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Carte de crédit";
@@ -343,9 +390,9 @@ namespace systemeTelethon
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Location = new System.Drawing.Point(16, 122);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 20);
+            this.label9.Size = new System.Drawing.Size(136, 20);
             this.label9.TabIndex = 35;
-            this.label9.Text = "Date d\'expiration";
+            this.label9.Text = "Date d\'expiration: ";
             // 
             // textBox8
             // 
@@ -487,7 +534,6 @@ namespace systemeTelethon
             // btnAfficherDonateur
             // 
             this.btnAfficherDonateur.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAfficherDonateur.FlatAppearance.BorderSize = 0;
             this.btnAfficherDonateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAfficherDonateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAfficherDonateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -521,7 +567,6 @@ namespace systemeTelethon
             // 
             this.btnAjouterDonateur.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAjouterDonateur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAjouterDonateur.FlatAppearance.BorderSize = 0;
             this.btnAjouterDonateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouterDonateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterDonateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -536,12 +581,12 @@ namespace systemeTelethon
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.SteelBlue;
-            this.tabPage2.Controls.Add(this.pnlQuitter);
+            this.tabPage2.Controls.Add(this.btnQuitter);
             this.tabPage2.Controls.Add(this.gpBxPrix);
             this.tabPage2.Controls.Add(this.gpBxComma);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(715, 397);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Commanditaire";
@@ -561,9 +606,9 @@ namespace systemeTelethon
             this.gpBxPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpBxPrix.ForeColor = System.Drawing.Color.White;
             this.gpBxPrix.Location = new System.Drawing.Point(380, 51);
-            this.gpBxPrix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpBxPrix.Margin = new System.Windows.Forms.Padding(2);
             this.gpBxPrix.Name = "gpBxPrix";
-            this.gpBxPrix.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpBxPrix.Padding = new System.Windows.Forms.Padding(2);
             this.gpBxPrix.Size = new System.Drawing.Size(320, 299);
             this.gpBxPrix.TabIndex = 14;
             this.gpBxPrix.TabStop = false;
@@ -572,11 +617,10 @@ namespace systemeTelethon
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(188, 214);
+            this.button3.Location = new System.Drawing.Point(167, 214);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(118, 28);
             this.button3.TabIndex = 24;
@@ -587,11 +631,10 @@ namespace systemeTelethon
             // 
             this.btnAjouterPrix.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAjouterPrix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAjouterPrix.FlatAppearance.BorderSize = 0;
             this.btnAjouterPrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouterPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAjouterPrix.Location = new System.Drawing.Point(55, 214);
+            this.btnAjouterPrix.Location = new System.Drawing.Point(34, 214);
             this.btnAjouterPrix.Margin = new System.Windows.Forms.Padding(0);
             this.btnAjouterPrix.Name = "btnAjouterPrix";
             this.btnAjouterPrix.Size = new System.Drawing.Size(118, 28);
@@ -601,7 +644,7 @@ namespace systemeTelethon
             // 
             // textBox10
             // 
-            this.textBox10.Location = new System.Drawing.Point(121, 155);
+            this.textBox10.Location = new System.Drawing.Point(121, 151);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(187, 24);
             this.textBox10.TabIndex = 21;
@@ -611,7 +654,7 @@ namespace systemeTelethon
             this.lbQuantite.AutoSize = true;
             this.lbQuantite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQuantite.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbQuantite.Location = new System.Drawing.Point(42, 158);
+            this.lbQuantite.Location = new System.Drawing.Point(18, 152);
             this.lbQuantite.Name = "lbQuantite";
             this.lbQuantite.Size = new System.Drawing.Size(78, 20);
             this.lbQuantite.TabIndex = 20;
@@ -647,7 +690,7 @@ namespace systemeTelethon
             this.lbDescription.AutoSize = true;
             this.lbDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDescription.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbDescription.Location = new System.Drawing.Point(25, 73);
+            this.lbDescription.Location = new System.Drawing.Point(18, 74);
             this.lbDescription.Name = "lbDescription";
             this.lbDescription.Size = new System.Drawing.Size(97, 20);
             this.lbDescription.TabIndex = 16;
@@ -665,7 +708,7 @@ namespace systemeTelethon
             this.lbId.AutoSize = true;
             this.lbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbId.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbId.Location = new System.Drawing.Point(83, 39);
+            this.lbId.Location = new System.Drawing.Point(18, 38);
             this.lbId.Name = "lbId";
             this.lbId.Size = new System.Drawing.Size(34, 20);
             this.lbId.TabIndex = 14;
@@ -684,9 +727,9 @@ namespace systemeTelethon
             this.gpBxComma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpBxComma.ForeColor = System.Drawing.Color.White;
             this.gpBxComma.Location = new System.Drawing.Point(14, 51);
-            this.gpBxComma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpBxComma.Margin = new System.Windows.Forms.Padding(2);
             this.gpBxComma.Name = "gpBxComma";
-            this.gpBxComma.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpBxComma.Padding = new System.Windows.Forms.Padding(2);
             this.gpBxComma.Size = new System.Drawing.Size(333, 300);
             this.gpBxComma.TabIndex = 13;
             this.gpBxComma.TabStop = false;
@@ -695,11 +738,10 @@ namespace systemeTelethon
             // btnAfficherComm
             // 
             this.btnAfficherComm.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAfficherComm.FlatAppearance.BorderSize = 0;
             this.btnAfficherComm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAfficherComm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAfficherComm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAfficherComm.Location = new System.Drawing.Point(154, 215);
+            this.btnAfficherComm.Location = new System.Drawing.Point(166, 214);
             this.btnAfficherComm.Name = "btnAfficherComm";
             this.btnAfficherComm.Size = new System.Drawing.Size(115, 28);
             this.btnAfficherComm.TabIndex = 23;
@@ -710,11 +752,10 @@ namespace systemeTelethon
             // 
             this.btnAjouterComm.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnAjouterComm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAjouterComm.FlatAppearance.BorderSize = 0;
             this.btnAjouterComm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouterComm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterComm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAjouterComm.Location = new System.Drawing.Point(16, 214);
+            this.btnAjouterComm.Location = new System.Drawing.Point(36, 214);
             this.btnAjouterComm.Margin = new System.Windows.Forms.Padding(0);
             this.btnAjouterComm.Name = "btnAjouterComm";
             this.btnAjouterComm.Size = new System.Drawing.Size(115, 28);
@@ -724,14 +765,14 @@ namespace systemeTelethon
             // 
             // txtBxPrenom
             // 
-            this.txtBxPrenom.Location = new System.Drawing.Point(83, 136);
+            this.txtBxPrenom.Location = new System.Drawing.Point(102, 136);
             this.txtBxPrenom.Name = "txtBxPrenom";
             this.txtBxPrenom.Size = new System.Drawing.Size(187, 24);
             this.txtBxPrenom.TabIndex = 17;
             // 
             // txtBxNom
             // 
-            this.txtBxNom.Location = new System.Drawing.Point(83, 92);
+            this.txtBxNom.Location = new System.Drawing.Point(102, 92);
             this.txtBxNom.Name = "txtBxNom";
             this.txtBxNom.Size = new System.Drawing.Size(187, 24);
             this.txtBxNom.TabIndex = 16;
@@ -741,7 +782,7 @@ namespace systemeTelethon
             this.lblNom.AutoSize = true;
             this.lblNom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNom.Location = new System.Drawing.Point(32, 92);
+            this.lblNom.Location = new System.Drawing.Point(31, 93);
             this.lblNom.Name = "lblNom";
             this.lblNom.Size = new System.Drawing.Size(50, 20);
             this.lblNom.TabIndex = 15;
@@ -752,7 +793,7 @@ namespace systemeTelethon
             this.lbPrenom.AutoSize = true;
             this.lbPrenom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrenom.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbPrenom.Location = new System.Drawing.Point(12, 138);
+            this.lbPrenom.Location = new System.Drawing.Point(31, 138);
             this.lbPrenom.Name = "lbPrenom";
             this.lbPrenom.Size = new System.Drawing.Size(76, 20);
             this.lbPrenom.TabIndex = 14;
@@ -763,7 +804,7 @@ namespace systemeTelethon
             this.idComm.AutoSize = true;
             this.idComm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idComm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.idComm.Location = new System.Drawing.Point(46, 49);
+            this.idComm.Location = new System.Drawing.Point(31, 49);
             this.idComm.Name = "idComm";
             this.idComm.Size = new System.Drawing.Size(34, 20);
             this.idComm.TabIndex = 13;
@@ -771,60 +812,10 @@ namespace systemeTelethon
             // 
             // txtBxComm
             // 
-            this.txtBxComm.Location = new System.Drawing.Point(83, 49);
+            this.txtBxComm.Location = new System.Drawing.Point(102, 49);
             this.txtBxComm.Name = "txtBxComm";
             this.txtBxComm.Size = new System.Drawing.Size(187, 24);
             this.txtBxComm.TabIndex = 12;
-            // 
-            // lbMontantPrix
-            // 
-            this.lbMontantPrix.AutoSize = true;
-            this.lbMontantPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMontantPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbMontantPrix.Location = new System.Drawing.Point(5, 56);
-            this.lbMontantPrix.Name = "lbMontantPrix";
-            this.lbMontantPrix.Size = new System.Drawing.Size(76, 20);
-            this.lbMontantPrix.TabIndex = 29;
-            this.lbMontantPrix.Text = "Montant :";
-            // 
-            // txtBxMontantPrix
-            // 
-            this.txtBxMontantPrix.Location = new System.Drawing.Point(87, 56);
-            this.txtBxMontantPrix.Name = "txtBxMontantPrix";
-            this.txtBxMontantPrix.Size = new System.Drawing.Size(175, 22);
-            this.txtBxMontantPrix.TabIndex = 30;
-            // 
-            // lblQuant
-            // 
-            this.lblQuant.AutoSize = true;
-            this.lblQuant.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblQuant.Location = new System.Drawing.Point(5, 82);
-            this.lblQuant.Name = "lblQuant";
-            this.lblQuant.Size = new System.Drawing.Size(78, 20);
-            this.lblQuant.TabIndex = 31;
-            this.lblQuant.Text = "Quantité :";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(87, 82);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(175, 22);
-            this.textBox13.TabIndex = 32;
-            // 
-            // btnAfficherPrix
-            // 
-            this.btnAfficherPrix.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnAfficherPrix.FlatAppearance.BorderSize = 0;
-            this.btnAfficherPrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAfficherPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAfficherPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAfficherPrix.Location = new System.Drawing.Point(130, 119);
-            this.btnAfficherPrix.Name = "btnAfficherPrix";
-            this.btnAfficherPrix.Size = new System.Drawing.Size(132, 28);
-            this.btnAfficherPrix.TabIndex = 33;
-            this.btnAfficherPrix.Text = "Afficher";
-            this.btnAfficherPrix.UseVisualStyleBackColor = false;
             // 
             // btnQuitter
             // 
@@ -834,7 +825,7 @@ namespace systemeTelethon
             this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuitter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnQuitter.Location = new System.Drawing.Point(22, 0);
+            this.btnQuitter.Location = new System.Drawing.Point(585, 358);
             this.btnQuitter.Margin = new System.Windows.Forms.Padding(0);
             this.btnQuitter.Name = "btnQuitter";
             this.btnQuitter.Size = new System.Drawing.Size(115, 28);
@@ -842,13 +833,21 @@ namespace systemeTelethon
             this.btnQuitter.Text = "Quitter";
             this.btnQuitter.UseVisualStyleBackColor = false;
             // 
-            // pnlQuitter
+            // button4
             // 
-            this.pnlQuitter.Controls.Add(this.btnQuitter);
-            this.pnlQuitter.Location = new System.Drawing.Point(551, 356);
-            this.pnlQuitter.Name = "pnlQuitter";
-            this.pnlQuitter.Size = new System.Drawing.Size(148, 29);
-            this.pnlQuitter.TabIndex = 24;
+            this.button4.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(634, 351);
+            this.button4.Margin = new System.Windows.Forms.Padding(0);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(73, 28);
+            this.button4.TabIndex = 34;
+            this.button4.Text = "Quitter";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // Systeme
             // 
@@ -856,7 +855,7 @@ namespace systemeTelethon
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 579);
             this.Controls.Add(this.pnlInterface2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Systeme";
             this.Text = "Système Téléthon STE";
             this.pnlInterface2.ResumeLayout(false);
@@ -878,7 +877,6 @@ namespace systemeTelethon
             this.gpBxPrix.PerformLayout();
             this.gpBxComma.ResumeLayout(false);
             this.gpBxComma.PerformLayout();
-            this.pnlQuitter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -948,7 +946,7 @@ namespace systemeTelethon
         private System.Windows.Forms.Label lblQuant;
         private System.Windows.Forms.TextBox txtBxMontantPrix;
         private System.Windows.Forms.Label lbMontantPrix;
-        private System.Windows.Forms.Panel pnlQuitter;
+        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnQuitter;
     }
 }
