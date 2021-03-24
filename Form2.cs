@@ -21,5 +21,10 @@ namespace systemeTelethon
         {
 
         }
+
+        private void lblQuant_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
