@@ -31,46 +31,82 @@ namespace systemeTelethon
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Systeme));
             this.pnlInterface2 = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.btnAfficherDonateur = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnAjouterDonateur = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.tabDonateur = new System.Windows.Forms.TabControl();
+            this.tabCommanditaire = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnQuitter = new System.Windows.Forms.Button();
+            this.gbxAttribuerPrix = new System.Windows.Forms.GroupBox();
+            this.txtNbrePrix = new System.Windows.Forms.TextBox();
+            this.lbNbrePrix = new System.Windows.Forms.Label();
+            this.btnAfficherNombre = new System.Windows.Forms.Button();
+            this.gBxDonateur = new System.Windows.Forms.GroupBox();
             this.idDonateur = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbNomDonateur = new System.Windows.Forms.Label();
+            this.btnAfficherDonateur = new System.Windows.Forms.Button();
+            this.txtAdresseDona = new System.Windows.Forms.TextBox();
+            this.txtNomDona = new System.Windows.Forms.TextBox();
+            this.btnAjouterDonateur = new System.Windows.Forms.Button();
+            this.lbAdresseDona = new System.Windows.Forms.Label();
+            this.lbPrenomDona = new System.Windows.Forms.Label();
+            this.txtPrenomDona = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelephoneDona = new System.Windows.Forms.TextBox();
+            this.lbTelephone = new System.Windows.Forms.Label();
+            this.gBxDon = new System.Windows.Forms.GroupBox();
+            this.lbIdDon = new System.Windows.Forms.Label();
+            this.gBxCarte = new System.Windows.Forms.GroupBox();
+            this.dateTimeExpir = new System.Windows.Forms.DateTimePicker();
+            this.lbdateExpir = new System.Windows.Forms.Label();
+            this.txtNumeroCarte = new System.Windows.Forms.TextBox();
+            this.lbNumeroCarte = new System.Windows.Forms.Label();
+            this.gBxType = new System.Windows.Forms.GroupBox();
+            this.rbAmex = new System.Windows.Forms.RadioButton();
+            this.rbMc = new System.Windows.Forms.RadioButton();
+            this.rbVisa = new System.Windows.Forms.RadioButton();
+            this.txtMontantDon = new System.Windows.Forms.TextBox();
+            this.btnAfficherDon = new System.Windows.Forms.Button();
+            this.txtDon = new System.Windows.Forms.TextBox();
+            this.btnAjouterDon = new System.Windows.Forms.Button();
+            this.lbMontantDon = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txtAffichageResul = new System.Windows.Forms.TextBox();
+            this.gBxCommand = new System.Windows.Forms.GroupBox();
+            this.lbIdCommand = new System.Windows.Forms.Label();
+            this.lbNomCommand = new System.Windows.Forms.Label();
+            this.btnAfficherCommand = new System.Windows.Forms.Button();
+            this.txtNomCommand = new System.Windows.Forms.TextBox();
+            this.btnAjouterCommand = new System.Windows.Forms.Button();
+            this.lbPrenomCommand = new System.Windows.Forms.Label();
+            this.txtPrenomCommand = new System.Windows.Forms.TextBox();
+            this.txtIdCommand = new System.Windows.Forms.TextBox();
+            this.gBxPrix = new System.Windows.Forms.GroupBox();
+            this.lbIdPrix = new System.Windows.Forms.Label();
+            this.txtNombrPoin = new System.Windows.Forms.Label();
+            this.btnAfficherInfoPri = new System.Windows.Forms.Button();
+            this.txtQuantitePri = new System.Windows.Forms.TextBox();
+            this.btnAjouterInfoPrix = new System.Windows.Forms.Button();
+            this.lbDescriptionPri = new System.Windows.Forms.Label();
+            this.txtDescriptionPrix = new System.Windows.Forms.TextBox();
+            this.txtIdPrix = new System.Windows.Forms.TextBox();
+            this.lbValeurPri = new System.Windows.Forms.Label();
+            this.txtValeurPri = new System.Windows.Forms.TextBox();
+            this.btnQuitterCommand = new System.Windows.Forms.Button();
+            this.pnlBtnQuitter = new System.Windows.Forms.Panel();
             this.pnlInterface2.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.tabDonateur.SuspendLayout();
+            this.tabCommanditaire.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.gbxAttribuerPrix.SuspendLayout();
+            this.gBxDonateur.SuspendLayout();
+            this.gBxDon.SuspendLayout();
+            this.gBxCarte.SuspendLayout();
+            this.gBxType.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.gBxCommand.SuspendLayout();
+            this.gBxPrix.SuspendLayout();
+            this.pnlBtnQuitter.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlInterface2
@@ -78,230 +114,163 @@ namespace systemeTelethon
             this.pnlInterface2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(239)))), ((int)(((byte)(213)))));
             this.pnlInterface2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlInterface2.BackgroundImage")));
             this.pnlInterface2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnlInterface2.Controls.Add(this.tabControl1);
+            this.pnlInterface2.Controls.Add(this.panel2);
+            this.pnlInterface2.Controls.Add(this.tabDonateur);
             this.pnlInterface2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlInterface2.Location = new System.Drawing.Point(0, -319);
-            this.pnlInterface2.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlInterface2.Location = new System.Drawing.Point(0, -310);
+            this.pnlInterface2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlInterface2.Name = "pnlInterface2";
-            this.pnlInterface2.Size = new System.Drawing.Size(918, 882);
+            this.pnlInterface2.Size = new System.Drawing.Size(1025, 1086);
             this.pnlInterface2.TabIndex = 0;
             this.pnlInterface2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // tabControl1
+            // tabDonateur
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(3, 353);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(723, 387);
-            this.tabControl1.TabIndex = 22;
+            this.tabDonateur.Controls.Add(this.tabCommanditaire);
+            this.tabDonateur.Controls.Add(this.tabPage2);
+            this.tabDonateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabDonateur.Location = new System.Drawing.Point(30, 339);
+            this.tabDonateur.Margin = new System.Windows.Forms.Padding(4);
+            this.tabDonateur.Name = "tabDonateur";
+            this.tabDonateur.SelectedIndex = 0;
+            this.tabDonateur.Size = new System.Drawing.Size(964, 543);
+            this.tabDonateur.TabIndex = 22;
             // 
-            // tabPage1
+            // tabCommanditaire
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.SteelBlue;
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.textBox6);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.textBox7);
-            this.tabPage1.Controls.Add(this.btnAfficherDonateur);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.btnAjouterDonateur);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.textBox1);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.idDonateur);
-            this.tabPage1.Controls.Add(this.textBox5);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.textBox3);
-            this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(715, 358);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Donateur";
+            this.tabCommanditaire.BackColor = System.Drawing.Color.SteelBlue;
+            this.tabCommanditaire.Controls.Add(this.panel1);
+            this.tabCommanditaire.Controls.Add(this.gbxAttribuerPrix);
+            this.tabCommanditaire.Controls.Add(this.gBxDonateur);
+            this.tabCommanditaire.Controls.Add(this.gBxDon);
+            this.tabCommanditaire.Location = new System.Drawing.Point(4, 29);
+            this.tabCommanditaire.Margin = new System.Windows.Forms.Padding(4);
+            this.tabCommanditaire.Name = "tabCommanditaire";
+            this.tabCommanditaire.Padding = new System.Windows.Forms.Padding(4);
+            this.tabCommanditaire.Size = new System.Drawing.Size(956, 510);
+            this.tabCommanditaire.TabIndex = 0;
+            this.tabCommanditaire.Text = "Donateur";
             // 
-            // groupBox1
+            // panel1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(320, 195);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(370, 154);
-            this.groupBox1.TabIndex = 30;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Carte de crédit";
+            this.panel1.Controls.Add(this.btnQuitter);
+            this.panel1.Location = new System.Drawing.Point(790, 466);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(158, 33);
+            this.panel1.TabIndex = 34;
             // 
-            // dateTimePicker1
+            // btnQuitter
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(149, 118);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(205, 24);
-            this.dateTimePicker1.TabIndex = 36;
+            this.btnQuitter.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnQuitter.FlatAppearance.BorderSize = 0;
+            this.btnQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitter.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQuitter.Location = new System.Drawing.Point(4, -1);
+            this.btnQuitter.Margin = new System.Windows.Forms.Padding(0);
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.Size = new System.Drawing.Size(154, 34);
+            this.btnQuitter.TabIndex = 35;
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.UseVisualStyleBackColor = false;
             // 
-            // label9
+            // gbxAttribuerPrix
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(16, 122);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(128, 20);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "Date d\'expiration";
+            this.gbxAttribuerPrix.Controls.Add(this.txtNbrePrix);
+            this.gbxAttribuerPrix.Controls.Add(this.lbNbrePrix);
+            this.gbxAttribuerPrix.Controls.Add(this.btnAfficherNombre);
+            this.gbxAttribuerPrix.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxAttribuerPrix.ForeColor = System.Drawing.Color.White;
+            this.gbxAttribuerPrix.Location = new System.Drawing.Point(7, 333);
+            this.gbxAttribuerPrix.Name = "gbxAttribuerPrix";
+            this.gbxAttribuerPrix.Size = new System.Drawing.Size(412, 126);
+            this.gbxAttribuerPrix.TabIndex = 33;
+            this.gbxAttribuerPrix.TabStop = false;
+            this.gbxAttribuerPrix.Text = "Attribuer prix";
             // 
-            // textBox8
+            // txtNbrePrix
             // 
-            this.textBox8.Location = new System.Drawing.Point(149, 92);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(205, 24);
-            this.textBox8.TabIndex = 32;
+            this.txtNbrePrix.Location = new System.Drawing.Point(186, 78);
+            this.txtNbrePrix.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNbrePrix.Name = "txtNbrePrix";
+            this.txtNbrePrix.Size = new System.Drawing.Size(213, 34);
+            this.txtNbrePrix.TabIndex = 23;
             // 
-            // label10
+            // lbNbrePrix
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(16, 92);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(69, 20);
-            this.label10.TabIndex = 33;
-            this.label10.Text = "Numéro:";
+            this.lbNbrePrix.AutoSize = true;
+            this.lbNbrePrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNbrePrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbNbrePrix.Location = new System.Drawing.Point(7, 87);
+            this.lbNbrePrix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNbrePrix.Name = "lbNbrePrix";
+            this.lbNbrePrix.Size = new System.Drawing.Size(176, 25);
+            this.lbNbrePrix.TabIndex = 24;
+            this.lbNbrePrix.Text = "Nombre de points :";
             // 
-            // groupBox2
+            // btnAfficherNombre
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Location = new System.Drawing.Point(20, 25);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(334, 56);
-            this.groupBox2.TabIndex = 31;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Type de carte";
+            this.btnAfficherNombre.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAfficherNombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAfficherNombre.FlatAppearance.BorderSize = 0;
+            this.btnAfficherNombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAfficherNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAfficherNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAfficherNombre.Location = new System.Drawing.Point(245, 31);
+            this.btnAfficherNombre.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAfficherNombre.Name = "btnAfficherNombre";
+            this.btnAfficherNombre.Size = new System.Drawing.Size(154, 34);
+            this.btnAfficherNombre.TabIndex = 22;
+            this.btnAfficherNombre.Text = "Afficher prix";
+            this.btnAfficherNombre.UseVisualStyleBackColor = false;
             // 
-            // radioButton3
+            // gBxDonateur
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(240, 23);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(68, 22);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "AMEX";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.gBxDonateur.Controls.Add(this.idDonateur);
+            this.gBxDonateur.Controls.Add(this.lbNomDonateur);
+            this.gBxDonateur.Controls.Add(this.btnAfficherDonateur);
+            this.gBxDonateur.Controls.Add(this.txtAdresseDona);
+            this.gBxDonateur.Controls.Add(this.txtNomDona);
+            this.gBxDonateur.Controls.Add(this.btnAjouterDonateur);
+            this.gBxDonateur.Controls.Add(this.lbAdresseDona);
+            this.gBxDonateur.Controls.Add(this.lbPrenomDona);
+            this.gBxDonateur.Controls.Add(this.txtPrenomDona);
+            this.gBxDonateur.Controls.Add(this.textBox1);
+            this.gBxDonateur.Controls.Add(this.txtTelephoneDona);
+            this.gBxDonateur.Controls.Add(this.lbTelephone);
+            this.gBxDonateur.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBxDonateur.ForeColor = System.Drawing.Color.White;
+            this.gBxDonateur.Location = new System.Drawing.Point(7, 28);
+            this.gBxDonateur.Name = "gBxDonateur";
+            this.gBxDonateur.Size = new System.Drawing.Size(413, 294);
+            this.gBxDonateur.TabIndex = 32;
+            this.gBxDonateur.TabStop = false;
+            this.gBxDonateur.Text = "Information donateur";
             // 
-            // radioButton2
+            // idDonateur
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(129, 23);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(50, 22);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "MC";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.idDonateur.AutoSize = true;
+            this.idDonateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idDonateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.idDonateur.Location = new System.Drawing.Point(19, 43);
+            this.idDonateur.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.idDonateur.Name = "idDonateur";
+            this.idDonateur.Size = new System.Drawing.Size(42, 25);
+            this.idDonateur.TabIndex = 12;
+            this.idDonateur.Text = "ID :";
             // 
-            // radioButton1
+            // lbNomDonateur
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(20, 23);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(54, 22);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Visa";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(164, 321);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 28);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Afficher Don";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(27, 321);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 28);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Ajouter Don";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(23, 220);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 23);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "Information Don";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(22, 282);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 20);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Montant :";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(122, 256);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(175, 22);
-            this.textBox6.TabIndex = 23;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(22, 256);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 20);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "ID don:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(122, 282);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(175, 22);
-            this.textBox7.TabIndex = 25;
+            this.lbNomDonateur.AutoSize = true;
+            this.lbNomDonateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNomDonateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbNomDonateur.Location = new System.Drawing.Point(19, 123);
+            this.lbNomDonateur.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNomDonateur.Name = "lbNomDonateur";
+            this.lbNomDonateur.Size = new System.Drawing.Size(64, 25);
+            this.lbNomDonateur.TabIndex = 16;
+            this.lbNomDonateur.Text = "Nom :";
             // 
             // btnAfficherDonateur
             // 
@@ -310,23 +279,29 @@ namespace systemeTelethon
             this.btnAfficherDonateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAfficherDonateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAfficherDonateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAfficherDonateur.Location = new System.Drawing.Point(164, 179);
+            this.btnAfficherDonateur.Location = new System.Drawing.Point(228, 245);
+            this.btnAfficherDonateur.Margin = new System.Windows.Forms.Padding(4);
             this.btnAfficherDonateur.Name = "btnAfficherDonateur";
-            this.btnAfficherDonateur.Size = new System.Drawing.Size(132, 28);
+            this.btnAfficherDonateur.Size = new System.Drawing.Size(154, 34);
             this.btnAfficherDonateur.TabIndex = 22;
-            this.btnAfficherDonateur.Text = "Afficher donateur";
+            this.btnAfficherDonateur.Text = "Afficher ";
             this.btnAfficherDonateur.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // txtAdresseDona
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(22, 13);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(170, 23);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Information donateur";
+            this.txtAdresseDona.Location = new System.Drawing.Point(149, 161);
+            this.txtAdresseDona.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAdresseDona.Name = "txtAdresseDona";
+            this.txtAdresseDona.Size = new System.Drawing.Size(233, 34);
+            this.txtAdresseDona.TabIndex = 17;
+            // 
+            // txtNomDona
+            // 
+            this.txtNomDona.Location = new System.Drawing.Point(149, 119);
+            this.txtNomDona.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNomDona.Name = "txtNomDona";
+            this.txtNomDona.Size = new System.Drawing.Size(233, 34);
+            this.txtNomDona.TabIndex = 15;
             // 
             // btnAjouterDonateur
             // 
@@ -336,149 +311,599 @@ namespace systemeTelethon
             this.btnAjouterDonateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouterDonateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterDonateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAjouterDonateur.Location = new System.Drawing.Point(25, 179);
+            this.btnAjouterDonateur.Location = new System.Drawing.Point(33, 245);
             this.btnAjouterDonateur.Margin = new System.Windows.Forms.Padding(0);
             this.btnAjouterDonateur.Name = "btnAjouterDonateur";
-            this.btnAjouterDonateur.Size = new System.Drawing.Size(133, 28);
+            this.btnAjouterDonateur.Size = new System.Drawing.Size(154, 34);
             this.btnAjouterDonateur.TabIndex = 21;
-            this.btnAjouterDonateur.Text = "Ajouter donateur";
+            this.btnAjouterDonateur.Text = "Ajouter";
             this.btnAjouterDonateur.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lbAdresseDona
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(21, 75);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 20);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Prénom :";
+            this.lbAdresseDona.AutoSize = true;
+            this.lbAdresseDona.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbAdresseDona.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbAdresseDona.Location = new System.Drawing.Point(19, 170);
+            this.lbAdresseDona.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbAdresseDona.Name = "lbAdresseDona";
+            this.lbAdresseDona.Size = new System.Drawing.Size(96, 25);
+            this.lbAdresseDona.TabIndex = 18;
+            this.lbAdresseDona.Text = "Adresse :";
+            // 
+            // lbPrenomDona
+            // 
+            this.lbPrenomDona.AutoSize = true;
+            this.lbPrenomDona.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrenomDona.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbPrenomDona.Location = new System.Drawing.Point(19, 83);
+            this.lbPrenomDona.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPrenomDona.Name = "lbPrenomDona";
+            this.lbPrenomDona.Size = new System.Drawing.Size(91, 25);
+            this.lbPrenomDona.TabIndex = 14;
+            this.lbPrenomDona.Text = "Prénom :";
+            // 
+            // txtPrenomDona
+            // 
+            this.txtPrenomDona.Location = new System.Drawing.Point(149, 76);
+            this.txtPrenomDona.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrenomDona.Name = "txtPrenomDona";
+            this.txtPrenomDona.Size = new System.Drawing.Size(233, 34);
+            this.txtPrenomDona.TabIndex = 13;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(121, 49);
+            this.textBox1.Location = new System.Drawing.Point(149, 34);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 22);
+            this.textBox1.Size = new System.Drawing.Size(233, 34);
             this.textBox1.TabIndex = 11;
             // 
-            // label4
+            // txtTelephoneDona
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(21, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 20);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Téléphone : ";
+            this.txtTelephoneDona.Location = new System.Drawing.Point(149, 203);
+            this.txtTelephoneDona.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTelephoneDona.Name = "txtTelephoneDona";
+            this.txtTelephoneDona.Size = new System.Drawing.Size(233, 34);
+            this.txtTelephoneDona.TabIndex = 19;
             // 
-            // idDonateur
+            // lbTelephone
             // 
-            this.idDonateur.AutoSize = true;
-            this.idDonateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idDonateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.idDonateur.Location = new System.Drawing.Point(21, 49);
-            this.idDonateur.Name = "idDonateur";
-            this.idDonateur.Size = new System.Drawing.Size(34, 20);
-            this.idDonateur.TabIndex = 12;
-            this.idDonateur.Text = "ID :";
+            this.lbTelephone.AutoSize = true;
+            this.lbTelephone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTelephone.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbTelephone.Location = new System.Drawing.Point(19, 212);
+            this.lbTelephone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTelephone.Name = "lbTelephone";
+            this.lbTelephone.Size = new System.Drawing.Size(122, 25);
+            this.lbTelephone.TabIndex = 20;
+            this.lbTelephone.Text = "Téléphone : ";
             // 
-            // textBox5
+            // gBxDon
             // 
-            this.textBox5.Location = new System.Drawing.Point(121, 153);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(175, 22);
-            this.textBox5.TabIndex = 19;
+            this.gBxDon.Controls.Add(this.lbIdDon);
+            this.gBxDon.Controls.Add(this.gBxCarte);
+            this.gBxDon.Controls.Add(this.txtMontantDon);
+            this.gBxDon.Controls.Add(this.btnAfficherDon);
+            this.gBxDon.Controls.Add(this.txtDon);
+            this.gBxDon.Controls.Add(this.btnAjouterDon);
+            this.gBxDon.Controls.Add(this.lbMontantDon);
+            this.gBxDon.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBxDon.ForeColor = System.Drawing.Color.White;
+            this.gBxDon.Location = new System.Drawing.Point(426, 28);
+            this.gBxDon.Name = "gBxDon";
+            this.gBxDon.Size = new System.Drawing.Size(523, 432);
+            this.gBxDon.TabIndex = 31;
+            this.gBxDon.TabStop = false;
+            this.gBxDon.Text = "Information don";
             // 
-            // textBox2
+            // lbIdDon
             // 
-            this.textBox2.Location = new System.Drawing.Point(121, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 22);
-            this.textBox2.TabIndex = 13;
+            this.lbIdDon.AutoSize = true;
+            this.lbIdDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIdDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbIdDon.Location = new System.Drawing.Point(21, 48);
+            this.lbIdDon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbIdDon.Name = "lbIdDon";
+            this.lbIdDon.Size = new System.Drawing.Size(75, 25);
+            this.lbIdDon.TabIndex = 24;
+            this.lbIdDon.Text = "ID don:";
             // 
-            // label3
+            // gBxCarte
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(21, 127);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Adresse :";
+            this.gBxCarte.Controls.Add(this.dateTimeExpir);
+            this.gBxCarte.Controls.Add(this.lbdateExpir);
+            this.gBxCarte.Controls.Add(this.txtNumeroCarte);
+            this.gBxCarte.Controls.Add(this.lbNumeroCarte);
+            this.gBxCarte.Controls.Add(this.gBxType);
+            this.gBxCarte.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBxCarte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gBxCarte.Location = new System.Drawing.Point(7, 227);
+            this.gBxCarte.Margin = new System.Windows.Forms.Padding(4);
+            this.gBxCarte.Name = "gBxCarte";
+            this.gBxCarte.Padding = new System.Windows.Forms.Padding(4);
+            this.gBxCarte.Size = new System.Drawing.Size(489, 190);
+            this.gBxCarte.TabIndex = 30;
+            this.gBxCarte.TabStop = false;
+            this.gBxCarte.Text = "Carte de crédit";
             // 
-            // textBox3
+            // dateTimeExpir
             // 
-            this.textBox3.Location = new System.Drawing.Point(121, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 22);
-            this.textBox3.TabIndex = 15;
+            this.dateTimeExpir.Location = new System.Drawing.Point(199, 145);
+            this.dateTimeExpir.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimeExpir.Name = "dateTimeExpir";
+            this.dateTimeExpir.Size = new System.Drawing.Size(272, 29);
+            this.dateTimeExpir.TabIndex = 36;
             // 
-            // textBox4
+            // lbdateExpir
             // 
-            this.textBox4.Location = new System.Drawing.Point(121, 127);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(175, 22);
-            this.textBox4.TabIndex = 17;
+            this.lbdateExpir.AutoSize = true;
+            this.lbdateExpir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbdateExpir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbdateExpir.Location = new System.Drawing.Point(21, 150);
+            this.lbdateExpir.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbdateExpir.Name = "lbdateExpir";
+            this.lbdateExpir.Size = new System.Drawing.Size(157, 25);
+            this.lbdateExpir.TabIndex = 35;
+            this.lbdateExpir.Text = "Date d\'expiration";
             // 
-            // label2
+            // txtNumeroCarte
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(21, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Nom :";
+            this.txtNumeroCarte.Location = new System.Drawing.Point(199, 113);
+            this.txtNumeroCarte.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumeroCarte.Name = "txtNumeroCarte";
+            this.txtNumeroCarte.Size = new System.Drawing.Size(272, 29);
+            this.txtNumeroCarte.TabIndex = 32;
+            // 
+            // lbNumeroCarte
+            // 
+            this.lbNumeroCarte.AutoSize = true;
+            this.lbNumeroCarte.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNumeroCarte.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbNumeroCarte.Location = new System.Drawing.Point(21, 113);
+            this.lbNumeroCarte.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNumeroCarte.Name = "lbNumeroCarte";
+            this.lbNumeroCarte.Size = new System.Drawing.Size(87, 25);
+            this.lbNumeroCarte.TabIndex = 33;
+            this.lbNumeroCarte.Text = "Numéro:";
+            // 
+            // gBxType
+            // 
+            this.gBxType.Controls.Add(this.rbAmex);
+            this.gBxType.Controls.Add(this.rbMc);
+            this.gBxType.Controls.Add(this.rbVisa);
+            this.gBxType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBxType.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gBxType.Location = new System.Drawing.Point(27, 31);
+            this.gBxType.Margin = new System.Windows.Forms.Padding(4);
+            this.gBxType.Name = "gBxType";
+            this.gBxType.Padding = new System.Windows.Forms.Padding(4);
+            this.gBxType.Size = new System.Drawing.Size(445, 69);
+            this.gBxType.TabIndex = 31;
+            this.gBxType.TabStop = false;
+            this.gBxType.Text = "Type de carte";
+            // 
+            // rbAmex
+            // 
+            this.rbAmex.AutoSize = true;
+            this.rbAmex.Location = new System.Drawing.Point(320, 28);
+            this.rbAmex.Margin = new System.Windows.Forms.Padding(4);
+            this.rbAmex.Name = "rbAmex";
+            this.rbAmex.Size = new System.Drawing.Size(87, 28);
+            this.rbAmex.TabIndex = 2;
+            this.rbAmex.TabStop = true;
+            this.rbAmex.Text = "AMEX";
+            this.rbAmex.UseVisualStyleBackColor = true;
+            // 
+            // rbMc
+            // 
+            this.rbMc.AutoSize = true;
+            this.rbMc.Location = new System.Drawing.Point(172, 28);
+            this.rbMc.Margin = new System.Windows.Forms.Padding(4);
+            this.rbMc.Name = "rbMc";
+            this.rbMc.Size = new System.Drawing.Size(60, 28);
+            this.rbMc.TabIndex = 1;
+            this.rbMc.TabStop = true;
+            this.rbMc.Text = "MC";
+            this.rbMc.UseVisualStyleBackColor = true;
+            // 
+            // rbVisa
+            // 
+            this.rbVisa.AutoSize = true;
+            this.rbVisa.Location = new System.Drawing.Point(27, 28);
+            this.rbVisa.Margin = new System.Windows.Forms.Padding(4);
+            this.rbVisa.Name = "rbVisa";
+            this.rbVisa.Size = new System.Drawing.Size(67, 28);
+            this.rbVisa.TabIndex = 0;
+            this.rbVisa.TabStop = true;
+            this.rbVisa.Text = "Visa";
+            this.rbVisa.UseVisualStyleBackColor = true;
+            // 
+            // txtMontantDon
+            // 
+            this.txtMontantDon.Location = new System.Drawing.Point(150, 76);
+            this.txtMontantDon.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMontantDon.Name = "txtMontantDon";
+            this.txtMontantDon.Size = new System.Drawing.Size(290, 34);
+            this.txtMontantDon.TabIndex = 25;
+            // 
+            // btnAfficherDon
+            // 
+            this.btnAfficherDon.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAfficherDon.FlatAppearance.BorderSize = 0;
+            this.btnAfficherDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAfficherDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAfficherDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAfficherDon.Location = new System.Drawing.Point(265, 166);
+            this.btnAfficherDon.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAfficherDon.Name = "btnAfficherDon";
+            this.btnAfficherDon.Size = new System.Drawing.Size(176, 34);
+            this.btnAfficherDon.TabIndex = 29;
+            this.btnAfficherDon.Text = "Afficher";
+            this.btnAfficherDon.UseVisualStyleBackColor = false;
+            // 
+            // txtDon
+            // 
+            this.txtDon.Location = new System.Drawing.Point(150, 35);
+            this.txtDon.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDon.Name = "txtDon";
+            this.txtDon.Size = new System.Drawing.Size(290, 34);
+            this.txtDon.TabIndex = 23;
+            // 
+            // btnAjouterDon
+            // 
+            this.btnAjouterDon.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAjouterDon.FlatAppearance.BorderSize = 0;
+            this.btnAjouterDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouterDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAjouterDon.Location = new System.Drawing.Point(61, 166);
+            this.btnAjouterDon.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAjouterDon.Name = "btnAjouterDon";
+            this.btnAjouterDon.Size = new System.Drawing.Size(177, 34);
+            this.btnAjouterDon.TabIndex = 28;
+            this.btnAjouterDon.Text = "Ajouter";
+            this.btnAjouterDon.UseVisualStyleBackColor = false;
+            // 
+            // lbMontantDon
+            // 
+            this.lbMontantDon.AutoSize = true;
+            this.lbMontantDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMontantDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbMontantDon.Location = new System.Drawing.Point(21, 83);
+            this.lbMontantDon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbMontantDon.Name = "lbMontantDon";
+            this.lbMontantDon.Size = new System.Drawing.Size(94, 25);
+            this.lbMontantDon.TabIndex = 26;
+            this.lbMontantDon.Text = "Montant :";
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.SteelBlue;
-            this.tabPage2.Controls.Add(this.textBox10);
-            this.tabPage2.Controls.Add(this.textBox9);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Controls.Add(this.pnlBtnQuitter);
+            this.tabPage2.Controls.Add(this.gBxPrix);
+            this.tabPage2.Controls.Add(this.gBxCommand);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(715, 358);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(956, 510);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Commanditaire";
             // 
-            // textBox9
+            // panel2
             // 
-            this.textBox9.Location = new System.Drawing.Point(270, 168);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(175, 22);
-            this.textBox9.TabIndex = 12;
+            this.panel2.Controls.Add(this.txtAffichageResul);
+            this.panel2.Location = new System.Drawing.Point(34, 889);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(964, 145);
+            this.panel2.TabIndex = 35;
             // 
-            // textBox10
+            // txtAffichageResul
             // 
-            this.textBox10.Location = new System.Drawing.Point(278, 176);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(175, 22);
-            this.textBox10.TabIndex = 13;
+            this.txtAffichageResul.Location = new System.Drawing.Point(-4, 0);
+            this.txtAffichageResul.Multiline = true;
+            this.txtAffichageResul.Name = "txtAffichageResul";
+            this.txtAffichageResul.Size = new System.Drawing.Size(964, 144);
+            this.txtAffichageResul.TabIndex = 0;
+            // 
+            // gBxCommand
+            // 
+            this.gBxCommand.Controls.Add(this.lbIdCommand);
+            this.gBxCommand.Controls.Add(this.lbNomCommand);
+            this.gBxCommand.Controls.Add(this.btnAfficherCommand);
+            this.gBxCommand.Controls.Add(this.txtNomCommand);
+            this.gBxCommand.Controls.Add(this.btnAjouterCommand);
+            this.gBxCommand.Controls.Add(this.lbPrenomCommand);
+            this.gBxCommand.Controls.Add(this.txtPrenomCommand);
+            this.gBxCommand.Controls.Add(this.txtIdCommand);
+            this.gBxCommand.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBxCommand.ForeColor = System.Drawing.Color.White;
+            this.gBxCommand.Location = new System.Drawing.Point(25, 60);
+            this.gBxCommand.Name = "gBxCommand";
+            this.gBxCommand.Size = new System.Drawing.Size(413, 384);
+            this.gBxCommand.TabIndex = 33;
+            this.gBxCommand.TabStop = false;
+            this.gBxCommand.Text = "Information Commanditaire";
+            // 
+            // lbIdCommand
+            // 
+            this.lbIdCommand.AutoSize = true;
+            this.lbIdCommand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIdCommand.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbIdCommand.Location = new System.Drawing.Point(19, 100);
+            this.lbIdCommand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbIdCommand.Name = "lbIdCommand";
+            this.lbIdCommand.Size = new System.Drawing.Size(42, 25);
+            this.lbIdCommand.TabIndex = 12;
+            this.lbIdCommand.Text = "ID :";
+            // 
+            // lbNomCommand
+            // 
+            this.lbNomCommand.AutoSize = true;
+            this.lbNomCommand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNomCommand.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbNomCommand.Location = new System.Drawing.Point(19, 214);
+            this.lbNomCommand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbNomCommand.Name = "lbNomCommand";
+            this.lbNomCommand.Size = new System.Drawing.Size(64, 25);
+            this.lbNomCommand.TabIndex = 16;
+            this.lbNomCommand.Text = "Nom :";
+            // 
+            // btnAfficherCommand
+            // 
+            this.btnAfficherCommand.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAfficherCommand.FlatAppearance.BorderSize = 0;
+            this.btnAfficherCommand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAfficherCommand.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAfficherCommand.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAfficherCommand.Location = new System.Drawing.Point(228, 279);
+            this.btnAfficherCommand.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAfficherCommand.Name = "btnAfficherCommand";
+            this.btnAfficherCommand.Size = new System.Drawing.Size(154, 34);
+            this.btnAfficherCommand.TabIndex = 22;
+            this.btnAfficherCommand.Text = "Afficher ";
+            this.btnAfficherCommand.UseVisualStyleBackColor = false;
+            // 
+            // txtNomCommand
+            // 
+            this.txtNomCommand.Location = new System.Drawing.Point(149, 205);
+            this.txtNomCommand.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNomCommand.Name = "txtNomCommand";
+            this.txtNomCommand.Size = new System.Drawing.Size(233, 34);
+            this.txtNomCommand.TabIndex = 15;
+            // 
+            // btnAjouterCommand
+            // 
+            this.btnAjouterCommand.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAjouterCommand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAjouterCommand.FlatAppearance.BorderSize = 0;
+            this.btnAjouterCommand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouterCommand.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterCommand.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAjouterCommand.Location = new System.Drawing.Point(24, 279);
+            this.btnAjouterCommand.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAjouterCommand.Name = "btnAjouterCommand";
+            this.btnAjouterCommand.Size = new System.Drawing.Size(154, 34);
+            this.btnAjouterCommand.TabIndex = 21;
+            this.btnAjouterCommand.Text = "Ajouter";
+            this.btnAjouterCommand.UseVisualStyleBackColor = false;
+            // 
+            // lbPrenomCommand
+            // 
+            this.lbPrenomCommand.AutoSize = true;
+            this.lbPrenomCommand.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrenomCommand.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbPrenomCommand.Location = new System.Drawing.Point(19, 154);
+            this.lbPrenomCommand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbPrenomCommand.Name = "lbPrenomCommand";
+            this.lbPrenomCommand.Size = new System.Drawing.Size(91, 25);
+            this.lbPrenomCommand.TabIndex = 14;
+            this.lbPrenomCommand.Text = "Prénom :";
+            // 
+            // txtPrenomCommand
+            // 
+            this.txtPrenomCommand.Location = new System.Drawing.Point(149, 150);
+            this.txtPrenomCommand.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrenomCommand.Name = "txtPrenomCommand";
+            this.txtPrenomCommand.Size = new System.Drawing.Size(233, 34);
+            this.txtPrenomCommand.TabIndex = 13;
+            // 
+            // txtIdCommand
+            // 
+            this.txtIdCommand.Location = new System.Drawing.Point(149, 91);
+            this.txtIdCommand.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdCommand.Name = "txtIdCommand";
+            this.txtIdCommand.Size = new System.Drawing.Size(233, 34);
+            this.txtIdCommand.TabIndex = 11;
+            // 
+            // gBxPrix
+            // 
+            this.gBxPrix.Controls.Add(this.lbValeurPri);
+            this.gBxPrix.Controls.Add(this.txtValeurPri);
+            this.gBxPrix.Controls.Add(this.lbIdPrix);
+            this.gBxPrix.Controls.Add(this.txtNombrPoin);
+            this.gBxPrix.Controls.Add(this.lbDescriptionPri);
+            this.gBxPrix.Controls.Add(this.btnAfficherInfoPri);
+            this.gBxPrix.Controls.Add(this.txtQuantitePri);
+            this.gBxPrix.Controls.Add(this.btnAjouterInfoPrix);
+            this.gBxPrix.Controls.Add(this.txtDescriptionPrix);
+            this.gBxPrix.Controls.Add(this.txtIdPrix);
+            this.gBxPrix.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBxPrix.ForeColor = System.Drawing.Color.White;
+            this.gBxPrix.Location = new System.Drawing.Point(460, 60);
+            this.gBxPrix.Name = "gBxPrix";
+            this.gBxPrix.Size = new System.Drawing.Size(468, 384);
+            this.gBxPrix.TabIndex = 34;
+            this.gBxPrix.TabStop = false;
+            this.gBxPrix.Text = "Information prix";
+            // 
+            // lbIdPrix
+            // 
+            this.lbIdPrix.AutoSize = true;
+            this.lbIdPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIdPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbIdPrix.Location = new System.Drawing.Point(19, 60);
+            this.lbIdPrix.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbIdPrix.Name = "lbIdPrix";
+            this.lbIdPrix.Size = new System.Drawing.Size(42, 25);
+            this.lbIdPrix.TabIndex = 12;
+            this.lbIdPrix.Text = "ID :";
+            // 
+            // txtNombrPoin
+            // 
+            this.txtNombrPoin.AutoSize = true;
+            this.txtNombrPoin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombrPoin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtNombrPoin.Location = new System.Drawing.Point(19, 214);
+            this.txtNombrPoin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txtNombrPoin.Name = "txtNombrPoin";
+            this.txtNombrPoin.Size = new System.Drawing.Size(176, 25);
+            this.txtNombrPoin.TabIndex = 16;
+            this.txtNombrPoin.Text = "Nombre de points :";
+            // 
+            // btnAfficherInfoPri
+            // 
+            this.btnAfficherInfoPri.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAfficherInfoPri.FlatAppearance.BorderSize = 0;
+            this.btnAfficherInfoPri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAfficherInfoPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAfficherInfoPri.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAfficherInfoPri.Location = new System.Drawing.Point(279, 279);
+            this.btnAfficherInfoPri.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAfficherInfoPri.Name = "btnAfficherInfoPri";
+            this.btnAfficherInfoPri.Size = new System.Drawing.Size(154, 34);
+            this.btnAfficherInfoPri.TabIndex = 22;
+            this.btnAfficherInfoPri.Text = "Afficher ";
+            this.btnAfficherInfoPri.UseVisualStyleBackColor = false;
+            // 
+            // txtQuantitePri
+            // 
+            this.txtQuantitePri.Location = new System.Drawing.Point(200, 205);
+            this.txtQuantitePri.Margin = new System.Windows.Forms.Padding(4);
+            this.txtQuantitePri.Name = "txtQuantitePri";
+            this.txtQuantitePri.Size = new System.Drawing.Size(233, 34);
+            this.txtQuantitePri.TabIndex = 15;
+            // 
+            // btnAjouterInfoPrix
+            // 
+            this.btnAjouterInfoPrix.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnAjouterInfoPrix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAjouterInfoPrix.FlatAppearance.BorderSize = 0;
+            this.btnAjouterInfoPrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouterInfoPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterInfoPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAjouterInfoPrix.Location = new System.Drawing.Point(65, 279);
+            this.btnAjouterInfoPrix.Margin = new System.Windows.Forms.Padding(0);
+            this.btnAjouterInfoPrix.Name = "btnAjouterInfoPrix";
+            this.btnAjouterInfoPrix.Size = new System.Drawing.Size(154, 34);
+            this.btnAjouterInfoPrix.TabIndex = 21;
+            this.btnAjouterInfoPrix.Text = "Ajouter";
+            this.btnAjouterInfoPrix.UseVisualStyleBackColor = false;
+            // 
+            // lbDescriptionPri
+            // 
+            this.lbDescriptionPri.AutoSize = true;
+            this.lbDescriptionPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDescriptionPri.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbDescriptionPri.Location = new System.Drawing.Point(21, 119);
+            this.lbDescriptionPri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbDescriptionPri.Name = "lbDescriptionPri";
+            this.lbDescriptionPri.Size = new System.Drawing.Size(120, 25);
+            this.lbDescriptionPri.TabIndex = 14;
+            this.lbDescriptionPri.Text = "Description :";
+            // 
+            // txtDescriptionPrix
+            // 
+            this.txtDescriptionPrix.Location = new System.Drawing.Point(200, 106);
+            this.txtDescriptionPrix.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescriptionPrix.Name = "txtDescriptionPrix";
+            this.txtDescriptionPrix.Size = new System.Drawing.Size(233, 34);
+            this.txtDescriptionPrix.TabIndex = 13;
+            // 
+            // txtIdPrix
+            // 
+            this.txtIdPrix.Location = new System.Drawing.Point(200, 56);
+            this.txtIdPrix.Margin = new System.Windows.Forms.Padding(4);
+            this.txtIdPrix.Name = "txtIdPrix";
+            this.txtIdPrix.Size = new System.Drawing.Size(233, 34);
+            this.txtIdPrix.TabIndex = 11;
+            // 
+            // lbValeurPri
+            // 
+            this.lbValeurPri.AutoSize = true;
+            this.lbValeurPri.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbValeurPri.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbValeurPri.Location = new System.Drawing.Point(21, 163);
+            this.lbValeurPri.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbValeurPri.Name = "lbValeurPri";
+            this.lbValeurPri.Size = new System.Drawing.Size(100, 31);
+            this.lbValeurPri.TabIndex = 24;
+            this.lbValeurPri.Text = "Valeur :";
+            // 
+            // txtValeurPri
+            // 
+            this.txtValeurPri.Location = new System.Drawing.Point(200, 156);
+            this.txtValeurPri.Margin = new System.Windows.Forms.Padding(4);
+            this.txtValeurPri.Name = "txtValeurPri";
+            this.txtValeurPri.Size = new System.Drawing.Size(233, 34);
+            this.txtValeurPri.TabIndex = 23;
+            // 
+            // btnQuitterCommand
+            // 
+            this.btnQuitterCommand.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnQuitterCommand.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnQuitterCommand.FlatAppearance.BorderSize = 0;
+            this.btnQuitterCommand.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuitterCommand.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuitterCommand.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQuitterCommand.Location = new System.Drawing.Point(7, 2);
+            this.btnQuitterCommand.Margin = new System.Windows.Forms.Padding(0);
+            this.btnQuitterCommand.Name = "btnQuitterCommand";
+            this.btnQuitterCommand.Size = new System.Drawing.Size(154, 34);
+            this.btnQuitterCommand.TabIndex = 35;
+            this.btnQuitterCommand.Text = "Quitter";
+            this.btnQuitterCommand.UseVisualStyleBackColor = false;
+            // 
+            // pnlBtnQuitter
+            // 
+            this.pnlBtnQuitter.Controls.Add(this.btnQuitterCommand);
+            this.pnlBtnQuitter.Location = new System.Drawing.Point(767, 453);
+            this.pnlBtnQuitter.Name = "pnlBtnQuitter";
+            this.pnlBtnQuitter.Size = new System.Drawing.Size(160, 36);
+            this.pnlBtnQuitter.TabIndex = 36;
             // 
             // Systeme
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(918, 563);
+            this.ClientSize = new System.Drawing.Size(1025, 776);
             this.Controls.Add(this.pnlInterface2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Systeme";
             this.Text = "Système Téléthon STE";
             this.pnlInterface2.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.tabDonateur.ResumeLayout(false);
+            this.tabCommanditaire.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.gbxAttribuerPrix.ResumeLayout(false);
+            this.gbxAttribuerPrix.PerformLayout();
+            this.gBxDonateur.ResumeLayout(false);
+            this.gBxDonateur.PerformLayout();
+            this.gBxDon.ResumeLayout(false);
+            this.gBxDon.PerformLayout();
+            this.gBxCarte.ResumeLayout(false);
+            this.gBxCarte.PerformLayout();
+            this.gBxType.ResumeLayout(false);
+            this.gBxType.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.gBxCommand.ResumeLayout(false);
+            this.gBxCommand.PerformLayout();
+            this.gBxPrix.ResumeLayout(false);
+            this.gBxPrix.PerformLayout();
+            this.pnlBtnQuitter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -486,39 +911,67 @@ namespace systemeTelethon
         #endregion
 
         private System.Windows.Forms.Panel pnlInterface2;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabControl tabDonateur;
+        private System.Windows.Forms.TabPage tabCommanditaire;
+        private System.Windows.Forms.Label lbPrenomDona;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbTelephone;
         private System.Windows.Forms.Label idDonateur;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtTelephoneDona;
+        private System.Windows.Forms.TextBox txtPrenomDona;
+        private System.Windows.Forms.Label lbAdresseDona;
+        private System.Windows.Forms.TextBox txtNomDona;
+        private System.Windows.Forms.TextBox txtAdresseDona;
+        private System.Windows.Forms.Label lbNomDonateur;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnAjouterDonateur;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.GroupBox gBxCarte;
+        private System.Windows.Forms.Button btnAfficherDon;
+        private System.Windows.Forms.Button btnAjouterDon;
+        private System.Windows.Forms.Label lbMontantDon;
+        private System.Windows.Forms.TextBox txtDon;
+        private System.Windows.Forms.Label lbIdDon;
+        private System.Windows.Forms.TextBox txtMontantDon;
         private System.Windows.Forms.Button btnAfficherDonateur;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.DateTimePicker dateTimeExpir;
+        private System.Windows.Forms.Label lbdateExpir;
+        private System.Windows.Forms.TextBox txtNumeroCarte;
+        private System.Windows.Forms.Label lbNumeroCarte;
+        private System.Windows.Forms.GroupBox gBxType;
+        private System.Windows.Forms.RadioButton rbAmex;
+        private System.Windows.Forms.RadioButton rbMc;
+        private System.Windows.Forms.RadioButton rbVisa;
+        private System.Windows.Forms.GroupBox gBxDon;
+        private System.Windows.Forms.GroupBox gBxDonateur;
+        private System.Windows.Forms.GroupBox gbxAttribuerPrix;
+        private System.Windows.Forms.TextBox txtNbrePrix;
+        private System.Windows.Forms.Label lbNbrePrix;
+        private System.Windows.Forms.Button btnAfficherNombre;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnQuitter;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox txtAffichageResul;
+        private System.Windows.Forms.GroupBox gBxCommand;
+        private System.Windows.Forms.Label lbIdCommand;
+        private System.Windows.Forms.Label lbNomCommand;
+        private System.Windows.Forms.Button btnAfficherCommand;
+        private System.Windows.Forms.TextBox txtNomCommand;
+        private System.Windows.Forms.Button btnAjouterCommand;
+        private System.Windows.Forms.Label lbPrenomCommand;
+        private System.Windows.Forms.TextBox txtPrenomCommand;
+        private System.Windows.Forms.TextBox txtIdCommand;
+        private System.Windows.Forms.GroupBox gBxPrix;
+        private System.Windows.Forms.Label lbIdPrix;
+        private System.Windows.Forms.Label txtNombrPoin;
+        private System.Windows.Forms.Button btnAfficherInfoPri;
+        private System.Windows.Forms.TextBox txtQuantitePri;
+        private System.Windows.Forms.Button btnAjouterInfoPrix;
+        private System.Windows.Forms.Label lbDescriptionPri;
+        private System.Windows.Forms.TextBox txtDescriptionPrix;
+        private System.Windows.Forms.TextBox txtIdPrix;
+        private System.Windows.Forms.Label lbValeurPri;
+        private System.Windows.Forms.TextBox txtValeurPri;
+        private System.Windows.Forms.Panel pnlBtnQuitter;
+        private System.Windows.Forms.Button btnQuitterCommand;
     }
 }
