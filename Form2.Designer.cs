@@ -36,7 +36,6 @@ namespace systemeTelethon
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.gBxPrix = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.btnAfficherPrix = new System.Windows.Forms.Button();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.lblQuant = new System.Windows.Forms.Label();
@@ -171,7 +170,6 @@ namespace systemeTelethon
             // 
             // gBxPrix
             // 
-            this.gBxPrix.Controls.Add(this.label11);
             this.gBxPrix.Controls.Add(this.btnAfficherPrix);
             this.gBxPrix.Controls.Add(this.textBox13);
             this.gBxPrix.Controls.Add(this.lblQuant);
@@ -185,17 +183,6 @@ namespace systemeTelethon
             this.gBxPrix.TabIndex = 33;
             this.gBxPrix.TabStop = false;
             this.gBxPrix.Text = "Attribuer prix";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(1, 60);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 19);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "de prix";
             // 
             // btnAfficherPrix
             // 
@@ -213,9 +200,9 @@ namespace systemeTelethon
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(101, 40);
+            this.textBox13.Location = new System.Drawing.Point(163, 40);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(175, 31);
+            this.textBox13.Size = new System.Drawing.Size(113, 31);
             this.textBox13.TabIndex = 32;
             // 
             // lblQuant
@@ -223,11 +210,11 @@ namespace systemeTelethon
             this.lblQuant.AutoSize = true;
             this.lblQuant.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblQuant.Location = new System.Drawing.Point(1, 40);
+            this.lblQuant.Location = new System.Drawing.Point(2, 48);
             this.lblQuant.Name = "lblQuant";
-            this.lblQuant.Size = new System.Drawing.Size(80, 19);
+            this.lblQuant.Size = new System.Drawing.Size(155, 19);
             this.lblQuant.TabIndex = 31;
-            this.lblQuant.Text = "Nombre :";
+            this.lblQuant.Text = "Nombre de points :";
             this.lblQuant.Click += new System.EventHandler(this.lblQuant_Click);
             // 
             // gBxDon
@@ -923,6 +910,5 @@ namespace systemeTelethon
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label11;
     }
 }
