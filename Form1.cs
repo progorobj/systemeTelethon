@@ -36,5 +36,55 @@ namespace systemeTelethon
         {
            // pictureBox1.Padding = new Padding(0);
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lbTitreLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbNomUtilisateur_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbMotPasse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBxNomUt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtBxMoPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
