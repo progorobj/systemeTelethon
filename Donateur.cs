@@ -25,7 +25,7 @@ namespace systemeTelethon
             this.typedecarte = typedecarte;
             this.numeroDeCarte = numeroDeCarte ?? throw new ArgumentNullException(nameof(numeroDeCarte));
             DateExpiration = dateExpiration ?? throw new ArgumentNullException(nameof(dateExpiration));
-            base.;
+            
         }
        
     }

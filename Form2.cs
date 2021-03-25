@@ -40,7 +40,6 @@ namespace systemeTelethon
         private void btnAjouterDonateur_Click(object sender, EventArgs e)
         {
             string nom = textNom.Text;
-            Program.
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
