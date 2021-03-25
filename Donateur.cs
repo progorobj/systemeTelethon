@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Projet_integrateur
+namespace systemeTelethon
 {
     class Donateur : Personne
     {
@@ -25,6 +25,8 @@ namespace Projet_integrateur
             this.typedecarte = typedecarte;
             this.numeroDeCarte = numeroDeCarte ?? throw new ArgumentNullException(nameof(numeroDeCarte));
             DateExpiration = dateExpiration ?? throw new ArgumentNullException(nameof(dateExpiration));
+            base.;
         }
+       
     }
 }

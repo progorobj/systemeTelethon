@@ -55,20 +55,20 @@ namespace systemeTelethon
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAjouterDon = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.gBxDonnateur = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textAdresse = new System.Windows.Forms.TextBox();
+            this.textNom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textPrenom = new System.Windows.Forms.TextBox();
+            this.textPhone = new System.Windows.Forms.TextBox();
             this.idDonateur = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnAfficherDonateur = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textID = new System.Windows.Forms.TextBox();
             this.btnAjouterDonateur = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button6 = new System.Windows.Forms.Button();
@@ -253,7 +253,7 @@ namespace systemeTelethon
             this.gBxDon.Controls.Add(this.textBox7);
             this.gBxDon.Controls.Add(this.button1);
             this.gBxDon.Controls.Add(this.textBox6);
-            this.gBxDon.Controls.Add(this.button2);
+            this.gBxDon.Controls.Add(this.btnAjouterDon);
             this.gBxDon.Controls.Add(this.label7);
             this.gBxDon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBxDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -404,19 +404,20 @@ namespace systemeTelethon
             this.textBox6.Size = new System.Drawing.Size(175, 26);
             this.textBox6.TabIndex = 23;
             // 
-            // button2
+            // btnAjouterDon
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(69, 337);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(133, 28);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Ajouter";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAjouterDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
+            this.btnAjouterDon.FlatAppearance.BorderSize = 0;
+            this.btnAjouterDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouterDon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouterDon.ForeColor = System.Drawing.Color.White;
+            this.btnAjouterDon.Location = new System.Drawing.Point(69, 337);
+            this.btnAjouterDon.Name = "btnAjouterDon";
+            this.btnAjouterDon.Size = new System.Drawing.Size(133, 28);
+            this.btnAjouterDon.TabIndex = 28;
+            this.btnAjouterDon.Text = "Ajouter";
+            this.btnAjouterDon.UseVisualStyleBackColor = false;
+            this.btnAjouterDon.Click += new System.EventHandler(this.btnAjouterDon_Click);
             // 
             // label7
             // 
@@ -434,15 +435,15 @@ namespace systemeTelethon
             this.gBxDonnateur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.gBxDonnateur.Controls.Add(this.label1);
             this.gBxDonnateur.Controls.Add(this.label2);
-            this.gBxDonnateur.Controls.Add(this.textBox4);
-            this.gBxDonnateur.Controls.Add(this.textBox3);
+            this.gBxDonnateur.Controls.Add(this.textAdresse);
+            this.gBxDonnateur.Controls.Add(this.textNom);
             this.gBxDonnateur.Controls.Add(this.label3);
-            this.gBxDonnateur.Controls.Add(this.textBox2);
-            this.gBxDonnateur.Controls.Add(this.textBox5);
+            this.gBxDonnateur.Controls.Add(this.textPrenom);
+            this.gBxDonnateur.Controls.Add(this.textPhone);
             this.gBxDonnateur.Controls.Add(this.idDonateur);
             this.gBxDonnateur.Controls.Add(this.label4);
             this.gBxDonnateur.Controls.Add(this.btnAfficherDonateur);
-            this.gBxDonnateur.Controls.Add(this.textBox1);
+            this.gBxDonnateur.Controls.Add(this.textID);
             this.gBxDonnateur.Controls.Add(this.btnAjouterDonateur);
             this.gBxDonnateur.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBxDonnateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -477,19 +478,19 @@ namespace systemeTelethon
             this.label2.TabIndex = 16;
             this.label2.Text = "Nom :";
             // 
-            // textBox4
+            // textAdresse
             // 
-            this.textBox4.Location = new System.Drawing.Point(102, 131);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(175, 26);
-            this.textBox4.TabIndex = 17;
+            this.textAdresse.Location = new System.Drawing.Point(102, 131);
+            this.textAdresse.Name = "textAdresse";
+            this.textAdresse.Size = new System.Drawing.Size(175, 26);
+            this.textAdresse.TabIndex = 17;
             // 
-            // textBox3
+            // textNom
             // 
-            this.textBox3.Location = new System.Drawing.Point(102, 98);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(175, 26);
-            this.textBox3.TabIndex = 15;
+            this.textNom.Location = new System.Drawing.Point(102, 98);
+            this.textNom.Name = "textNom";
+            this.textNom.Size = new System.Drawing.Size(175, 26);
+            this.textNom.TabIndex = 15;
             // 
             // label3
             // 
@@ -502,19 +503,20 @@ namespace systemeTelethon
             this.label3.TabIndex = 18;
             this.label3.Text = "Adresse :";
             // 
-            // textBox2
+            // textPrenom
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(175, 26);
-            this.textBox2.TabIndex = 13;
+            this.textPrenom.Location = new System.Drawing.Point(102, 64);
+            this.textPrenom.Name = "textPrenom";
+            this.textPrenom.Size = new System.Drawing.Size(175, 26);
+            this.textPrenom.TabIndex = 13;
+            this.textPrenom.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox5
+            // textPhone
             // 
-            this.textBox5.Location = new System.Drawing.Point(102, 165);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(175, 26);
-            this.textBox5.TabIndex = 19;
+            this.textPhone.Location = new System.Drawing.Point(102, 165);
+            this.textPhone.Name = "textPhone";
+            this.textPhone.Size = new System.Drawing.Size(175, 26);
+            this.textPhone.TabIndex = 19;
             // 
             // idDonateur
             // 
@@ -552,12 +554,13 @@ namespace systemeTelethon
             this.btnAfficherDonateur.Text = "Afficher";
             this.btnAfficherDonateur.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // textID
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(175, 26);
-            this.textBox1.TabIndex = 11;
+            this.textID.Location = new System.Drawing.Point(102, 30);
+            this.textID.Name = "textID";
+            this.textID.Size = new System.Drawing.Size(175, 26);
+            this.textID.TabIndex = 11;
+            this.textID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnAjouterDonateur
             // 
@@ -574,6 +577,7 @@ namespace systemeTelethon
             this.btnAjouterDonateur.TabIndex = 21;
             this.btnAjouterDonateur.Text = "Ajouter ";
             this.btnAjouterDonateur.UseVisualStyleBackColor = false;
+            this.btnAjouterDonateur.Click += new System.EventHandler(this.btnAjouterDonateur_Click);
             // 
             // tabPage2
             // 
@@ -878,20 +882,20 @@ namespace systemeTelethon
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label idDonateur;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textPhone;
+        private System.Windows.Forms.TextBox textPrenom;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textNom;
+        private System.Windows.Forms.TextBox textAdresse;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnAjouterDonateur;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAjouterDon;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label8;
