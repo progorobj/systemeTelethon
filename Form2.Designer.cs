@@ -127,7 +127,7 @@ namespace systemeTelethon
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(37, 715);
+            this.panel1.Location = new System.Drawing.Point(38, 715);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(724, 145);
             this.panel1.TabIndex = 23;
@@ -135,7 +135,7 @@ namespace systemeTelethon
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.panel2.Controls.Add(this.textBox11);
             this.panel2.Location = new System.Drawing.Point(4, 4);
             this.panel2.Name = "panel2";
@@ -160,7 +160,7 @@ namespace systemeTelethon
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(37, 257);
+            this.tabControl1.Location = new System.Drawing.Point(42, 260);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(724, 453);
@@ -168,7 +168,7 @@ namespace systemeTelethon
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.SteelBlue;
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.gBxPrix);
             this.tabPage1.Controls.Add(this.gBxDon);
@@ -197,7 +197,7 @@ namespace systemeTelethon
             // 
             // gBxPrix
             // 
-            this.gBxPrix.BackColor = System.Drawing.Color.SteelBlue;
+            this.gBxPrix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.gBxPrix.Controls.Add(this.btnAfficherPrix);
             this.gBxPrix.Controls.Add(this.textBox13);
             this.gBxPrix.Controls.Add(this.lblQuant);
@@ -247,7 +247,7 @@ namespace systemeTelethon
             // 
             // gBxDon
             // 
-            this.gBxDon.BackColor = System.Drawing.Color.SteelBlue;
+            this.gBxDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.gBxDon.Controls.Add(this.label8);
             this.gBxDon.Controls.Add(this.groupBox1);
             this.gBxDon.Controls.Add(this.textBox7);
@@ -431,7 +431,7 @@ namespace systemeTelethon
             // 
             // gBxDonnateur
             // 
-            this.gBxDonnateur.BackColor = System.Drawing.Color.SteelBlue;
+            this.gBxDonnateur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.gBxDonnateur.Controls.Add(this.label1);
             this.gBxDonnateur.Controls.Add(this.label2);
             this.gBxDonnateur.Controls.Add(this.textBox4);
@@ -577,7 +577,7 @@ namespace systemeTelethon
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.SteelBlue;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.gpBxPrix);
             this.tabPage2.Controls.Add(this.gpBxComma);
@@ -604,6 +604,7 @@ namespace systemeTelethon
             // 
             // gpBxPrix
             // 
+            this.gpBxPrix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.gpBxPrix.Controls.Add(this.button3);
             this.gpBxPrix.Controls.Add(this.btnAjouterPrix);
             this.gpBxPrix.Controls.Add(this.textBox10);
@@ -729,6 +730,7 @@ namespace systemeTelethon
             // 
             // gpBxComma
             // 
+            this.gpBxComma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.gpBxComma.Controls.Add(this.btnAfficherComm);
             this.gpBxComma.Controls.Add(this.btnAjouterComm);
             this.gpBxComma.Controls.Add(this.txtBxPrenom);
