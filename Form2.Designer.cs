@@ -69,7 +69,6 @@ namespace systemeTelethon
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnAjouterDonateur = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox12 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.gpBxPrix = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -91,6 +90,8 @@ namespace systemeTelethon
             this.lbPrenom = new System.Windows.Forms.Label();
             this.idComm = new System.Windows.Forms.Label();
             this.txtBxComm = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pnlInterface2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -102,6 +103,8 @@ namespace systemeTelethon
             this.tabPage2.SuspendLayout();
             this.gpBxPrix.SuspendLayout();
             this.gpBxComma.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlInterface2
@@ -109,6 +112,7 @@ namespace systemeTelethon
             this.pnlInterface2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(239)))), ((int)(((byte)(213)))));
             this.pnlInterface2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlInterface2.BackgroundImage")));
             this.pnlInterface2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlInterface2.Controls.Add(this.panel1);
             this.pnlInterface2.Controls.Add(this.tabControl1);
             this.pnlInterface2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlInterface2.Location = new System.Drawing.Point(0, -230);
@@ -126,13 +130,12 @@ namespace systemeTelethon
             this.tabControl1.Location = new System.Drawing.Point(31, 261);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(724, 598);
+            this.tabControl1.Size = new System.Drawing.Size(724, 453);
             this.tabControl1.TabIndex = 22;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.SteelBlue;
-            this.tabPage1.Controls.Add(this.textBox11);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.gBxPrix);
             this.tabPage1.Controls.Add(this.gBxDon);
@@ -140,18 +143,19 @@ namespace systemeTelethon
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(716, 569);
+            this.tabPage1.Size = new System.Drawing.Size(716, 424);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Donateur";
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(14, 420);
+            this.textBox11.Location = new System.Drawing.Point(13, 15);
             this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(686, 134);
+            this.textBox11.Size = new System.Drawing.Size(686, 108);
             this.textBox11.TabIndex = 23;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // button4
             // 
@@ -548,25 +552,15 @@ namespace systemeTelethon
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.SteelBlue;
-            this.tabPage2.Controls.Add(this.textBox12);
             this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.gpBxPrix);
             this.tabPage2.Controls.Add(this.gpBxComma);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(716, 569);
+            this.tabPage2.Size = new System.Drawing.Size(716, 424);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Commanditaire";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(14, 420);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(686, 134);
-            this.textBox12.TabIndex = 37;
             // 
             // button6
             // 
@@ -812,6 +806,26 @@ namespace systemeTelethon
             this.txtBxComm.Size = new System.Drawing.Size(187, 31);
             this.txtBxComm.TabIndex = 12;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(31, 720);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(724, 145);
+            this.panel1.TabIndex = 23;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.textBox11);
+            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(716, 136);
+            this.panel2.TabIndex = 24;
+            // 
             // Systeme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -819,6 +833,7 @@ namespace systemeTelethon
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(798, 652);
             this.Controls.Add(this.pnlInterface2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Systeme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -826,7 +841,6 @@ namespace systemeTelethon
             this.pnlInterface2.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.gBxPrix.ResumeLayout(false);
             this.gBxPrix.PerformLayout();
             this.gBxDon.ResumeLayout(false);
@@ -838,11 +852,13 @@ namespace systemeTelethon
             this.gBxDonnateur.ResumeLayout(false);
             this.gBxDonnateur.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.gpBxPrix.ResumeLayout(false);
             this.gpBxPrix.PerformLayout();
             this.gpBxComma.ResumeLayout(false);
             this.gpBxComma.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -909,6 +925,7 @@ namespace systemeTelethon
         private System.Windows.Forms.Label lblQuant;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

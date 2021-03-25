@@ -26,5 +26,15 @@ namespace systemeTelethon
         {
 
         }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
