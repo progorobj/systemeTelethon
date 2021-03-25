@@ -125,9 +125,9 @@ namespace systemeTelethon
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(42, 715);
+            this.panel1.Location = new System.Drawing.Point(42, 705);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(724, 145);
             this.panel1.TabIndex = 23;
@@ -137,18 +137,18 @@ namespace systemeTelethon
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.panel2.Controls.Add(this.textBox11);
-            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Location = new System.Drawing.Point(4, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(716, 137);
+            this.panel2.Size = new System.Drawing.Size(716, 141);
             this.panel2.TabIndex = 24;
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(13, 15);
+            this.textBox11.Location = new System.Drawing.Point(13, 0);
             this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(686, 108);
+            this.textBox11.Size = new System.Drawing.Size(686, 123);
             this.textBox11.TabIndex = 23;
             this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
