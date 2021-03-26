@@ -87,5 +87,10 @@ namespace systemeTelethon
             }
             textAffichage.Text = result;
         }
+
+        private void txtBxComm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

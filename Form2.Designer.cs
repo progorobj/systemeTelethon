@@ -866,6 +866,7 @@ namespace systemeTelethon
             this.txtBxComm.Name = "txtBxComm";
             this.txtBxComm.Size = new System.Drawing.Size(187, 26);
             this.txtBxComm.TabIndex = 12;
+            this.txtBxComm.TextChanged += new System.EventHandler(this.txtBxComm_TextChanged);
             // 
             // Systeme
             // 
