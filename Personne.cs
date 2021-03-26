@@ -19,7 +19,7 @@ namespace systemeTelethon
 
         public override string ToString()
         {
-            return base.ToString();
+            return " : [ Prénom : " + this.prenom + " ] [ Nom : " + this.nom+" ]";
         }
     }
 }

@@ -21,10 +21,7 @@ namespace systemeTelethon
             
         }
 
-        private static void ajouterDonateur(string nom, string prenom, string id, string adresse, string telephone, char type, string numeroCarte, string DateExpiration)
-        {
-            Donateur a = new Donateur(nom, prenom, id, adresse, telephone, type, numeroCarte, DateExpiration);
-        }
+      
         
     }
 }
