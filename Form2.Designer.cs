@@ -119,7 +119,7 @@ namespace systemeTelethon
             this.pnlInterface2.Name = "pnlInterface2";
             this.pnlInterface2.Size = new System.Drawing.Size(798, 882);
             this.pnlInterface2.TabIndex = 0;
-            this.pnlInterface2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            
             // 
             // panel1
             // 
@@ -154,7 +154,7 @@ namespace systemeTelethon
             this.textAffichage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textAffichage.Size = new System.Drawing.Size(697, 129);
             this.textAffichage.TabIndex = 23;
-            this.textAffichage.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            
             // 
             // buttonQuitter
             // 
@@ -248,7 +248,7 @@ namespace systemeTelethon
             this.lblQuant.Size = new System.Drawing.Size(155, 19);
             this.lblQuant.TabIndex = 31;
             this.lblQuant.Text = "Nombre de points :";
-            this.lblQuant.Click += new System.EventHandler(this.lblQuant_Click);
+            
             // 
             // gBxDonnateur
             // 
@@ -442,7 +442,7 @@ namespace systemeTelethon
             this.textPrenom.Name = "textPrenom";
             this.textPrenom.Size = new System.Drawing.Size(232, 26);
             this.textPrenom.TabIndex = 13;
-            this.textPrenom.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+          
             // 
             // textPhone
             // 
@@ -498,7 +498,7 @@ namespace systemeTelethon
             this.textIDonateur.Name = "textIDonateur";
             this.textIDonateur.Size = new System.Drawing.Size(232, 26);
             this.textIDonateur.TabIndex = 11;
-            this.textIDonateur.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            
             // 
             // btnAjouterDonateur
             // 
@@ -851,7 +851,7 @@ namespace systemeTelethon
             this.txtBxComm.Name = "txtBxComm";
             this.txtBxComm.Size = new System.Drawing.Size(187, 26);
             this.txtBxComm.TabIndex = 12;
-            this.txtBxComm.TextChanged += new System.EventHandler(this.txtBxComm_TextChanged);
+           
             // 
             // Systeme
             // 

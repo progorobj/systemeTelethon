@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,23 +21,41 @@ namespace systemeTelethon
         }
         private void btnAjouterDonateur_Click(object sender, EventArgs e)
         {
-            String id = textIDonateur.Text;
-            String prenom = textPrenom.Text;
-            String nom = textNom.Text;
-            String adresse = textAdresse.Text;
-            String telephone = textPhone.Text;
-            char type='A';
-            if (rbtnVisa.Checked)
+            Regex myRegex = new Regex(@"^\(([\d]+)\)([\d]+)\-([\d])+$");
+
+            if (textIDonateur.Text.Equals("") || textPrenom.Text.Equals("") || textNom.Text.Equals("") || textAdresse.Text.Equals("") || textPhone.Text.Equals("") || textNumeroCarte.Text.Equals(""))
             {
-                type = 'V';
+                DialogResult message = MessageBox.Show("Erreur un des champs requis est vide");
             }
-            else if (rbtnMc.Checked)
+            else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
             {
-                type = 'M';
+                DialogResult message = MessageBox.Show("Erreur il manque le type de carte");
             }
-            String numero= textNumeroCarte.Text;
-            String date = dateTimePicker1.Value.ToString("yyyy-MM-dd");
-            galerie1.ajouterDonateur(id, prenom, nom, adresse, telephone,type, numero, date);
+            else if (!myRegex.IsMatch(textPhone.Text))
+            {
+                DialogResult message = MessageBox.Show("Erreur numero de telephone incorect (format = (555)555-5555) ");
+            }
+            else
+            {
+                String id = textIDonateur.Text;
+                String prenom = textPrenom.Text;
+                String nom = textNom.Text;
+                String adresse = textAdresse.Text;
+                String telephone = textPhone.Text;
+                String numero = textNumeroCarte.Text;
+                String date = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+                char type ='A';
+                if (rbtnVisa.Checked)
+                {
+                    type = 'V';
+                }
+                else if (rbtnMc.Checked)
+                {
+                    type = 'M';
+                }
+                galerie1.ajouterDonateur(id, prenom, nom, adresse, telephone, type, numero, date);
+                
+            }
         }
 
 
