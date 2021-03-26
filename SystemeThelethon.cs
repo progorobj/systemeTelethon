@@ -72,7 +72,7 @@ namespace systemeTelethon
 
         private void btnAjouterDon_Click(object sender, EventArgs e)
         {
-          
+           
         }
 
         private void btnAfficherDonateur_Click(object sender, EventArgs e)
@@ -86,6 +86,16 @@ namespace systemeTelethon
                 
             }
             textAffichage.Text = result;
+        }
+
+        private void txtBxComm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAjouterComm_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

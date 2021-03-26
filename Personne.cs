@@ -17,6 +17,19 @@ namespace systemeTelethon
             this.prenom = prenom;
         }
 
+        public string Nom
+        {
+            get { return this.nom; }
+            set { this.nom = value; }
+        }
+
+        public string Preom
+        {
+            get { return this.prenom; }
+            set { this.prenom = value; }
+        }
+
+
         public override string ToString()
         {
             return " : [ Prénom : " + this.prenom + " ] [ Nom : " + this.nom+" ]";
