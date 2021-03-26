@@ -24,15 +24,20 @@ namespace systemeTelethon
         {
             return this.donateurs;
         }
+        public List<Don> getDon()
+        {
+            return this.don;
+        }
         public void ajouterDonateur(string nom, string prenom, string id, string adresse, string telephone, char type, string numeroCarte, string DateExpiration)
         {
             Donateur a = new Donateur(nom, prenom, id, adresse, telephone, type, numeroCarte, DateExpiration);
             donateurs.Add(a);
         }
-
-        public override string ToString()
+        public void ajouterDon(string idDon, string dateDuDon, string idDonateur, double montant)
         {
-            return base.ToString();
+            Don don1 = new Don(idDon,dateDuDon,idDonateur, montant);
+            don.Add(don1);
         }
+       
     }
 }

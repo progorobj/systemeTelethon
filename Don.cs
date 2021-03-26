@@ -8,5 +8,24 @@ namespace systemeTelethon
 {
     class Don
     {
+        private String IdDon;
+        private String DateDuDon;
+        private String IdDonateur;
+        private Double Montant;
+        private int x;
+        static int count = 1;
+
+        public Don(string idDon, string dateDuDon, string idDonateur, double montant)
+        {
+            this.IdDon = idDon;
+            DateDuDon = dateDuDon;
+            IdDonateur = idDonateur;
+            Montant = montant;
+            x = count++;
+        }
+        public override string ToString()
+        {
+            return "Don #" + x +" [ Id Don : " + IdDon + " ] [ Date du don : " + DateDuDon + " ] [ Id donateur : " + IdDonateur + "] [ Montant du don : " + Montant+"$]";
+        }
     }
 }

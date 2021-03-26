@@ -34,19 +34,19 @@ namespace systemeTelethon
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textAffichage = new System.Windows.Forms.TextBox();
+            this.buttonQuitter = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
             this.gBxPrix = new System.Windows.Forms.GroupBox();
             this.btnAfficherPrix = new System.Windows.Forms.Button();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textNombreDePoints = new System.Windows.Forms.TextBox();
             this.lblQuant = new System.Windows.Forms.Label();
             this.gBxDonnateur = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.textnumeroCarte = new System.Windows.Forms.TextBox();
+            this.textNumeroCarte = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.rbtnAmex = new System.Windows.Forms.RadioButton();
@@ -61,17 +61,16 @@ namespace systemeTelethon
             this.idDonateur = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnAfficherDonateur = new System.Windows.Forms.Button();
-            this.textID = new System.Windows.Forms.TextBox();
+            this.textIDonateur = new System.Windows.Forms.TextBox();
             this.btnAjouterDonateur = new System.Windows.Forms.Button();
             this.gBxDon = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textMontantDon = new System.Windows.Forms.TextBox();
+            this.btnAfficherDon = new System.Windows.Forms.Button();
+            this.textIdDon = new System.Windows.Forms.TextBox();
             this.btnAjouterDon = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
             this.gpBxPrix = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.btnAjouterPrix = new System.Windows.Forms.Button();
@@ -115,7 +114,7 @@ namespace systemeTelethon
             this.pnlInterface2.Controls.Add(this.panel1);
             this.pnlInterface2.Controls.Add(this.tabControl1);
             this.pnlInterface2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlInterface2.Location = new System.Drawing.Point(0, -257);
+            this.pnlInterface2.Location = new System.Drawing.Point(0, -209);
             this.pnlInterface2.Margin = new System.Windows.Forms.Padding(2);
             this.pnlInterface2.Name = "pnlInterface2";
             this.pnlInterface2.Size = new System.Drawing.Size(798, 882);
@@ -127,9 +126,9 @@ namespace systemeTelethon
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(42, 689);
+            this.panel1.Location = new System.Drawing.Point(42, 663);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(724, 145);
+            this.panel1.Size = new System.Drawing.Size(724, 169);
             this.panel1.TabIndex = 23;
             // 
             // panel2
@@ -137,9 +136,10 @@ namespace systemeTelethon
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.panel2.Controls.Add(this.textAffichage);
-            this.panel2.Location = new System.Drawing.Point(4, 0);
+            this.panel2.Controls.Add(this.buttonQuitter);
+            this.panel2.Location = new System.Drawing.Point(4, -3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(716, 141);
+            this.panel2.Size = new System.Drawing.Size(716, 169);
             this.panel2.TabIndex = 24;
             // 
             // textAffichage
@@ -147,14 +147,29 @@ namespace systemeTelethon
             this.textAffichage.BackColor = System.Drawing.Color.White;
             this.textAffichage.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textAffichage.ForeColor = System.Drawing.Color.Black;
-            this.textAffichage.Location = new System.Drawing.Point(13, 0);
+            this.textAffichage.Location = new System.Drawing.Point(9, 1);
             this.textAffichage.Margin = new System.Windows.Forms.Padding(2);
             this.textAffichage.Multiline = true;
             this.textAffichage.Name = "textAffichage";
             this.textAffichage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textAffichage.Size = new System.Drawing.Size(686, 123);
+            this.textAffichage.Size = new System.Drawing.Size(697, 129);
             this.textAffichage.TabIndex = 23;
             this.textAffichage.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
+            // 
+            // buttonQuitter
+            // 
+            this.buttonQuitter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
+            this.buttonQuitter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonQuitter.FlatAppearance.BorderSize = 0;
+            this.buttonQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQuitter.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQuitter.ForeColor = System.Drawing.Color.White;
+            this.buttonQuitter.Location = new System.Drawing.Point(633, 135);
+            this.buttonQuitter.Name = "buttonQuitter";
+            this.buttonQuitter.Size = new System.Drawing.Size(73, 28);
+            this.buttonQuitter.TabIndex = 37;
+            this.buttonQuitter.Text = "Quitter";
+            this.buttonQuitter.UseVisualStyleBackColor = false;
             // 
             // tabControl1
             // 
@@ -164,7 +179,7 @@ namespace systemeTelethon
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(42, 274);
+            this.tabControl1.Location = new System.Drawing.Point(42, 248);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(724, 485);
@@ -173,7 +188,6 @@ namespace systemeTelethon
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
-            this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.gBxPrix);
             this.tabPage1.Controls.Add(this.gBxDonnateur);
             this.tabPage1.Controls.Add(this.gBxDon);
@@ -184,34 +198,19 @@ namespace systemeTelethon
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Donateur";
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(626, 354);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(73, 28);
-            this.button4.TabIndex = 37;
-            this.button4.Text = "Quitter";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // gBxPrix
             // 
             this.gBxPrix.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.gBxPrix.Controls.Add(this.btnAfficherPrix);
-            this.gBxPrix.Controls.Add(this.textBox13);
+            this.gBxPrix.Controls.Add(this.textNombreDePoints);
             this.gBxPrix.Controls.Add(this.lblQuant);
             this.gBxPrix.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBxPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gBxPrix.Location = new System.Drawing.Point(329, 243);
+            this.gBxPrix.Location = new System.Drawing.Point(358, 243);
             this.gBxPrix.Margin = new System.Windows.Forms.Padding(2);
             this.gBxPrix.Name = "gBxPrix";
             this.gBxPrix.Padding = new System.Windows.Forms.Padding(2);
-            this.gBxPrix.Size = new System.Drawing.Size(282, 139);
+            this.gBxPrix.Size = new System.Drawing.Size(348, 139);
             this.gBxPrix.TabIndex = 33;
             this.gBxPrix.TabStop = false;
             this.gBxPrix.Text = "Attribuer prix";
@@ -223,28 +222,28 @@ namespace systemeTelethon
             this.btnAfficherPrix.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAfficherPrix.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAfficherPrix.ForeColor = System.Drawing.Color.White;
-            this.btnAfficherPrix.Location = new System.Drawing.Point(84, 96);
+            this.btnAfficherPrix.Location = new System.Drawing.Point(108, 96);
             this.btnAfficherPrix.Name = "btnAfficherPrix";
             this.btnAfficherPrix.Size = new System.Drawing.Size(115, 28);
             this.btnAfficherPrix.TabIndex = 33;
             this.btnAfficherPrix.Text = "Afficher prix";
             this.btnAfficherPrix.UseVisualStyleBackColor = false;
             // 
-            // textBox13
+            // textNombreDePoints
             // 
-            this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.ForeColor = System.Drawing.Color.Black;
-            this.textBox13.Location = new System.Drawing.Point(177, 45);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(91, 26);
-            this.textBox13.TabIndex = 32;
+            this.textNombreDePoints.BackColor = System.Drawing.Color.White;
+            this.textNombreDePoints.ForeColor = System.Drawing.Color.Black;
+            this.textNombreDePoints.Location = new System.Drawing.Point(203, 44);
+            this.textNombreDePoints.Name = "textNombreDePoints";
+            this.textNombreDePoints.Size = new System.Drawing.Size(91, 26);
+            this.textNombreDePoints.TabIndex = 32;
             // 
             // lblQuant
             // 
             this.lblQuant.AutoSize = true;
             this.lblQuant.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblQuant.Location = new System.Drawing.Point(16, 48);
+            this.lblQuant.Location = new System.Drawing.Point(42, 47);
             this.lblQuant.Name = "lblQuant";
             this.lblQuant.Size = new System.Drawing.Size(155, 19);
             this.lblQuant.TabIndex = 31;
@@ -265,15 +264,15 @@ namespace systemeTelethon
             this.gBxDonnateur.Controls.Add(this.idDonateur);
             this.gBxDonnateur.Controls.Add(this.label4);
             this.gBxDonnateur.Controls.Add(this.btnAfficherDonateur);
-            this.gBxDonnateur.Controls.Add(this.textID);
+            this.gBxDonnateur.Controls.Add(this.textIDonateur);
             this.gBxDonnateur.Controls.Add(this.btnAjouterDonateur);
             this.gBxDonnateur.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBxDonnateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gBxDonnateur.Location = new System.Drawing.Point(14, 5);
+            this.gBxDonnateur.Location = new System.Drawing.Point(9, 5);
             this.gBxDonnateur.Margin = new System.Windows.Forms.Padding(2);
             this.gBxDonnateur.Name = "gBxDonnateur";
             this.gBxDonnateur.Padding = new System.Windows.Forms.Padding(2);
-            this.gBxDonnateur.Size = new System.Drawing.Size(685, 234);
+            this.gBxDonnateur.Size = new System.Drawing.Size(697, 234);
             this.gBxDonnateur.TabIndex = 31;
             this.gBxDonnateur.TabStop = false;
             this.gBxDonnateur.Text = "Information donateur";
@@ -283,7 +282,7 @@ namespace systemeTelethon
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(3, 64);
+            this.label1.Location = new System.Drawing.Point(10, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 19);
             this.label1.TabIndex = 14;
@@ -293,14 +292,14 @@ namespace systemeTelethon
             // 
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textnumeroCarte);
+            this.groupBox1.Controls.Add(this.textNumeroCarte);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(315, 22);
+            this.groupBox1.Location = new System.Drawing.Point(351, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(352, 169);
+            this.groupBox1.Size = new System.Drawing.Size(334, 169);
             this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Carte de crédit";
@@ -312,9 +311,9 @@ namespace systemeTelethon
             this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(149, 118);
+            this.dateTimePicker1.Location = new System.Drawing.Point(164, 118);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(179, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(160, 26);
             this.dateTimePicker1.TabIndex = 36;
             // 
             // label9
@@ -322,27 +321,27 @@ namespace systemeTelethon
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(5, 122);
+            this.label9.Location = new System.Drawing.Point(14, 122);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(148, 19);
             this.label9.TabIndex = 35;
             this.label9.Text = "Date d\'expiration: ";
             // 
-            // textnumeroCarte
+            // textNumeroCarte
             // 
-            this.textnumeroCarte.BackColor = System.Drawing.Color.White;
-            this.textnumeroCarte.ForeColor = System.Drawing.Color.Black;
-            this.textnumeroCarte.Location = new System.Drawing.Point(149, 92);
-            this.textnumeroCarte.Name = "textnumeroCarte";
-            this.textnumeroCarte.Size = new System.Drawing.Size(179, 26);
-            this.textnumeroCarte.TabIndex = 32;
+            this.textNumeroCarte.BackColor = System.Drawing.Color.White;
+            this.textNumeroCarte.ForeColor = System.Drawing.Color.Black;
+            this.textNumeroCarte.Location = new System.Drawing.Point(164, 92);
+            this.textNumeroCarte.Name = "textNumeroCarte";
+            this.textNumeroCarte.Size = new System.Drawing.Size(160, 26);
+            this.textNumeroCarte.TabIndex = 32;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(5, 92);
+            this.label10.Location = new System.Drawing.Point(12, 92);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 19);
             this.label10.TabIndex = 33;
@@ -355,7 +354,7 @@ namespace systemeTelethon
             this.groupBox2.Controls.Add(this.rbtnVisa);
             this.groupBox2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox2.Location = new System.Drawing.Point(20, 25);
+            this.groupBox2.Location = new System.Drawing.Point(16, 25);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(308, 56);
             this.groupBox2.TabIndex = 31;
@@ -400,7 +399,7 @@ namespace systemeTelethon
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(3, 100);
+            this.label2.Location = new System.Drawing.Point(10, 100);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 19);
             this.label2.TabIndex = 16;
@@ -410,18 +409,18 @@ namespace systemeTelethon
             // 
             this.textAdresse.BackColor = System.Drawing.Color.White;
             this.textAdresse.ForeColor = System.Drawing.Color.Black;
-            this.textAdresse.Location = new System.Drawing.Point(102, 131);
+            this.textAdresse.Location = new System.Drawing.Point(109, 131);
             this.textAdresse.Name = "textAdresse";
-            this.textAdresse.Size = new System.Drawing.Size(197, 26);
+            this.textAdresse.Size = new System.Drawing.Size(232, 26);
             this.textAdresse.TabIndex = 17;
             // 
             // textNom
             // 
             this.textNom.BackColor = System.Drawing.Color.White;
             this.textNom.ForeColor = System.Drawing.Color.Black;
-            this.textNom.Location = new System.Drawing.Point(102, 98);
+            this.textNom.Location = new System.Drawing.Point(109, 98);
             this.textNom.Name = "textNom";
-            this.textNom.Size = new System.Drawing.Size(197, 26);
+            this.textNom.Size = new System.Drawing.Size(232, 26);
             this.textNom.TabIndex = 15;
             // 
             // label3
@@ -429,7 +428,7 @@ namespace systemeTelethon
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(3, 135);
+            this.label3.Location = new System.Drawing.Point(10, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 19);
             this.label3.TabIndex = 18;
@@ -439,9 +438,9 @@ namespace systemeTelethon
             // 
             this.textPrenom.BackColor = System.Drawing.Color.White;
             this.textPrenom.ForeColor = System.Drawing.Color.Black;
-            this.textPrenom.Location = new System.Drawing.Point(102, 64);
+            this.textPrenom.Location = new System.Drawing.Point(109, 64);
             this.textPrenom.Name = "textPrenom";
-            this.textPrenom.Size = new System.Drawing.Size(197, 26);
+            this.textPrenom.Size = new System.Drawing.Size(232, 26);
             this.textPrenom.TabIndex = 13;
             this.textPrenom.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -449,9 +448,9 @@ namespace systemeTelethon
             // 
             this.textPhone.BackColor = System.Drawing.Color.White;
             this.textPhone.ForeColor = System.Drawing.Color.Black;
-            this.textPhone.Location = new System.Drawing.Point(102, 165);
+            this.textPhone.Location = new System.Drawing.Point(109, 165);
             this.textPhone.Name = "textPhone";
-            this.textPhone.Size = new System.Drawing.Size(197, 26);
+            this.textPhone.Size = new System.Drawing.Size(232, 26);
             this.textPhone.TabIndex = 19;
             // 
             // idDonateur
@@ -459,7 +458,7 @@ namespace systemeTelethon
             this.idDonateur.AutoSize = true;
             this.idDonateur.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idDonateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.idDonateur.Location = new System.Drawing.Point(3, 30);
+            this.idDonateur.Location = new System.Drawing.Point(10, 30);
             this.idDonateur.Name = "idDonateur";
             this.idDonateur.Size = new System.Drawing.Size(35, 19);
             this.idDonateur.TabIndex = 12;
@@ -470,7 +469,7 @@ namespace systemeTelethon
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(3, 170);
+            this.label4.Location = new System.Drawing.Point(10, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 19);
             this.label4.TabIndex = 20;
@@ -483,23 +482,23 @@ namespace systemeTelethon
             this.btnAfficherDonateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAfficherDonateur.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAfficherDonateur.ForeColor = System.Drawing.Color.White;
-            this.btnAfficherDonateur.Location = new System.Drawing.Point(315, 197);
+            this.btnAfficherDonateur.Location = new System.Drawing.Point(351, 197);
             this.btnAfficherDonateur.Name = "btnAfficherDonateur";
-            this.btnAfficherDonateur.Size = new System.Drawing.Size(132, 28);
+            this.btnAfficherDonateur.Size = new System.Drawing.Size(95, 28);
             this.btnAfficherDonateur.TabIndex = 22;
             this.btnAfficherDonateur.Text = "Afficher";
             this.btnAfficherDonateur.UseVisualStyleBackColor = false;
             this.btnAfficherDonateur.Click += new System.EventHandler(this.btnAfficherDonateur_Click);
             // 
-            // textID
+            // textIDonateur
             // 
-            this.textID.BackColor = System.Drawing.Color.White;
-            this.textID.ForeColor = System.Drawing.Color.Black;
-            this.textID.Location = new System.Drawing.Point(102, 30);
-            this.textID.Name = "textID";
-            this.textID.Size = new System.Drawing.Size(197, 26);
-            this.textID.TabIndex = 11;
-            this.textID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textIDonateur.BackColor = System.Drawing.Color.White;
+            this.textIDonateur.ForeColor = System.Drawing.Color.Black;
+            this.textIDonateur.Location = new System.Drawing.Point(109, 30);
+            this.textIDonateur.Name = "textIDonateur";
+            this.textIDonateur.Size = new System.Drawing.Size(232, 26);
+            this.textIDonateur.TabIndex = 11;
+            this.textIDonateur.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnAjouterDonateur
             // 
@@ -509,10 +508,10 @@ namespace systemeTelethon
             this.btnAjouterDonateur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouterDonateur.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterDonateur.ForeColor = System.Drawing.Color.White;
-            this.btnAjouterDonateur.Location = new System.Drawing.Point(166, 197);
+            this.btnAjouterDonateur.Location = new System.Drawing.Point(246, 197);
             this.btnAjouterDonateur.Margin = new System.Windows.Forms.Padding(0);
             this.btnAjouterDonateur.Name = "btnAjouterDonateur";
-            this.btnAjouterDonateur.Size = new System.Drawing.Size(133, 28);
+            this.btnAjouterDonateur.Size = new System.Drawing.Size(95, 28);
             this.btnAjouterDonateur.TabIndex = 21;
             this.btnAjouterDonateur.Text = "Ajouter ";
             this.btnAjouterDonateur.UseVisualStyleBackColor = false;
@@ -522,18 +521,18 @@ namespace systemeTelethon
             // 
             this.gBxDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.gBxDon.Controls.Add(this.label8);
-            this.gBxDon.Controls.Add(this.textBox7);
-            this.gBxDon.Controls.Add(this.button1);
-            this.gBxDon.Controls.Add(this.textBox6);
+            this.gBxDon.Controls.Add(this.textMontantDon);
+            this.gBxDon.Controls.Add(this.btnAfficherDon);
+            this.gBxDon.Controls.Add(this.textIdDon);
             this.gBxDon.Controls.Add(this.btnAjouterDon);
             this.gBxDon.Controls.Add(this.label7);
             this.gBxDon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBxDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gBxDon.Location = new System.Drawing.Point(14, 243);
+            this.gBxDon.Location = new System.Drawing.Point(9, 243);
             this.gBxDon.Margin = new System.Windows.Forms.Padding(2);
             this.gBxDon.Name = "gBxDon";
             this.gBxDon.Padding = new System.Windows.Forms.Padding(2);
-            this.gBxDon.Size = new System.Drawing.Size(301, 139);
+            this.gBxDon.Size = new System.Drawing.Size(341, 139);
             this.gBxDon.TabIndex = 32;
             this.gBxDon.TabStop = false;
             this.gBxDon.Text = "Information don";
@@ -543,43 +542,44 @@ namespace systemeTelethon
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(11, 28);
+            this.label8.Location = new System.Drawing.Point(42, 28);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(65, 19);
             this.label8.TabIndex = 24;
             this.label8.Text = "ID don:";
             // 
-            // textBox7
+            // textMontantDon
             // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(111, 64);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(154, 26);
-            this.textBox7.TabIndex = 25;
+            this.textMontantDon.BackColor = System.Drawing.Color.White;
+            this.textMontantDon.ForeColor = System.Drawing.Color.Black;
+            this.textMontantDon.Location = new System.Drawing.Point(142, 64);
+            this.textMontantDon.Name = "textMontantDon";
+            this.textMontantDon.Size = new System.Drawing.Size(154, 26);
+            this.textMontantDon.TabIndex = 25;
             // 
-            // button1
+            // btnAfficherDon
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(157, 96);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 28);
-            this.button1.TabIndex = 29;
-            this.button1.Text = "Afficher";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAfficherDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
+            this.btnAfficherDon.FlatAppearance.BorderSize = 0;
+            this.btnAfficherDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAfficherDon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAfficherDon.ForeColor = System.Drawing.Color.White;
+            this.btnAfficherDon.Location = new System.Drawing.Point(188, 96);
+            this.btnAfficherDon.Name = "btnAfficherDon";
+            this.btnAfficherDon.Size = new System.Drawing.Size(108, 28);
+            this.btnAfficherDon.TabIndex = 29;
+            this.btnAfficherDon.Text = "Afficher";
+            this.btnAfficherDon.UseVisualStyleBackColor = false;
+            this.btnAfficherDon.Click += new System.EventHandler(this.btnAfficherDon_Click);
             // 
-            // textBox6
+            // textIdDon
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(111, 28);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 26);
-            this.textBox6.TabIndex = 23;
+            this.textIdDon.BackColor = System.Drawing.Color.White;
+            this.textIdDon.ForeColor = System.Drawing.Color.Black;
+            this.textIdDon.Location = new System.Drawing.Point(142, 28);
+            this.textIdDon.Name = "textIdDon";
+            this.textIdDon.Size = new System.Drawing.Size(154, 26);
+            this.textIdDon.TabIndex = 23;
             // 
             // btnAjouterDon
             // 
@@ -588,7 +588,7 @@ namespace systemeTelethon
             this.btnAjouterDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouterDon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouterDon.ForeColor = System.Drawing.Color.White;
-            this.btnAjouterDon.Location = new System.Drawing.Point(47, 96);
+            this.btnAjouterDon.Location = new System.Drawing.Point(61, 96);
             this.btnAjouterDon.Name = "btnAjouterDon";
             this.btnAjouterDon.Size = new System.Drawing.Size(99, 28);
             this.btnAjouterDon.TabIndex = 28;
@@ -601,7 +601,7 @@ namespace systemeTelethon
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(11, 65);
+            this.label7.Location = new System.Drawing.Point(42, 65);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 19);
             this.label7.TabIndex = 26;
@@ -610,7 +610,6 @@ namespace systemeTelethon
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
-            this.tabPage2.Controls.Add(this.button6);
             this.tabPage2.Controls.Add(this.gpBxPrix);
             this.tabPage2.Controls.Add(this.gpBxComma);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -619,20 +618,6 @@ namespace systemeTelethon
             this.tabPage2.Size = new System.Drawing.Size(716, 456);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Commanditaire";
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(626, 354);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(73, 28);
-            this.button6.TabIndex = 36;
-            this.button6.Text = "Quitter";
-            this.button6.UseVisualStyleBackColor = false;
             // 
             // gpBxPrix
             // 
@@ -873,7 +858,7 @@ namespace systemeTelethon
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(798, 625);
+            this.ClientSize = new System.Drawing.Size(798, 673);
             this.Controls.Add(this.pnlInterface2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -911,7 +896,7 @@ namespace systemeTelethon
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textID;
+        private System.Windows.Forms.TextBox textIDonateur;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label idDonateur;
         private System.Windows.Forms.TextBox textPhone;
@@ -923,16 +908,16 @@ namespace systemeTelethon
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btnAjouterDonateur;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAfficherDon;
         private System.Windows.Forms.Button btnAjouterDon;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textIdDon;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textMontantDon;
         private System.Windows.Forms.Button btnAfficherDonateur;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textnumeroCarte;
+        private System.Windows.Forms.TextBox textNumeroCarte;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.RadioButton rbtnAmex;
@@ -963,10 +948,9 @@ namespace systemeTelethon
         private System.Windows.Forms.GroupBox gBxDon;
         private System.Windows.Forms.GroupBox gBxDonnateur;
         private System.Windows.Forms.Button btnAfficherPrix;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textNombreDePoints;
         private System.Windows.Forms.Label lblQuant;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button buttonQuitter;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
     }
