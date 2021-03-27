@@ -14,5 +14,10 @@ namespace systemeTelethon
         {
             IDCommanditaire = iDCommanditaire;
         }
+
+        public override string ToString()
+        {
+            return "Commanditaire # : " + " Id Commanditaire : " + this.IDCommanditaire + " " + base.ToString();
+        }
     }
 }
