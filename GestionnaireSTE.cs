@@ -8,18 +8,16 @@ namespace systemeTelethon
 {
     class GestionnaireSTE
     {
-       private List<Donateur> donateurs = new List<Donateur>();
-       private List<Don> don = new List<Don>();
+        private List<Donateur> donateurs = new List<Donateur>();
+        private List<Commanditaire> commanditaire = new List<Commanditaire>();
+        private List<Don> don = new List<Don>();
+        private List<Prix> prix = new List<Prix>();
+        
         public GestionnaireSTE()
         {
         //constructeur par default   
         }
 
-        public GestionnaireSTE(List<Donateur> donateurs, List<Don> don)
-        {
-            this.donateurs = donateurs;
-            this.don = don;
-        }
         public List<Donateur> getDonateurs()
         {
             return this.donateurs;
@@ -30,8 +28,8 @@ namespace systemeTelethon
         }
         public void AjouterDonateur(string nom, string prenom, string id, string adresse, string telephone, char type, string numeroCarte, string DateExpiration)
         {
-            Donateur a = new Donateur(nom, prenom, id, adresse, telephone, type, numeroCarte, DateExpiration);
-            donateurs.Add(a);
+            Donateur donateur1 = new Donateur(nom, prenom, id, adresse, telephone, type, numeroCarte, DateExpiration);
+            donateurs.Add(donateur1);
         }
         public void AjouterDon(string idDon, string dateDuDon, string idDonateur, double montant)
         {
