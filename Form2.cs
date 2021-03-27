@@ -130,5 +130,66 @@ namespace systemeTelethon
             }
             textAffichage.Text = result;
         }
+
+        private void btnAjouterComm_Click(object sender, EventArgs e)
+        {
+            if (txtBxIdComm.Text.Equals("") || txtPrenomComm.Text.Equals("")
+                || txtNomComm.Text.Equals(""))
+            {
+                DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
+                    "Meci de remplir tout les champs ", "Attention");
+            }
+            else
+            {
+                string idCommand = txtBxIdComm.Text;
+                string prenomCommand = txtPrenomComm.Text;
+                string nomCommand = txtNomComm.Text;
+                galerie1.AjouterCommanditaire(nomCommand, prenomCommand, idCommand );
+            }
+
+        }
+
+        private void txtBxNom_TextChanged(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void btnAfficherComm_Click(object sender, EventArgs e)
+        {
+            
+            textAffichage.Text = galerie1.AfficherCommanditaires();
+        }
+
+        private void btnAjouterPrix_Click(object sender, EventArgs e)
+        {
+            if (txtIdPrix.Text.Equals("") || txtBxDescription.Text.Equals("")
+                || txtValeurPrix.Text.Equals("") || txtQuantitePrix.Text.Equals("")
+                || txtBxIdComm.Text.Equals(""))
+            {
+                DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
+                    "Meci de remplir tout les champs ", "Attention");
+            }
+            else
+            {
+                string idPrix = txtIdPrix.Text;
+                string description = txtBxDescription.Text;
+                double valeur = Double.Parse(txtValeurPrix.Text);
+                int quantite = int.Parse(txtQuantitePrix.Text);
+                string idCommand = txtBxIdComm.Text;
+                galerie1.AjouterPrix(idPrix, description, valeur,quantite,idCommand);
+            }
+        }
+
+        private void btnAfficherPri_Click(object sender, EventArgs e)
+        {
+
+            textAffichage.Text = galerie1.AfficherPrix();
+        }
+
+        private void buttonQuitter_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

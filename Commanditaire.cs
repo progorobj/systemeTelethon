@@ -17,7 +17,9 @@ namespace systemeTelethon
 
         public override string ToString()
         {
-            return "Commanditaire # : " + " Id Commanditaire : " + this.IDCommanditaire + " " + base.ToString();
+            return "Commanditaire # : "+" Id Commanditaire : "+this.IDCommanditaire+" "+base.ToString();
         }
+
+       
     }
 }
