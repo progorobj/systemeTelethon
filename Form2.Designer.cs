@@ -162,7 +162,7 @@ namespace systemeTelethon
             this.buttonQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuitter.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQuitter.ForeColor = System.Drawing.Color.White;
-            this.buttonQuitter.Location = new System.Drawing.Point(633, 135);
+            this.buttonQuitter.Location = new System.Drawing.Point(621, 135);
             this.buttonQuitter.Name = "buttonQuitter";
             this.buttonQuitter.Size = new System.Drawing.Size(73, 28);
             this.buttonQuitter.TabIndex = 37;
