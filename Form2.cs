@@ -21,7 +21,9 @@ namespace systemeTelethon
         }
         private void btnAjouterDonateur_Click(object sender, EventArgs e)
         {
-            Regex myRegexPhone = new Regex(@"^\(([\d]+)\)([\d]+)\-([\d])+$");
+            Regex myRegexPhone = new Regex(@"^\d{3}\-\d{3}\-\d{4}$");
+            Regex myRegexNom = new Regex(@"^[a-z]+$");
+            Regex myRegexCarteCredit = new Regex(@"^\d{16}$");
             DateTime date1 = DateTime.Parse(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             DateTime date2 = DateTime.Now;
 
@@ -36,11 +38,19 @@ namespace systemeTelethon
             }
             else if (!myRegexPhone.IsMatch(textPhone.Text))
             {
-                DialogResult message = MessageBox.Show("Erreur numero de telephone incorect (format = (555)555-5555) ", "Attention");
+                DialogResult message = MessageBox.Show("Erreur numero de telephone incorect format = 555-555-5555 ", "Attention");
             }
             else if ( date1 < date2)
             {
                 DialogResult message = MessageBox.Show("Erreur la carte de crédit est expirée", "Attention");
+            }
+            else if(!myRegexNom.IsMatch(textPrenom.Text) || !myRegexNom.IsMatch(textNom.Text))
+            {
+                DialogResult = MessageBox.Show("Erreur Nom et prénom ne peut uniquement contenir des lettres de a à z", "Attention");
+            }
+            else if (!myRegexCarteCredit.IsMatch(textNumeroCarte.Text))
+            {
+                DialogResult = MessageBox.Show("Erreur le numero de carte de crédit est invalide seul une suite de 16 chiffre entre 0-9 est accepté", "Attention");
             }
             else
             {
@@ -60,7 +70,7 @@ namespace systemeTelethon
                 {
                     type = 'M';
                 }
-                galerie1.AjouterDonateur(id, prenom, nom, adresse, telephone, type, numero, date);
+                galerie1.AjouterDonateur(nom, prenom, id, adresse, telephone, type, numero, date);
                 
             }
         }
