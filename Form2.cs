@@ -27,19 +27,20 @@ namespace systemeTelethon
 
             if (textIDonateur.Text.Equals("") || textPrenom.Text.Equals("") || textNom.Text.Equals("") || textAdresse.Text.Equals("") || textPhone.Text.Equals("") || textNumeroCarte.Text.Equals(""))
             {
-                DialogResult message = MessageBox.Show("Erreur un des champs requis est vide");
+                DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
+                    "Meci de remplir tout les champs ", "Attention");
             }
             else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
             {
-                DialogResult message = MessageBox.Show("Erreur il manque le type de carte");
+                DialogResult message = MessageBox.Show("Erreur il manque le type de carte", "Attention");
             }
             else if (!myRegexPhone.IsMatch(textPhone.Text))
             {
-                DialogResult message = MessageBox.Show("Erreur numero de telephone incorect (format = (555)555-5555) ");
+                DialogResult message = MessageBox.Show("Erreur numero de telephone incorect (format = (555)555-5555) ", "Attention");
             }
             else if ( date1 < date2)
             {
-                DialogResult message = MessageBox.Show("Erreur la carte de crédit est expirée");
+                DialogResult message = MessageBox.Show("Erreur la carte de crédit est expirée", "Attention");
             }
             else
             {
@@ -69,7 +70,10 @@ namespace systemeTelethon
         {
             if (textIdDon.Text.Equals("") || textMontantDon.Text.Equals(""))
             {
-                DialogResult message = MessageBox.Show("Erreur l'id ou le don est vide");
+                DialogResult message = MessageBox.Show("Erreur l'id du don ou du donateur ou le montant est vide");
+            }
+            else if (galerie1.EnregistrerDonateur(textIDonateur.Text)==false){
+                DialogResult message = MessageBox.Show("Erreur le donateur n'existe pas");
             }
             else
             {
@@ -107,28 +111,12 @@ namespace systemeTelethon
 
         private void btnAfficherDonateur_Click(object sender, EventArgs e)
         {
-            String result = "";
-            foreach (Donateur donateur in galerie1.getDonateurs())
-            {
-
-                result += donateur+"\r\n" +
-                    " " +"\r\n";
-                
-            }
-            textAffichage.Text = result;
+            textAffichage.Text = galerie1.AfficherDonateurs();
         }
 
         private void btnAfficherDon_Click(object sender, EventArgs e)
         {
-            String result = "";
-            foreach (Don don in galerie1.getDon())
-            {
-
-                result += don + "\r\n" +
-                    " " + "\r\n";
-
-            }
-            textAffichage.Text = result;
+            textAffichage.Text = galerie1.AfficherDons();
         }
 
         private void btnAjouterComm_Click(object sender, EventArgs e)

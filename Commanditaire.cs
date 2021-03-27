@@ -8,16 +8,19 @@ namespace systemeTelethon
 {
     class Commanditaire : Personne
     {
-        string IDCommanditaire;
+       private string IDCommanditaire;
+        private int x;
+        static int count = 1;
 
         public Commanditaire(string nom, string prenom, string iDCommanditaire) : base(nom,prenom)
         {
             IDCommanditaire = iDCommanditaire;
+            x = count++;
         }
 
         public override string ToString()
         {
-            return "Commanditaire # : "+" Id Commanditaire : "+this.IDCommanditaire+" "+base.ToString();
+            return "Commanditaire #"+x+" : "+" Id Commanditaire : "+this.IDCommanditaire+" "+base.ToString();
         }
 
        

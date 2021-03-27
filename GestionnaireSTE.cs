@@ -39,13 +39,13 @@ namespace systemeTelethon
         }
         public void AjouterDonateur(string nom, string prenom, string id, string adresse, string telephone, char type, string numeroCarte, string DateExpiration)
         {
-            Donateur donateur1 = new Donateur(nom, prenom, id, adresse, telephone, type, numeroCarte, DateExpiration);
-            donateurs.Add(donateur1);
+            Donateur unDonateur = new Donateur(nom, prenom, id, adresse, telephone, type, numeroCarte, DateExpiration);
+            donateurs.Add(unDonateur);
         }
         public void AjouterDon(string idDon, string dateDuDon, string idDonateur, double montant)
         {
-            Don don1 = new Don(idDon, dateDuDon, idDonateur, montant);
-            don.Add(don1);
+            Don unDon = new Don(idDon, dateDuDon, idDonateur, montant);
+            don.Add(unDon);
         }
 
         public void AjouterCommanditaire(string nom, string prenom, string iDCommanditaire)
@@ -61,7 +61,18 @@ namespace systemeTelethon
             listePrix.Add(unPrix);
         
         }
+        public string AfficherDonateurs()
+        {
+            String result = "";
+            foreach (Donateur donateur in this.getDonateurs())
+            {
 
+                result += donateur + "\r\n" +
+                    " " + "\r\n";
+
+            }
+            return result;
+        }
         public string AfficherCommanditaires() 
         {
             String result = "";
@@ -87,6 +98,30 @@ namespace systemeTelethon
             }
             return result;
 
+        }
+        public string AfficherDons()
+        {
+            String result = "";
+            foreach (Don don in this.getDon())
+            {
+
+                result += don + "\r\n" +
+                    " " + "\r\n";
+
+            }
+            return result;
+        }
+        public Boolean EnregistrerDonateur(String IdDonateur)
+        {
+            bool checkup = false;
+            foreach (Donateur donateur in  this.getDonateurs())
+            {
+                if (IdDonateur.Equals(donateur.getID())){
+                    checkup = true;
+                }
+
+            }
+            return checkup;
         }
        
     }

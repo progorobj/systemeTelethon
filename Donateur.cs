@@ -29,7 +29,10 @@ namespace systemeTelethon
             this.DateExpiration = dateExpiration ;
             x = count++;
         }
-
+        public string getID()
+        {
+            return this.Id;
+        }
         public override string ToString()
         {
             return "Donateur #"+x + base.ToString() + " [ Id : " + this.Id + " ] [ Adresse : " + this.Adresse +" ] [ Téléphone : " + this.Telephone + "] [ Type de carte : "+ this.Typedecarte  +" ] [ Numero de carte : " + this.NumeroDeCarte+ " ]"+" [ Date expiration "+ this.DateExpiration+" ]";
