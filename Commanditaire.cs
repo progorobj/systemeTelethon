@@ -20,9 +20,6 @@ namespace systemeTelethon
             return "Commanditaire # : "+" Id Commanditaire : "+this.IDCommanditaire+" "+base.ToString();
         }
 
-        public override string ToString()
-        {
-            return "Commanditaire # : " + " Id Commanditaire : " + this.IDCommanditaire + " " + base.ToString();
-        }
+       
     }
 }

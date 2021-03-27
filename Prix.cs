@@ -16,13 +16,13 @@ namespace systemeTelethon
         private string idCommanditaire;
 
         public Prix(string idPrix, string description, double valeur,
-            int qteOriginale, int qteDisponible, string idCommanditaire)
+            int qteOriginale, string idCommanditaire)
         {
             this.idPrix = idPrix;
             this.description = description;
             this.valeur = valeur;
             this.qteOriginale = qteOriginale;
-            this.qteDisponible = qteDisponible;
+            this.qteDisponible = 0;
             this.idCommanditaire = idCommanditaire;
         }
 
@@ -60,9 +60,18 @@ namespace systemeTelethon
             set { this.idCommanditaire = value; }
         }
 
+        public void Deduire(int qteDeduite)
+        {
+            this.qteDisponible -= qteDeduite;
+        }
+
+
+
         public override string ToString()
         {
-            return base.ToString();
+            return "Prix : Id prix : "+idPrix+" , Description : "+description
+                +" , Id commanditaire :"+idCommanditaire+" , Valeur : "+valeur+" \t\tQuantite originale : "+qteOriginale
+                +" , Quantité disponible : "+qteDisponible;
         }
     }
 }
