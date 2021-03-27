@@ -21,7 +21,9 @@ namespace systemeTelethon
         }
         private void btnAjouterDonateur_Click(object sender, EventArgs e)
         {
-            Regex myRegex = new Regex(@"^\(([\d]+)\)([\d]+)\-([\d])+$");
+            Regex myRegexPhone = new Regex(@"^\(([\d]+)\)([\d]+)\-([\d])+$");
+            DateTime date1 = DateTime.Parse(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
+            DateTime date2 = DateTime.Now;
 
             if (textIDonateur.Text.Equals("") || textPrenom.Text.Equals("") || textNom.Text.Equals("") || textAdresse.Text.Equals("") || textPhone.Text.Equals("") || textNumeroCarte.Text.Equals(""))
             {
@@ -31,9 +33,13 @@ namespace systemeTelethon
             {
                 DialogResult message = MessageBox.Show("Erreur il manque le type de carte");
             }
-            else if (!myRegex.IsMatch(textPhone.Text))
+            else if (!myRegexPhone.IsMatch(textPhone.Text))
             {
                 DialogResult message = MessageBox.Show("Erreur numero de telephone incorect (format = (555)555-5555) ");
+            }
+            else if ( date1 < date2)
+            {
+                DialogResult message = MessageBox.Show("Erreur la carte de crédit est expirée");
             }
             else
             {
@@ -53,7 +59,7 @@ namespace systemeTelethon
                 {
                     type = 'M';
                 }
-                galerie1.ajouterDonateur(id, prenom, nom, adresse, telephone, type, numero, date);
+                galerie1.AjouterDonateur(id, prenom, nom, adresse, telephone, type, numero, date);
                 
             }
         }
@@ -72,7 +78,7 @@ namespace systemeTelethon
                 String IdDonateur = textIDonateur.Text;
                 Double MontantDuDon = Double.Parse(textMontantDon.Text);
 
-                galerie1.ajouterDon(IdDon, DateDuDon, IdDonateur, MontantDuDon);
+                galerie1.AjouterDon(IdDon, DateDuDon, IdDonateur, MontantDuDon);
                 int Nombredepoints = 0;
                 if (MontantDuDon > 49 && MontantDuDon < 200)
                 {
