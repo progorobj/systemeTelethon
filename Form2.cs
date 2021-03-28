@@ -15,7 +15,7 @@ namespace systemeTelethon
     public partial class Systeme : Form
     {
         GestionnaireSTE galerie1 = new GestionnaireSTE();
-        
+    
         public Systeme()
         {
             InitializeComponent();
