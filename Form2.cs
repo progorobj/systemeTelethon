@@ -32,6 +32,9 @@ namespace systemeTelethon
                 DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
                     "Meci de remplir tout les champs ", "Attention");
             }
+            else if(galerie1.EnregistrerDonateur(textIDonateur.Text)){
+                DialogResult message = MessageBox.Show("Erreur le donateur existe déja dans la liste ", "Attention");
+            }
 /*            else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
             {
                 DialogResult message = MessageBox.Show("Erreur il manque le type de carte", "Attention");
@@ -196,24 +199,32 @@ namespace systemeTelethon
 
         private void btnAfficherPrix_Click(object sender, EventArgs e)
         {
-            double Valeurpoints = 10 * (Int32.Parse(textNombreDePoints.Text));
-            List<Prix> sortedPrix = galerie1.getPrix().OrderByDescending(Prix => Prix.Valeur).ToList();
+            if (textNombreDePoints.Text.Equals(""))
+            {
+                DialogResult message = MessageBox.Show("Erreur il faut d'abord ajouter un don ", "Attention");
+            }
+            else
+            {
 
-            string test = "";
+
+                double Valeurpoints = 10 * (Int32.Parse(textNombreDePoints.Text));
+                List<Prix> sortedPrix = galerie1.getPrix().OrderByDescending(Prix => Prix.Valeur).ToList();
+
+                string test = "";
                 foreach (Prix prix in sortedPrix)
                 {
                     while (Valeurpoints >= prix.Valeur && prix.QteDisponible > 0)
                     {
-                    prix.QteDisponible = prix.QteDisponible - 1;
-                    Valeurpoints = Valeurpoints - prix.Valeur;
-                    test += "Le donateur remporte un " + prix.Description+ " Valeur point ="+(prix.Valeur)/10+" Quantite disponible = "+prix.QteDisponible+"\r\n";
+                        prix.QteDisponible = prix.QteDisponible - 1;
+                        Valeurpoints = Valeurpoints - prix.Valeur;
+                        test += "Le donateur remporte un " + prix.Description + " Valeur point =" + (prix.Valeur) / 10 + " Quantite disponible = " + prix.QteDisponible + "\r\n";
                     }
                 }
-            
-            textAffichage.Text = "Le donateur avec "+textNombreDePoints.Text+" point(s) remporte un ou plusieurs prix :  \r\n" +
-                ""+test;
-            textNombreDePoints.Text = "0";
 
+                textAffichage.Text = "Le donateur avec " + textNombreDePoints.Text + " point(s) remporte un ou plusieurs prix :  \r\n" +
+                    "" + test;
+                textNombreDePoints.Text = "0";
+            }
         }
     }
 }
