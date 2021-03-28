@@ -8,13 +8,13 @@ namespace systemeTelethon
 {
     class Donateur : Personne
     {
-      private  string Id;
-        private string Adresse;
-        private string Telephone;
-        private char Typedecarte;
-        private string NumeroDeCarte;
-        private string DateExpiration;
-        private int x;
+      protected  string Id;
+        protected string Adresse;
+        protected string Telephone;
+        protected char Typedecarte;
+        protected string NumeroDeCarte;
+        protected string DateExpiration;
+        protected int x;
         static int count = 1;
 
  

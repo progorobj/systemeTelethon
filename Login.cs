@@ -90,11 +90,11 @@ namespace systemeTelethon
         private void button2_Click_1(object sender, EventArgs e)
         {
             string utilisateur = txtBxNomUt.Text.Trim().ToLower();
-            string motPasse = txtBxMoPass.Text.Trim().ToLower();
+            string motPasse = txtBxMoPass.Text;
             if (!String.IsNullOrEmpty(utilisateur) &&
                 (!String.IsNullOrEmpty((motPasse))))
             {
-                if (utilisateur == "téléthon2021" && motPasse == "don@2021")
+                if (utilisateur == "téléthon 2021" && motPasse == "Don@2021")
                 {
 
                     this.Close();
