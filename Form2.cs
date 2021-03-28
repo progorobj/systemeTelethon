@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,7 +28,7 @@ namespace systemeTelethon
             DateTime date1 = DateTime.Parse(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             DateTime date2 = DateTime.Now;
 
-            if (textIDonateur.Text.Equals("") || textPrenom.Text.Equals("") || textNom.Text.Equals("") || textAdresse.Text.Equals("") || textPhone.Text.Equals("") || textNumeroCarte.Text.Equals(""))
+            if (textIDonateur.Text.Equals(""))
             {
                 DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
                     "Meci de remplir tout les champs ", "Attention");
@@ -54,7 +55,7 @@ namespace systemeTelethon
             else if (!myRegexCarteCredit.IsMatch(textNumeroCarte.Text))
             {
                 DialogResult = MessageBox.Show("Erreur le numero de carte de crédit est invalide seul une suite de 16 chiffre entre 0-9 est accepté", "Attention");
-            }
+            }*/
             else
             {
                 String id = textIDonateur.Text;
