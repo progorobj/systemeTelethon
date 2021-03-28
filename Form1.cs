@@ -34,7 +34,7 @@ namespace systemeTelethon
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
-           // pictureBox1.Padding = new Padding(0);
+            // pictureBox1.Padding = new Padding(0);
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -83,6 +83,56 @@ namespace systemeTelethon
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            string utilisateur = txtBxNomUt.Text.Trim().ToLower();
+            string motPasse = txtBxMoPass.Text.Trim().ToLower();
+            if (!String.IsNullOrEmpty(utilisateur) &&
+                (!String.IsNullOrEmpty((motPasse))))
+            {
+                if (utilisateur == "téléthon2021" && motPasse == "don@2021")
+                {
+
+                    this.Close();
+
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Les informations saisies ne sont pas " +
+                        "valides.", "Attention", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                    txtBxNomUt.SelectAll();
+                    txtBxNomUt.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vous devez saisir votre nom d'utilisateur " +
+                    "et votre mot de passe.", "Attention", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                txtBxNomUt.Focus();
+
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DialogResult reponse = MessageBox.Show("Désirez-vous réellement " +
+               "quitter cette application ?", "Attention",
+               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (reponse == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void lbTitreLogin_Click_1(object sender, EventArgs e)
         {
 
         }
