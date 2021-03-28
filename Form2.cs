@@ -28,7 +28,7 @@ namespace systemeTelethon
             DateTime date1 = DateTime.Parse(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             DateTime date2 = DateTime.Now;
 
-            if (textIDonateur.Text.Equals(""))
+            if (textIDonateur.Text.Equals("") || textPrenom.Text.Equals("") || textNom.Text.Equals("") || textAdresse.Text.Equals("") || textPhone.Text.Equals("") || textNumeroCarte.Text.Equals(""))
             {
                 DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
                     "Meci de remplir tout les champs ", "Attention");
@@ -36,7 +36,7 @@ namespace systemeTelethon
             else if(galerie1.EnregistrerDonateur(textIDonateur.Text)){
                 DialogResult message = MessageBox.Show("Erreur le donateur existe déja dans la liste ", "Attention");
             }
-/*            else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
+            else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
             {
                 DialogResult message = MessageBox.Show("Erreur il manque le type de carte", "Attention");
             }
@@ -44,18 +44,18 @@ namespace systemeTelethon
             {
                 DialogResult message = MessageBox.Show("Erreur numero de telephone incorect format = 555-555-5555 ", "Attention");
             }
-            else if ( date1 < date2)
+            else if (date1 < date2)
             {
                 DialogResult message = MessageBox.Show("Erreur la carte de crédit est expirée", "Attention");
             }
-            else if(!myRegexNom.IsMatch(textPrenom.Text) || !myRegexNom.IsMatch(textNom.Text))
+            else if (!myRegexNom.IsMatch(textPrenom.Text) || !myRegexNom.IsMatch(textNom.Text))
             {
                 DialogResult = MessageBox.Show("Erreur Nom et prénom ne peut uniquement contenir des lettres de a à z", "Attention");
             }
             else if (!myRegexCarteCredit.IsMatch(textNumeroCarte.Text))
             {
                 DialogResult = MessageBox.Show("Erreur le numero de carte de crédit est invalide seul une suite de 16 chiffre entre 0-9 est accepté", "Attention");
-            }*/
+            }
             else
             {
                 String id = textIDonateur.Text;
