@@ -87,14 +87,14 @@ namespace systemeTelethon
 
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void buttonOk_Click_1(object sender, EventArgs e)
         {
             string utilisateur = txtBxNomUt.Text.Trim().ToLower();
-            string motPasse = txtBxMoPass.Text.Trim().ToLower();
+            string motPasse = txtBxMoPass.Text;
             if (!String.IsNullOrEmpty(utilisateur) &&
                 (!String.IsNullOrEmpty((motPasse))))
             {
-                if (utilisateur == "téléthon2021" && motPasse == "don@2021")
+                if (utilisateur == "téléthon 2021" && motPasse == "Don@2021")
                 {
 
                     this.Close();
@@ -121,20 +121,18 @@ namespace systemeTelethon
             }
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+     
+
+
+        private void buttonAnnuler_Click_2(object sender, EventArgs e)
         {
             DialogResult reponse = MessageBox.Show("Désirez-vous réellement " +
-               "quitter cette application ?", "Attention",
-               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+         "quitter cette application ?", "Attention",
+         MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (reponse == DialogResult.Yes)
             {
                 Application.Exit();
             }
-        }
-
-        private void lbTitreLogin_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

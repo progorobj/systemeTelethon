@@ -33,8 +33,8 @@ namespace systemeTelethon
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbTitreLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
             this.txtBxMoPass = new System.Windows.Forms.TextBox();
             this.txtBxNomUt = new System.Windows.Forms.TextBox();
             this.lbMotPasse = new System.Windows.Forms.Label();
@@ -49,8 +49,8 @@ namespace systemeTelethon
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lbTitreLogin);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnAnnuler);
+            this.panel2.Controls.Add(this.btnOk);
             this.panel2.Controls.Add(this.txtBxMoPass);
             this.panel2.Controls.Add(this.txtBxNomUt);
             this.panel2.Controls.Add(this.lbMotPasse);
@@ -84,34 +84,35 @@ namespace systemeTelethon
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnAnnuler
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(549, 188);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 34);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Annuler";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAnnuler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
+            this.btnAnnuler.FlatAppearance.BorderSize = 0;
+            this.btnAnnuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnnuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnuler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAnnuler.Location = new System.Drawing.Point(549, 188);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(102, 34);
+            this.btnAnnuler.TabIndex = 38;
+            this.btnAnnuler.Text = "Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = false;
+            this.btnAnnuler.Click += new System.EventHandler(this.buttonAnnuler_Click_2);
             // 
-            // button2
+            // btnOk
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(409, 188);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 34);
-            this.button2.TabIndex = 37;
-            this.button2.Text = "Ok";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
+            this.btnOk.FlatAppearance.BorderSize = 0;
+            this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnOk.Location = new System.Drawing.Point(409, 188);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(116, 34);
+            this.btnOk.TabIndex = 37;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = false;
+            this.btnOk.Click += new System.EventHandler(this.buttonOk_Click_1);
             // 
             // txtBxMoPass
             // 
@@ -121,6 +122,7 @@ namespace systemeTelethon
             this.txtBxMoPass.Name = "txtBxMoPass";
             this.txtBxMoPass.Size = new System.Drawing.Size(242, 26);
             this.txtBxMoPass.TabIndex = 36;
+            this.txtBxMoPass.Text = "Don@2021";
             // 
             // txtBxNomUt
             // 
@@ -130,6 +132,7 @@ namespace systemeTelethon
             this.txtBxNomUt.Name = "txtBxNomUt";
             this.txtBxNomUt.Size = new System.Drawing.Size(242, 26);
             this.txtBxNomUt.TabIndex = 35;
+            this.txtBxNomUt.Text = "téléthon 2021";
             // 
             // lbMotPasse
             // 
@@ -181,8 +184,8 @@ namespace systemeTelethon
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lbTitreLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.TextBox txtBxMoPass;
         private System.Windows.Forms.TextBox txtBxNomUt;
         private System.Windows.Forms.Label lbMotPasse;
