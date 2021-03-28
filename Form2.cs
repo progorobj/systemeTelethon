@@ -15,16 +15,16 @@ namespace systemeTelethon
     public partial class Systeme : Form
     {
         GestionnaireSTE galerie1 = new GestionnaireSTE();
-        
+        Regex myRegexPhone = new Regex(@"^\d{3}\-\d{3}\-\d{4}$");
+        Regex myRegexNom = new Regex(@"^[a-z]+$");
+        Regex myRegexCarteCredit = new Regex(@"^\d{16}$");
         public Systeme()
         {
             InitializeComponent();
         }
         private void btnAjouterDonateur_Click(object sender, EventArgs e)
         {
-            Regex myRegexPhone = new Regex(@"^\d{3}\-\d{3}\-\d{4}$");
-            Regex myRegexNom = new Regex(@"^[a-z]+$");
-            Regex myRegexCarteCredit = new Regex(@"^\d{16}$");
+         
             DateTime date1 = DateTime.Parse(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             DateTime date2 = DateTime.Now;
 
