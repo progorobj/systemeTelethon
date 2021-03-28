@@ -124,6 +124,19 @@ namespace systemeTelethon
             return checkup;
         }
 
+        public Boolean EnregistrerDon(String IdDonateur)
+        {
+            bool checkup = false;
+            foreach (Don don in this.getDon())
+            {
+                if (IdDonateur.Equals(don.IdDon1))
+                {
+                    checkup = true;
+                }
+
+            }
+            return checkup;
+        }
         public Boolean AttribuerPrix(double montant)
         {
             if (montant > 49 )

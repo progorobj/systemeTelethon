@@ -32,7 +32,7 @@ namespace systemeTelethon
                 DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
                     "Meci de remplir tout les champs ", "Attention");
             }
-            else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
+/*            else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
             {
                 DialogResult message = MessageBox.Show("Erreur il manque le type de carte", "Attention");
             }
@@ -84,6 +84,10 @@ namespace systemeTelethon
             }
             else if (galerie1.EnregistrerDonateur(textIDonateur.Text)==false){
                 DialogResult message = MessageBox.Show("Erreur le donateur n'existe pas");
+            }
+            else if (galerie1.EnregistrerDon(textIdDon.Text))
+            {
+                DialogResult message = MessageBox.Show("L'id du don existe déja dans la liste");
             }
             else
             {
@@ -192,79 +196,24 @@ namespace systemeTelethon
 
         private void btnAfficherPrix_Click(object sender, EventArgs e)
         {
-            int nbrePrix;
-           int nbrePoints = int.Parse(textNombreDePoints.Text);
-            if (galerie1.AttribuerPrix(double.Parse(textMontantDon.Text)))
-            {
-                if (nbrePoints >= 1 && nbrePoints < 3)
-                {
-                    foreach (Prix unPrix in galerie1.getPrix())
-                    {
-                        if (unPrix.Description.Equals("Calendrier"))
-                        {
-                            
-                            textAffichage.Text = "Félicitation ! Vous avez gagner un " + nbrePoints + " " + unPrix.Description;
-                            unPrix.Deduire(nbrePoints);
-                        }
+            double Valeurpoints = 10 * (Int32.Parse(textNombreDePoints.Text));
+            List<Prix> sortedPrix = galerie1.getPrix().OrderByDescending(Prix => Prix.Valeur).ToList();
 
+            string test = "";
+                foreach (Prix prix in sortedPrix)
+                {
+                    while (Valeurpoints >= prix.Valeur && prix.QteDisponible > 0)
+                    {
+                    prix.QteDisponible = prix.QteDisponible - 1;
+                    Valeurpoints = Valeurpoints - prix.Valeur;
+                    test += "Le donateur remporte un " + prix.Description+ " Valeur point ="+(prix.Valeur)/10+" Quantite disponible = "+prix.QteDisponible+"\r\n";
                     }
                 }
-                if (nbrePoints >= 3 && nbrePoints < 10)
-                {
-                    foreach (Prix unPrix in galerie1.getPrix())
-                    {
-                        if (unPrix.Description.Equals("Repas pour 2"))
-                        {
-                            nbrePrix = nbrePoints / 3;
+            
+            textAffichage.Text = "Le donateur avec "+textNombreDePoints.Text+" point(s) remporte un ou plusieurs prix :  \r\n" +
+                ""+test;
+            textNombreDePoints.Text = "0";
 
-                            //test vérification de la quantité disponible de prix
-                            if (unPrix.QteDisponible >= nbrePrix)
-                            {
-                                textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix + " " + unPrix.Description;
-                                unPrix.Deduire(nbrePrix);
-                            }
-                            else
-                            {
-                                textAffichage.Text = "Quantité épuisé en stock .";
-                            }
-
-                        }
-
-                    }
-                }
-                if (nbrePoints >= 10 && nbrePoints < 12)
-                {
-                    foreach (Prix unPrix in galerie1.getPrix())
-                    {
-                        if (unPrix.Description.Equals("BBQ"))
-                        {
-                            nbrePrix = nbrePoints / 10;
-                            textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix + " " + unPrix.Description;
-                            unPrix.Deduire(nbrePrix);
-                        }
-
-                    }
-                }
-                if (nbrePoints >= 12)
-                {
-                    foreach (Prix unPrix in galerie1.getPrix())
-                    {
-                        if (unPrix.Description.Equals("Téléviseur"))
-                        {
-                            nbrePrix = nbrePoints / 12;
-                            textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix+ " " + unPrix.Description;
-                            unPrix.Deduire(nbrePrix);
-                        }
-
-                    }
-                }
-
-            }
-            else
-            {
-                textAffichage.Text = "Malheureusement ! Votre score ne vous permet pas de gagner aucun prix.  ";
-
-            }
         }
     }
 }
