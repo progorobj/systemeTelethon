@@ -15,6 +15,8 @@ namespace systemeTelethon
         private int x;
         static int count = 1;
 
+        public string IdDon1 { get => IdDon; set => IdDon = value; }
+
         public Don(string idDon, string dateDuDon, string idDonateur, double montant)
         {
             this.IdDon = idDon;
