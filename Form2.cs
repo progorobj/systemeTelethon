@@ -200,7 +200,7 @@ namespace systemeTelethon
                 {
                     foreach (Prix unPrix in galerie1.getPrix())
                     {
-                        if (unPrix.Valeur >= 1 && unPrix.Valeur < 3)
+                        if (unPrix.Description.Equals("Calendrier"))
                         {
                             
                             textAffichage.Text = "Félicitation ! Vous avez gagner un " + nbrePoints + " " + unPrix.Description;
@@ -213,7 +213,7 @@ namespace systemeTelethon
                 {
                     foreach (Prix unPrix in galerie1.getPrix())
                     {
-                        if (unPrix.Valeur >= 3 && unPrix.Valeur < 10)
+                        if (unPrix.Description.Equals("Repas pour 2"))
                         {
                             nbrePrix = nbrePoints / 3;
 
@@ -236,7 +236,7 @@ namespace systemeTelethon
                 {
                     foreach (Prix unPrix in galerie1.getPrix())
                     {
-                        if (unPrix.Valeur >= 10 && unPrix.Valeur < 12)
+                        if (unPrix.Description.Equals("BBQ"))
                         {
                             nbrePrix = nbrePoints / 10;
                             textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix + " " + unPrix.Description;
@@ -249,7 +249,7 @@ namespace systemeTelethon
                 {
                     foreach (Prix unPrix in galerie1.getPrix())
                     {
-                        if (unPrix.Valeur >= 12)
+                        if (unPrix.Description.Equals("Téléviseur"))
                         {
                             nbrePrix = nbrePoints / 12;
                             textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix+ " " + unPrix.Description;
