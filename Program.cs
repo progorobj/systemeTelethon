@@ -16,8 +16,8 @@ namespace systemeTelethon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           //Application.Run(new SystèmeTelethon());
-           Application.Run(new Systeme());
+            Application.Run(new SystèmeTelethon());
+            Application.Run(new Systeme());
             
         }
 
