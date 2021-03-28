@@ -233,6 +233,7 @@ namespace systemeTelethon
             this.btnAfficherPrix.TabIndex = 33;
             this.btnAfficherPrix.Text = "Afficher prix";
             this.btnAfficherPrix.UseVisualStyleBackColor = false;
+            this.btnAfficherPrix.Click += new System.EventHandler(this.btnAfficherPrix_Click);
             // 
             // textNombreDePoints
             // 

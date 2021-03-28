@@ -189,5 +189,82 @@ namespace systemeTelethon
         {
             this.Close();
         }
+
+        private void btnAfficherPrix_Click(object sender, EventArgs e)
+        {
+            int nbrePrix;
+           int nbrePoints = int.Parse(textNombreDePoints.Text);
+            if (galerie1.AttribuerPrix(double.Parse(textMontantDon.Text)))
+            {
+                if (nbrePoints >= 1 && nbrePoints < 3)
+                {
+                    foreach (Prix unPrix in galerie1.getPrix())
+                    {
+                        if (unPrix.Valeur >= 1 && unPrix.Valeur < 3)
+                        {
+                            
+                            textAffichage.Text = "Félicitation ! Vous avez gagner un " + nbrePoints + " " + unPrix.Description;
+                            unPrix.Deduire(nbrePoints);
+                        }
+
+                    }
+                }
+                if (nbrePoints >= 3 && nbrePoints < 10)
+                {
+                    foreach (Prix unPrix in galerie1.getPrix())
+                    {
+                        if (unPrix.Valeur >= 3 && unPrix.Valeur < 10)
+                        {
+                            nbrePrix = nbrePoints / 3;
+
+                            //test vérification de la quantité disponible de prix
+                            if (unPrix.QteDisponible >= nbrePrix)
+                            {
+                                textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix + " " + unPrix.Description;
+                                unPrix.Deduire(nbrePrix);
+                            }
+                            else
+                            {
+                                textAffichage.Text = "Quantité épuisé en stock .";
+                            }
+
+                        }
+
+                    }
+                }
+                if (nbrePoints >= 10 && nbrePoints < 12)
+                {
+                    foreach (Prix unPrix in galerie1.getPrix())
+                    {
+                        if (unPrix.Valeur >= 10 && unPrix.Valeur < 12)
+                        {
+                            nbrePrix = nbrePoints / 10;
+                            textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix + " " + unPrix.Description;
+                            unPrix.Deduire(nbrePrix);
+                        }
+
+                    }
+                }
+                if (nbrePoints >= 12)
+                {
+                    foreach (Prix unPrix in galerie1.getPrix())
+                    {
+                        if (unPrix.Valeur >= 12)
+                        {
+                            nbrePrix = nbrePoints / 12;
+                            textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix+ " " + unPrix.Description;
+                            unPrix.Deduire(nbrePrix);
+                        }
+
+                    }
+                }
+
+            }
+            else
+            {
+                textAffichage.Text = "Malheureusement ! Votre score ne vous permet pas de gagner aucun prix.  ";
+
+            }
+        }
     }
 }

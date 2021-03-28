@@ -123,6 +123,20 @@ namespace systemeTelethon
             }
             return checkup;
         }
+
+        public Boolean AttribuerPrix(double montant)
+        {
+            if (montant > 49 )
+            {
+                return true;       
+                    }
+            
+
+            return false;
+        }
+
+        
+     }
        
-    }
+    
 }

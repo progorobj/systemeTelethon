@@ -22,7 +22,7 @@ namespace systemeTelethon
             this.description = description;
             this.valeur = valeur;
             this.qteOriginale = qteOriginale;
-            this.qteDisponible = 0;
+            this.qteDisponible = qteOriginale;
             this.idCommanditaire = idCommanditaire;
         }
 
