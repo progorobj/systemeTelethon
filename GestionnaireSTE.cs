@@ -15,6 +15,14 @@ namespace systemeTelethon
 
         public GestionnaireSTE()
         {
+            Prix Televiseur = new Prix("1","téléviseur",120,5,"radioshack");
+            Prix Calendrier = new Prix("2", "calendrier", 10, 5,  "dollorama");
+            Prix Repas = new Prix("3", "repas pour 2", 30, 5,  "Paul patate");
+            Prix Bbq = new Prix("4", "BBQ", 100, 5,  "Canadiantire");
+            listePrix.Add(Televiseur);
+            listePrix.Add(Calendrier);
+            listePrix.Add(Repas);
+            listePrix.Add(Bbq);
             //constructeur par default   
         }
 

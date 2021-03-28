@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,12 +28,12 @@ namespace systemeTelethon
             DateTime date1 = DateTime.Parse(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
             DateTime date2 = DateTime.Now;
 
-            if (textIDonateur.Text.Equals("") || textPrenom.Text.Equals("") || textNom.Text.Equals("") || textAdresse.Text.Equals("") || textPhone.Text.Equals("") || textNumeroCarte.Text.Equals(""))
+            if (textIDonateur.Text.Equals(""))
             {
                 DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
                     "Meci de remplir tout les champs ", "Attention");
             }
-            else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
+/*            else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
             {
                 DialogResult message = MessageBox.Show("Erreur il manque le type de carte", "Attention");
             }
@@ -51,7 +52,7 @@ namespace systemeTelethon
             else if (!myRegexCarteCredit.IsMatch(textNumeroCarte.Text))
             {
                 DialogResult = MessageBox.Show("Erreur le numero de carte de crédit est invalide seul une suite de 16 chiffre entre 0-9 est accepté", "Attention");
-            }
+            }*/
             else
             {
                 String id = textIDonateur.Text;
@@ -192,79 +193,24 @@ namespace systemeTelethon
 
         private void btnAfficherPrix_Click(object sender, EventArgs e)
         {
-            int nbrePrix;
-           int nbrePoints = int.Parse(textNombreDePoints.Text);
-            if (galerie1.AttribuerPrix(double.Parse(textMontantDon.Text)))
-            {
-                if (nbrePoints >= 1 && nbrePoints < 3)
-                {
-                    foreach (Prix unPrix in galerie1.getPrix())
-                    {
-                        if (unPrix.Valeur >= 1 && unPrix.Valeur < 3)
-                        {
-                            
-                            textAffichage.Text = "Félicitation ! Vous avez gagner un " + nbrePoints + " " + unPrix.Description;
-                            unPrix.Deduire(nbrePoints);
-                        }
+            double Valeurpoints = 10 * (Int32.Parse(textNombreDePoints.Text));
+            List<Prix> sortedPrix = galerie1.getPrix().OrderByDescending(Prix => Prix.Valeur).ToList();
 
+            string test = "";
+                foreach (Prix prix in sortedPrix)
+                {
+                    while (Valeurpoints >= prix.Valeur && prix.QteDisponible > 0)
+                    {
+                    prix.QteDisponible = prix.QteDisponible - 1;
+                    Valeurpoints = Valeurpoints - prix.Valeur;
+                    test += "Le donateur remporte un " + prix.Description+ " Valeur point ="+(prix.Valeur)/10+" Quantite disponible = "+prix.QteDisponible+"\r\n";
                     }
                 }
-                if (nbrePoints >= 3 && nbrePoints < 10)
-                {
-                    foreach (Prix unPrix in galerie1.getPrix())
-                    {
-                        if (unPrix.Valeur >= 3 && unPrix.Valeur < 10)
-                        {
-                            nbrePrix = nbrePoints / 3;
+            
+            textAffichage.Text = "Le donateur avec "+textNombreDePoints.Text+" point(s) remporte un ou plusieurs prix :  \r\n" +
+                ""+test;
+            textNombreDePoints.Text = "0";
 
-                            //test vérification de la quantité disponible de prix
-                            if (unPrix.QteDisponible >= nbrePrix)
-                            {
-                                textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix + " " + unPrix.Description;
-                                unPrix.Deduire(nbrePrix);
-                            }
-                            else
-                            {
-                                textAffichage.Text = "Quantité épuisé en stock .";
-                            }
-
-                        }
-
-                    }
-                }
-                if (nbrePoints >= 10 && nbrePoints < 12)
-                {
-                    foreach (Prix unPrix in galerie1.getPrix())
-                    {
-                        if (unPrix.Valeur >= 10 && unPrix.Valeur < 12)
-                        {
-                            nbrePrix = nbrePoints / 10;
-                            textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix + " " + unPrix.Description;
-                            unPrix.Deduire(nbrePrix);
-                        }
-
-                    }
-                }
-                if (nbrePoints >= 12)
-                {
-                    foreach (Prix unPrix in galerie1.getPrix())
-                    {
-                        if (unPrix.Valeur >= 12)
-                        {
-                            nbrePrix = nbrePoints / 12;
-                            textAffichage.Text = "Félicitation ! Vous avez gagner  " + nbrePrix+ " " + unPrix.Description;
-                            unPrix.Deduire(nbrePrix);
-                        }
-
-                    }
-                }
-
-            }
-            else
-            {
-                textAffichage.Text = "Malheureusement ! Votre score ne vous permet pas de gagner aucun prix.  ";
-
-            }
         }
     }
 }
