@@ -89,7 +89,36 @@ namespace systemeTelethon
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            string utilisateur = txtBxNomUt.Text.Trim().ToLower();
+            string motPasse = txtBxMoPass.Text.Trim().ToLower();
+            if (!String.IsNullOrEmpty(utilisateur) &&
+                (!String.IsNullOrEmpty((motPasse))))
+            {
+                if (utilisateur == "téléthon2021" && motPasse == "don@2021")
+                {
 
+                    this.Close();
+
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Les informations saisies ne sont pas " +
+                        "valides.", "Attention", MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+                    txtBxNomUt.SelectAll();
+                    txtBxNomUt.Focus();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vous devez saisir votre nom d'utilisateur " +
+                    "et votre mot de passe.", "Attention", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+                txtBxNomUt.Focus();
+
+            }
         }
     }
 }
