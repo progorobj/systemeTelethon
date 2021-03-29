@@ -56,11 +56,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="SystemeThelethon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="SystemeThelethon.Designer.cs">
+      <DependentUpon>SystemeThelethon.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionnaireSTE.cs" />
     <Compile Include="Personne.cs" />
@@ -70,8 +70,8 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="SystemeThelethon.resx">
+      <DependentUpon>SystemeThelethon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
