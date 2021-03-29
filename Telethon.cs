@@ -205,6 +205,7 @@ namespace systemeTelethon
                             
                             textAffichage.Text = "Félicitation ! Vous avez gagner un " + nbrePoints + " " + unPrix.Description;
                             unPrix.Deduire(nbrePoints);
+                            
                         }
 
                     }
