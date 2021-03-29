@@ -14,15 +14,15 @@ namespace systemeTelethon
 {
     public partial class Systeme : Form
     {
-        GestionnaireSTE galerie1 = new GestionnaireSTE();
-        Regex myRegexPhone = new Regex(@"^\d{3}\-\d{3}\-\d{4}$");
-        Regex myRegexNom = new Regex(@"^[a-z]+$");
-        Regex myRegexCarteCredit = new Regex(@"^\d{16}$");
+        readonly GestionnaireSTE galerie1 = new GestionnaireSTE();
+        readonly Regex myRegexPhone = new Regex(@"^\d{3}\-\d{3}\-\d{4}$");
+        readonly Regex myRegexNom = new Regex(@"^[a-z]+$");
+        readonly Regex myRegexCarteCredit = new Regex(@"^\d{16}$");
         public Systeme()
         {
             InitializeComponent();
         }
-        private void btnAjouterDonateur_Click(object sender, EventArgs e)
+        private void BtnAjouterDonateur_Click(object sender, EventArgs e)
         {
          
             DateTime date1 = DateTime.Parse(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
@@ -80,18 +80,18 @@ namespace systemeTelethon
         }
 
 
-        private void btnAjouterDon_Click(object sender, EventArgs e)
+        private void BtnAjouterDon_Click(object sender, EventArgs e)
         {
             if (textIdDon.Text.Equals("") || textMontantDon.Text.Equals(""))
             {
-                DialogResult message = MessageBox.Show("Erreur l'id du don ou du donateur ou le montant est vide");
+                DialogResult = MessageBox.Show("Erreur l'id du don ou du donateur ou le montant est vide");
             }
             else if (galerie1.EnregistrerDonateur(textIDonateur.Text)==false){
-                DialogResult message = MessageBox.Show("Erreur le donateur n'existe pas");
+                DialogResult = MessageBox.Show("Erreur le donateur n'existe pas");
             }
             else if (galerie1.EnregistrerDon(textIdDon.Text))
             {
-                DialogResult message = MessageBox.Show("L'id du don existe déja dans la liste");
+                DialogResult = MessageBox.Show("L'id du don existe déja dans la liste");
             }
             else
             {
@@ -127,22 +127,22 @@ namespace systemeTelethon
             }
         }
 
-        private void btnAfficherDonateur_Click(object sender, EventArgs e)
+        private void BtnAfficherDonateur_Click(object sender, EventArgs e)
         {
             textAffichage.Text = galerie1.AfficherDonateurs();
         }
 
-        private void btnAfficherDon_Click(object sender, EventArgs e)
+        private void BtnAfficherDon_Click(object sender, EventArgs e)
         {
             textAffichage.Text = galerie1.AfficherDons();
         }
 
-        private void btnAjouterComm_Click(object sender, EventArgs e)
+        private void BtnAjouterComm_Click(object sender, EventArgs e)
         {
             if (txtBxIdComm.Text.Equals("") || txtPrenomComm.Text.Equals("")
                 || txtNomComm.Text.Equals(""))
             {
-                DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
+                DialogResult  = MessageBox.Show("Vous avez des champs vides . " +
                     "Meci de remplir tout les champs ", "Attention");
             }
             else
@@ -155,25 +155,21 @@ namespace systemeTelethon
 
         }
 
-        private void txtBxNom_TextChanged(object sender, EventArgs e)
-        {
-            
+   
 
-        }
-
-        private void btnAfficherComm_Click(object sender, EventArgs e)
+        private void BtnAfficherComm_Click(object sender, EventArgs e)
         {
             
             textAffichage.Text = galerie1.AfficherCommanditaires();
         }
 
-        private void btnAjouterPrix_Click(object sender, EventArgs e)
+        private void BtnAjouterPrix_Click(object sender, EventArgs e)
         {
             if (txtIdPrix.Text.Equals("") || txtBxDescription.Text.Equals("")
                 || txtValeurPrix.Text.Equals("") || txtQuantitePrix.Text.Equals("")
                 || txtBxIdComm.Text.Equals(""))
             {
-                DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
+                DialogResult = MessageBox.Show("Vous avez des champs vides . " +
                     "Meci de remplir tout les champs ", "Attention");
             }
             else
@@ -187,18 +183,18 @@ namespace systemeTelethon
             }
         }
 
-        private void btnAfficherPri_Click(object sender, EventArgs e)
+        private void BtnAfficherPri_Click(object sender, EventArgs e)
         {
 
             textAffichage.Text = galerie1.AfficherPrix();
         }
 
-        private void buttonQuitter_Click(object sender, EventArgs e)
+        private void ButtonQuitter_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnAfficherPrix_Click(object sender, EventArgs e)
+        private void BtnAfficherPrix_Click(object sender, EventArgs e)
         {
             if (textNombreDePoints.Text.Equals(""))
             {
@@ -207,7 +203,7 @@ namespace systemeTelethon
             else
             {
                 double Valeurpoints = 10 * (Int32.Parse(textNombreDePoints.Text));
-                List<Prix> sortedPrix = galerie1.getPrix().OrderByDescending(Prix => Prix.Valeur).ToList();
+                List<Prix> sortedPrix = galerie1.GetPrix().OrderByDescending(Prix => Prix.Valeur).ToList();
 
                 string test = "";
                 foreach (Prix prix in sortedPrix)

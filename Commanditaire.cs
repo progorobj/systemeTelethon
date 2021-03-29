@@ -8,8 +8,8 @@ namespace systemeTelethon
 {
     class Commanditaire : Personne
     {
-       private string IDCommanditaire;
-        private int x;
+        protected string IDCommanditaire;
+        protected int x;
         static int count = 1;
 
         public Commanditaire(string nom, string prenom, string iDCommanditaire) : base(nom,prenom)

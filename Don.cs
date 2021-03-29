@@ -8,11 +8,11 @@ namespace systemeTelethon
 {
     class Don
     {
-        private String IdDon;
-        private String DateDuDon;
-        private String IdDonateur;
-        private Double Montant;
-        private int x;
+        protected String IdDon;
+        protected String DateDuDon;
+        protected String IdDonateur;
+        protected Double Montant;
+        protected int x;
         static int count = 1;
 
         public string IdDon1 { get => IdDon; set => IdDon = value; }

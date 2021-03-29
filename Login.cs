@@ -17,77 +17,16 @@ namespace systemeTelethon
             InitializeComponent();
         }
 
-        private void btnAnnulerLogIn_Click(object sender, EventArgs e)
+        private void BtnAnnulerLogIn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
+        private void PictureBox1_Click_1(object sender, EventArgs e)
         {
             // pictureBox1.Padding = new Padding(0);
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lbTitreLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbNomUtilisateur_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbMotPasse_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBxNomUt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBxMoPass_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void buttonOk_Click_1(object sender, EventArgs e)
+        private void ButtonOk_Click_1(object sender, EventArgs e)
         {
             string utilisateur = txtBxNomUt.Text.Trim().ToLower();
             string motPasse = txtBxMoPass.Text;
@@ -124,7 +63,7 @@ namespace systemeTelethon
      
 
 
-        private void buttonAnnuler_Click_2(object sender, EventArgs e)
+        private void ButtonAnnuler_Click_2(object sender, EventArgs e)
         {
             DialogResult reponse = MessageBox.Show("Désirez-vous réellement " +
          "quitter cette application ?", "Attention",

@@ -171,7 +171,7 @@ namespace systemeTelethon
             this.buttonQuitter.TabIndex = 37;
             this.buttonQuitter.Text = "Quitter";
             this.buttonQuitter.UseVisualStyleBackColor = false;
-            this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
+            this.buttonQuitter.Click += new System.EventHandler(this.ButtonQuitter_Click);
             // 
             // tabControl1
             // 
@@ -233,7 +233,7 @@ namespace systemeTelethon
             this.btnAfficherPrix.TabIndex = 33;
             this.btnAfficherPrix.Text = "Afficher prix";
             this.btnAfficherPrix.UseVisualStyleBackColor = false;
-            this.btnAfficherPrix.Click += new System.EventHandler(this.btnAfficherPrix_Click);
+            this.btnAfficherPrix.Click += new System.EventHandler(this.BtnAfficherPrix_Click);
             // 
             // textNombreDePoints
             // 
@@ -515,7 +515,7 @@ namespace systemeTelethon
             this.btnAfficherDonateur.TabIndex = 22;
             this.btnAfficherDonateur.Text = "Afficher";
             this.btnAfficherDonateur.UseVisualStyleBackColor = false;
-            this.btnAfficherDonateur.Click += new System.EventHandler(this.btnAfficherDonateur_Click);
+            this.btnAfficherDonateur.Click += new System.EventHandler(this.BtnAfficherDonateur_Click);
             // 
             // textIDonateur
             // 
@@ -601,7 +601,7 @@ namespace systemeTelethon
             this.btnAfficherDon.TabIndex = 29;
             this.btnAfficherDon.Text = "Afficher";
             this.btnAfficherDon.UseVisualStyleBackColor = false;
-            this.btnAfficherDon.Click += new System.EventHandler(this.btnAfficherDon_Click);
+            this.btnAfficherDon.Click += new System.EventHandler(this.BtnAfficherDon_Click);
             // 
             // textIdDon
             // 
@@ -627,7 +627,7 @@ namespace systemeTelethon
             this.btnAjouterDon.TabIndex = 28;
             this.btnAjouterDon.Text = "Ajouter";
             this.btnAjouterDon.UseVisualStyleBackColor = false;
-            this.btnAjouterDon.Click += new System.EventHandler(this.btnAjouterDon_Click);
+            this.btnAjouterDon.Click += new System.EventHandler(this.BtnAjouterDon_Click);
             // 
             // label7
             // 
@@ -692,7 +692,7 @@ namespace systemeTelethon
             this.btnAfficherPri.TabIndex = 24;
             this.btnAfficherPri.Text = "Afficher";
             this.btnAfficherPri.UseVisualStyleBackColor = false;
-            this.btnAfficherPri.Click += new System.EventHandler(this.btnAfficherPri_Click);
+            this.btnAfficherPri.Click += new System.EventHandler(this.BtnAfficherPri_Click);
             // 
             // btnAjouterPrix
             // 
@@ -709,7 +709,7 @@ namespace systemeTelethon
             this.btnAjouterPrix.TabIndex = 23;
             this.btnAjouterPrix.Text = "Ajouter";
             this.btnAjouterPrix.UseVisualStyleBackColor = false;
-            this.btnAjouterPrix.Click += new System.EventHandler(this.btnAjouterPrix_Click);
+            this.btnAjouterPrix.Click += new System.EventHandler(this.BtnAjouterPrix_Click);
             // 
             // txtQuantitePrix
             // 
@@ -828,7 +828,7 @@ namespace systemeTelethon
             this.btnAfficherComm.TabIndex = 23;
             this.btnAfficherComm.Text = "Afficher";
             this.btnAfficherComm.UseVisualStyleBackColor = false;
-            this.btnAfficherComm.Click += new System.EventHandler(this.btnAfficherComm_Click);
+            this.btnAfficherComm.Click += new System.EventHandler(this.BtnAfficherComm_Click);
             // 
             // btnAjouterComm
             // 
@@ -845,7 +845,7 @@ namespace systemeTelethon
             this.btnAjouterComm.TabIndex = 22;
             this.btnAjouterComm.Text = "Ajouter";
             this.btnAjouterComm.UseVisualStyleBackColor = false;
-            this.btnAjouterComm.Click += new System.EventHandler(this.btnAjouterComm_Click);
+            this.btnAjouterComm.Click += new System.EventHandler(this.BtnAjouterComm_Click);
             // 
             // txtPrenomComm
             // 

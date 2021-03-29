@@ -8,10 +8,10 @@ namespace systemeTelethon
 {
     class GestionnaireSTE
     {
-        private List<Donateur> donateurs = new List<Donateur>();
-        private List<Commanditaire> commanditaires = new List<Commanditaire>();
-        private List<Don> don = new List<Don>();
-        private List<Prix> listePrix = new List<Prix>();
+        protected List<Donateur> donateurs = new List<Donateur>();
+        protected List<Commanditaire> commanditaires = new List<Commanditaire>();
+        protected List<Don> don = new List<Don>();
+        protected List<Prix> listePrix = new List<Prix>();
 
         public GestionnaireSTE()
         {
@@ -26,21 +26,21 @@ namespace systemeTelethon
             //constructeur par default   
         }
 
-        public List<Donateur> getDonateurs()
+        public List<Donateur> GetDonateurs()
         {
             return this.donateurs;
         }
-        public List<Don> getDon()
+        public List<Don> GetDon()
         {
             return this.don;
         }
 
-        public List<Commanditaire> getCommanditaire()
+        public List<Commanditaire> GetCommanditaire()
         {
             return this.commanditaires;
         }
 
-        public List<Prix> getPrix()
+        public List<Prix> GetPrix()
         {
             return this.listePrix;
 
@@ -72,7 +72,7 @@ namespace systemeTelethon
         public string AfficherDonateurs()
         {
             String result = "";
-            foreach (Donateur donateur in this.getDonateurs())
+            foreach (Donateur donateur in this.GetDonateurs())
             {
 
                 result += donateur + "\r\n" +
@@ -84,7 +84,7 @@ namespace systemeTelethon
         public string AfficherCommanditaires() 
         {
             String result = "";
-            foreach (Commanditaire unCommanditaire in this.getCommanditaire())
+            foreach (Commanditaire unCommanditaire in this.GetCommanditaire())
             {
 
                 result += unCommanditaire + "\r\n" +
@@ -97,7 +97,7 @@ namespace systemeTelethon
         public string AfficherPrix()
         {
             String result = "";
-            foreach (Prix unPrix in this.getPrix())
+            foreach (Prix unPrix in this.GetPrix())
             {
 
                 result += unPrix + "\r\n" +
@@ -110,7 +110,7 @@ namespace systemeTelethon
         public string AfficherDons()
         {
             String result = "";
-            foreach (Don don in this.getDon())
+            foreach (Don don in this.GetDon())
             {
 
                 result += don + "\r\n" +
@@ -122,7 +122,7 @@ namespace systemeTelethon
         public Boolean EnregistrerDonateur(String IdDonateur)
         {
             bool checkup = false;
-            foreach (Donateur donateur in  this.getDonateurs())
+            foreach (Donateur donateur in  this.GetDonateurs())
             {
                 if (IdDonateur.Equals(donateur.GetID())){
                     checkup = true;
@@ -135,7 +135,7 @@ namespace systemeTelethon
         public Boolean EnregistrerDon(String IdDonateur)
         {
             bool checkup = false;
-            foreach (Don don in this.getDon())
+            foreach (Don don in this.GetDon())
             {
                 if (IdDonateur.Equals(don.IdDon1))
                 {

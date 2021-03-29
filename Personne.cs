@@ -8,8 +8,8 @@ namespace systemeTelethon
 {
     class Personne
     {
-        string nom;
-        string prenom;
+       protected string nom;
+       protected string prenom;
 
         public Personne(string nom, string prenom)
         {

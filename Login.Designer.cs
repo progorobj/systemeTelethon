@@ -97,7 +97,7 @@ namespace systemeTelethon
             this.btnAnnuler.TabIndex = 38;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = false;
-            this.btnAnnuler.Click += new System.EventHandler(this.buttonAnnuler_Click_2);
+            this.btnAnnuler.Click += new System.EventHandler(this.ButtonAnnuler_Click_2);
             // 
             // btnOk
             // 
@@ -112,7 +112,7 @@ namespace systemeTelethon
             this.btnOk.TabIndex = 37;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = false;
-            this.btnOk.Click += new System.EventHandler(this.buttonOk_Click_1);
+            this.btnOk.Click += new System.EventHandler(this.ButtonOk_Click_1);
             // 
             // txtBxMoPass
             // 
