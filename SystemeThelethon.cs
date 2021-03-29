@@ -218,7 +218,7 @@ namespace systemeTelethon
 
                 textAffichage.Text = "Le donateur avec " + textNombreDePoints.Text + " point(s) remporte un ou plusieurs prix :  \r\n" +
                     "" + test;
-                textNombreDePoints.Text = "0";
+                textNombreDePoints.Text = "";
             }
         }
     }
