@@ -862,7 +862,6 @@ namespace systemeTelethon
             this.txtNomComm.Name = "txtNomComm";
             this.txtNomComm.Size = new System.Drawing.Size(248, 30);
             this.txtNomComm.TabIndex = 16;
-            this.txtNomComm.TextChanged += new System.EventHandler(this.txtBxNom_TextChanged);
             // 
             // lblNom
             // 
