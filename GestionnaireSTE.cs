@@ -124,7 +124,7 @@ namespace systemeTelethon
             bool checkup = false;
             foreach (Donateur donateur in  this.getDonateurs())
             {
-                if (IdDonateur.Equals(donateur.getID())){
+                if (IdDonateur.Equals(donateur.GetID())){
                     checkup = true;
                 }
 

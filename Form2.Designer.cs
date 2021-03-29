@@ -543,7 +543,7 @@ namespace systemeTelethon
             this.btnAjouterDonateur.TabIndex = 21;
             this.btnAjouterDonateur.Text = "Ajouter ";
             this.btnAjouterDonateur.UseVisualStyleBackColor = false;
-            this.btnAjouterDonateur.Click += new System.EventHandler(this.btnAjouterDonateur_Click);
+            this.btnAjouterDonateur.Click += new System.EventHandler(this.BtnAjouterDonateur_Click);
             // 
             // gBxDon
             // 

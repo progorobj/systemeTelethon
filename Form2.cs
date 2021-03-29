@@ -30,23 +30,23 @@ namespace systemeTelethon
 
             if (textIDonateur.Text.Equals("") || textPrenom.Text.Equals("") || textNom.Text.Equals("") || textAdresse.Text.Equals("") || textPhone.Text.Equals("") || textNumeroCarte.Text.Equals(""))
             {
-                DialogResult message = MessageBox.Show("Vous avez des champs vides . " +
+                DialogResult = MessageBox.Show("Vous avez des champs vides . " +
                     "Meci de remplir tout les champs ", "Attention");
             }
             else if(galerie1.EnregistrerDonateur(textIDonateur.Text)){
-                DialogResult message = MessageBox.Show("Erreur le donateur existe déja dans la liste ", "Attention");
+                DialogResult  = MessageBox.Show("Erreur le donateur existe déja dans la liste ", "Attention");
             }
             else if (!rbtnAmex.Checked && !rbtnVisa.Checked && !rbtnMc.Checked)
             {
-                DialogResult message = MessageBox.Show("Erreur il manque le type de carte", "Attention");
+                DialogResult  = MessageBox.Show("Erreur il manque le type de carte", "Attention");
             }
             else if (!myRegexPhone.IsMatch(textPhone.Text))
             {
-                DialogResult message = MessageBox.Show("Erreur numero de telephone incorect format = 555-555-5555 ", "Attention");
+                DialogResult  = MessageBox.Show("Erreur numero de telephone incorect format = 555-555-5555 ", "Attention");
             }
             else if (date1 < date2)
             {
-                DialogResult message = MessageBox.Show("Erreur la carte de crédit est expirée", "Attention");
+                DialogResult  = MessageBox.Show("Erreur la carte de crédit est expirée", "Attention");
             }
             else if (!myRegexNom.IsMatch(textPrenom.Text) || !myRegexNom.IsMatch(textNom.Text))
             {
@@ -206,8 +206,6 @@ namespace systemeTelethon
             }
             else
             {
-
-
                 double Valeurpoints = 10 * (Int32.Parse(textNombreDePoints.Text));
                 List<Prix> sortedPrix = galerie1.getPrix().OrderByDescending(Prix => Prix.Valeur).ToList();
 
@@ -216,8 +214,8 @@ namespace systemeTelethon
                 {
                     while (Valeurpoints >= prix.Valeur && prix.QteDisponible > 0)
                     {
-                        prix.QteDisponible = prix.QteDisponible - 1;
-                        Valeurpoints = Valeurpoints - prix.Valeur;
+                        prix.QteDisponible--;
+                        Valeurpoints -= prix.Valeur;
                         test += "Le donateur remporte un " + prix.Description + " Valeur point =" + (prix.Valeur) / 10 + " Quantite disponible = " + prix.QteDisponible + "\r\n";
                     }
                 }
