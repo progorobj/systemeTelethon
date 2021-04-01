@@ -133,6 +133,7 @@ namespace systemeTelethon
             this.txtBxNomUt.Size = new System.Drawing.Size(242, 26);
             this.txtBxNomUt.TabIndex = 35;
             this.txtBxNomUt.Text = "téléthon 2021";
+            this.txtBxNomUt.TextChanged += new System.EventHandler(this.txtBxNomUt_Leave);
             // 
             // lbMotPasse
             // 
