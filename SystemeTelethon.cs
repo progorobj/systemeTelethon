@@ -9,7 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BibliothequeTelethon;
 namespace systemeTelethon
 {
     public partial class Systeme : Form
@@ -129,12 +129,18 @@ namespace systemeTelethon
 
         private void BtnAfficherDonateur_Click(object sender, EventArgs e)
         {
-            textAffichage.Text = galerie1.AfficherDonateurs();
+           // textAffichage.Text = galerie1.AfficherDonateurs();
         }
 
         private void BtnAfficherDon_Click(object sender, EventArgs e)
         {
-            textAffichage.Text = galerie1.AfficherDons();
+            AffichageTelethon affichage = new AffichageTelethon();
+            //affichage.Visible = true;
+            //affichage.Activate();           
+            //textAffichage.Text = galerie1.AfficherDons();
+           // affichage.textAffiche = textAffichage.Text;
+            affichage.textAffiche = galerie1.AfficherDons();
+            affichage.ShowDialog();
         }
 
         private void BtnAjouterComm_Click(object sender, EventArgs e)
@@ -160,7 +166,7 @@ namespace systemeTelethon
         private void BtnAfficherComm_Click(object sender, EventArgs e)
         {
             
-            textAffichage.Text = galerie1.AfficherCommanditaires();
+           // textAffichage.Text = galerie1.AfficherCommanditaires();
         }
 
         private void BtnAjouterPrix_Click(object sender, EventArgs e)
@@ -186,7 +192,7 @@ namespace systemeTelethon
         private void BtnAfficherPri_Click(object sender, EventArgs e)
         {
 
-            textAffichage.Text = galerie1.AfficherPrix();
+           // textAffichage.Text = galerie1.AfficherPrix();
         }
 
         private void ButtonQuitter_Click(object sender, EventArgs e)
@@ -216,8 +222,8 @@ namespace systemeTelethon
                     }
                 }
 
-                textAffichage.Text = "Le donateur avec " + textNombreDePoints.Text + " point(s) remporte un ou plusieurs prix :  \r\n" +
-                    "" + test;
+              //  textAffichage.Text = "Le donateur avec " + textNombreDePoints.Text + " point(s) remporte un ou plusieurs prix :  \r\n" +
+                 //   "" + test;
                 textNombreDePoints.Text = "";
             }
         }

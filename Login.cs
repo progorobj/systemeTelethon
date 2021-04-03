@@ -82,5 +82,20 @@ namespace systemeTelethon
                 txtBxNomUt.Text = "Nom d'utilisateur";
             }
         }
+
+        private void txtBxMoPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SystèmeTelethon_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlLogin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
