@@ -129,16 +129,17 @@ namespace systemeTelethon
 
         private void BtnAfficherDonateur_Click(object sender, EventArgs e)
         {
-           // textAffichage.Text = galerie1.AfficherDonateurs();
+           
+            AffichageTelethon affichage = new AffichageTelethon();
+            
+            affichage.textAffiche = galerie1.AfficherDonateurs();
+            affichage.ShowDialog();
         }
 
         private void BtnAfficherDon_Click(object sender, EventArgs e)
         {
             AffichageTelethon affichage = new AffichageTelethon();
-            //affichage.Visible = true;
-            //affichage.Activate();           
-            //textAffichage.Text = galerie1.AfficherDons();
-           // affichage.textAffiche = textAffichage.Text;
+           
             affichage.textAffiche = galerie1.AfficherDons();
             affichage.ShowDialog();
         }
@@ -165,9 +166,14 @@ namespace systemeTelethon
 
         private void BtnAfficherComm_Click(object sender, EventArgs e)
         {
-            
-           // textAffichage.Text = galerie1.AfficherCommanditaires();
-        }
+
+           
+            AffichageTelethon affichage = new AffichageTelethon();
+
+            affichage.textAffiche = galerie1.AfficherCommanditaires();
+            affichage.ShowDialog();
+        
+    }
 
         private void BtnAjouterPrix_Click(object sender, EventArgs e)
         {
@@ -192,8 +198,12 @@ namespace systemeTelethon
         private void BtnAfficherPri_Click(object sender, EventArgs e)
         {
 
-           // textAffichage.Text = galerie1.AfficherPrix();
-        }
+            AffichageTelethon affichage = new AffichageTelethon();
+
+            affichage.textAffiche = galerie1.AfficherPrix();
+            affichage.ShowDialog();
+        
+    }
 
         private void ButtonQuitter_Click(object sender, EventArgs e)
         {
@@ -221,11 +231,40 @@ namespace systemeTelethon
                         test += "Le donateur remporte un " + prix.Description + " Valeur point =" + (prix.Valeur) / 10 + " Quantite disponible = " + prix.QteDisponible + "\r\n";
                     }
                 }
+                AffichageTelethon affichage = new AffichageTelethon();
+                
+                affichage.textAffiche = "Le donateur avec " + textNombreDePoints.Text + " point(s) remporte un ou plusieurs prix :  \r\n" +
+                 "" + test;
+                affichage.ShowDialog();
 
-              //  textAffichage.Text = "Le donateur avec " + textNombreDePoints.Text + " point(s) remporte un ou plusieurs prix :  \r\n" +
-                 //   "" + test;
+               
                 textNombreDePoints.Text = "";
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuitterComman_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnQuitterInfo_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnQuitterDon_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

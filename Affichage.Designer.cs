@@ -29,9 +29,10 @@ namespace systemeTelethon
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AffichageTelethon));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textAffichage = new System.Windows.Forms.TextBox();
             this.buttonQuitter = new System.Windows.Forms.Button();
+            this.textAffichage = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,15 +47,6 @@ namespace systemeTelethon
             this.panel1.Size = new System.Drawing.Size(975, 312);
             this.panel1.TabIndex = 0;
             // 
-            // textAffichage
-            // 
-            this.textAffichage.Location = new System.Drawing.Point(12, 50);
-            this.textAffichage.Multiline = true;
-            this.textAffichage.Name = "textAffichage";
-            this.textAffichage.Size = new System.Drawing.Size(941, 230);
-            this.textAffichage.TabIndex = 0;
-            this.textAffichage.TextChanged += new System.EventHandler(this.textAffichage_TextChanged);
-            // 
             // buttonQuitter
             // 
             this.buttonQuitter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(157)))), ((int)(((byte)(254)))));
@@ -63,7 +55,7 @@ namespace systemeTelethon
             this.buttonQuitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonQuitter.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonQuitter.ForeColor = System.Drawing.Color.White;
-            this.buttonQuitter.Location = new System.Drawing.Point(856, 9);
+            this.buttonQuitter.Location = new System.Drawing.Point(856, 265);
             this.buttonQuitter.Margin = new System.Windows.Forms.Padding(4);
             this.buttonQuitter.Name = "buttonQuitter";
             this.buttonQuitter.Size = new System.Drawing.Size(97, 34);
@@ -72,12 +64,22 @@ namespace systemeTelethon
             this.buttonQuitter.UseVisualStyleBackColor = false;
             this.buttonQuitter.Click += new System.EventHandler(this.buttonQuitter_Click);
             // 
+            // textAffichage
+            // 
+            this.textAffichage.Location = new System.Drawing.Point(12, 26);
+            this.textAffichage.Multiline = true;
+            this.textAffichage.Name = "textAffichage";
+            this.textAffichage.Size = new System.Drawing.Size(941, 230);
+            this.textAffichage.TabIndex = 0;
+            this.textAffichage.TextChanged += new System.EventHandler(this.textAffichage_TextChanged);
+            // 
             // AffichageTelethon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 312);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AffichageTelethon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Affichage ";
