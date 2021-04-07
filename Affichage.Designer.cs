@@ -48,17 +48,16 @@ namespace systemeTelethon
             // 
             // textAffichage
             // 
-            this.textAffichage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.textAffichage.Location = new System.Drawing.Point(24, 21);
-            this.textAffichage.Margin = new System.Windows.Forms.Padding(2);
+            this.textAffichage.BackColor = System.Drawing.SystemColors.Window;
+            this.textAffichage.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textAffichage.Location = new System.Drawing.Point(23, 23);
             this.textAffichage.Multiline = true;
             this.textAffichage.Name = "textAffichage";
-            this.textAffichage.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textAffichage.ReadOnly = true;
             this.textAffichage.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textAffichage.Size = new System.Drawing.Size(683, 209);
+            this.textAffichage.Size = new System.Drawing.Size(679, 208);
             this.textAffichage.TabIndex = 0;
-            this.textAffichage.WordWrap = false;
-            this.textAffichage.TextChanged += new System.EventHandler(this.textAffichage_TextChanged);
+            this.textAffichage.TextChanged += new System.EventHandler(this.textAffichage_TextChanged_1);
             // 
             // AffichageTelethon
             // 

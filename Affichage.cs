@@ -25,12 +25,19 @@ namespace systemeTelethon
 
         private void AffichageTelethon_Load(object sender, EventArgs e)
         {
-            textAffichage.Text = textAffiche;
+            
+           textAffichage.Text = textAffiche;
+            textAffichage.SelectionStart = 0;
         }
 
         private void buttonQuitter_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void textAffichage_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
