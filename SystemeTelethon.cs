@@ -171,7 +171,7 @@ namespace systemeTelethon
             AffichageTelethon affichage = new AffichageTelethon();
 
             affichage.textAffiche = galerie1.AfficherCommanditaires();
-            affichage.ShowDialog();
+            //affichage.ShowDialog();
         
     }
 

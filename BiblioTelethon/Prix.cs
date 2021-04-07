@@ -70,7 +70,7 @@ namespace BibliothequeTelethon
         public override string ToString()
         {
             return "Prix : Id prix : "+idPrix+" , Description : "+description
-                +" , Id commanditaire :"+idCommanditaire+" , Valeur : "+valeur+" \t\tQuantite originale : "+qteOriginale
+                +" , Id commanditaire :"+idCommanditaire+" , Valeur : "+valeur+" Quantite originale : "+qteOriginale
                 +" , Quantité disponible : "+qteDisponible;
         }
     }
