@@ -127,10 +127,10 @@ namespace systemeTelethon
             this.pnlInterface2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlInterface2.Controls.Add(this.tabControl1);
             this.pnlInterface2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlInterface2.Location = new System.Drawing.Point(0, -293);
+            this.pnlInterface2.Location = new System.Drawing.Point(0, -282);
             this.pnlInterface2.Margin = new System.Windows.Forms.Padding(2);
             this.pnlInterface2.Name = "pnlInterface2";
-            this.pnlInterface2.Size = new System.Drawing.Size(793, 882);
+            this.pnlInterface2.Size = new System.Drawing.Size(796, 882);
             this.pnlInterface2.TabIndex = 0;
             // 
             // tabControl1
@@ -140,7 +140,7 @@ namespace systemeTelethon
             this.tabControl1.Controls.Add(this.tabCommanditaire);
             this.tabControl1.Controls.Add(this.tabInformations);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(23, 291);
+            this.tabControl1.Location = new System.Drawing.Point(24, 289);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(747, 572);
@@ -969,7 +969,8 @@ namespace systemeTelethon
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(793, 589);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(796, 600);
             this.Controls.Add(this.pnlInterface2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
