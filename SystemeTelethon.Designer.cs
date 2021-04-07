@@ -196,7 +196,7 @@ namespace systemeTelethon
             // 
             this.textNombreDePoints.BackColor = System.Drawing.Color.White;
             this.textNombreDePoints.ForeColor = System.Drawing.Color.Black;
-            this.textNombreDePoints.Location = new System.Drawing.Point(204, 74);
+            this.textNombreDePoints.Location = new System.Drawing.Point(203, 70);
             this.textNombreDePoints.Name = "textNombreDePoints";
             this.textNombreDePoints.Size = new System.Drawing.Size(91, 26);
             this.textNombreDePoints.TabIndex = 32;
@@ -206,7 +206,7 @@ namespace systemeTelethon
             this.lblQuant.AutoSize = true;
             this.lblQuant.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuant.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblQuant.Location = new System.Drawing.Point(43, 77);
+            this.lblQuant.Location = new System.Drawing.Point(42, 73);
             this.lblQuant.Name = "lblQuant";
             this.lblQuant.Size = new System.Drawing.Size(155, 19);
             this.lblQuant.TabIndex = 31;
@@ -319,7 +319,7 @@ namespace systemeTelethon
             this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(151, 164);
+            this.dateTimePicker1.Location = new System.Drawing.Point(160, 139);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(160, 26);
             this.dateTimePicker1.TabIndex = 36;
@@ -349,7 +349,7 @@ namespace systemeTelethon
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(1, 168);
+            this.label9.Location = new System.Drawing.Point(10, 143);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(148, 19);
             this.label9.TabIndex = 35;
@@ -359,7 +359,7 @@ namespace systemeTelethon
             // 
             this.textNumeroCarte.BackColor = System.Drawing.Color.White;
             this.textNumeroCarte.ForeColor = System.Drawing.Color.Black;
-            this.textNumeroCarte.Location = new System.Drawing.Point(151, 119);
+            this.textNumeroCarte.Location = new System.Drawing.Point(160, 100);
             this.textNumeroCarte.Name = "textNumeroCarte";
             this.textNumeroCarte.Size = new System.Drawing.Size(160, 26);
             this.textNumeroCarte.TabIndex = 32;
@@ -369,7 +369,7 @@ namespace systemeTelethon
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(1, 124);
+            this.label10.Location = new System.Drawing.Point(10, 105);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 19);
             this.label10.TabIndex = 33;
