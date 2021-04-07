@@ -50,7 +50,7 @@ namespace systemeTelethon
             // 
             // pnlLogin
             // 
-            this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(180)))));
+            this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.pnlLogin.Controls.Add(this.pictInstagram);
             this.pnlLogin.Controls.Add(this.pictTwitter);
             this.pnlLogin.Controls.Add(this.pictFacebook);
