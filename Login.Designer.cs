@@ -31,6 +31,9 @@ namespace systemeTelethon
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SystèmeTelethon));
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.pictInstagram = new System.Windows.Forms.PictureBox();
+            this.pictTwitter = new System.Windows.Forms.PictureBox();
+            this.pictFacebook = new System.Windows.Forms.PictureBox();
             this.pictTelethon = new System.Windows.Forms.PictureBox();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
@@ -38,19 +41,16 @@ namespace systemeTelethon
             this.txtBxNomUt = new System.Windows.Forms.TextBox();
             this.lbMotPasse = new System.Windows.Forms.Label();
             this.lbNomUtilisateur = new System.Windows.Forms.Label();
-            this.pictFacebook = new System.Windows.Forms.PictureBox();
-            this.pictTwitter = new System.Windows.Forms.PictureBox();
-            this.pictInstagram = new System.Windows.Forms.PictureBox();
             this.pnlLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictTelethon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictFacebook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictTwitter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictInstagram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictTwitter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictFacebook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictTelethon)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLogin
             // 
-            this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
+            this.pnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(180)))));
             this.pnlLogin.Controls.Add(this.pictInstagram);
             this.pnlLogin.Controls.Add(this.pictTwitter);
             this.pnlLogin.Controls.Add(this.pictFacebook);
@@ -62,23 +62,55 @@ namespace systemeTelethon
             this.pnlLogin.Controls.Add(this.lbMotPasse);
             this.pnlLogin.Controls.Add(this.lbNomUtilisateur);
             this.pnlLogin.Location = new System.Drawing.Point(-2, -1);
-            this.pnlLogin.Margin = new System.Windows.Forms.Padding(4);
             this.pnlLogin.Name = "pnlLogin";
-            this.pnlLogin.Size = new System.Drawing.Size(473, 420);
+            this.pnlLogin.Size = new System.Drawing.Size(363, 381);
             this.pnlLogin.TabIndex = 36;
             this.pnlLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogin_Paint);
+            // 
+            // pictInstagram
+            // 
+            this.pictInstagram.Image = ((System.Drawing.Image)(resources.GetObject("pictInstagram.Image")));
+            this.pictInstagram.Location = new System.Drawing.Point(212, 334);
+            this.pictInstagram.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictInstagram.Name = "pictInstagram";
+            this.pictInstagram.Size = new System.Drawing.Size(29, 31);
+            this.pictInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictInstagram.TabIndex = 42;
+            this.pictInstagram.TabStop = false;
+            // 
+            // pictTwitter
+            // 
+            this.pictTwitter.Image = ((System.Drawing.Image)(resources.GetObject("pictTwitter.Image")));
+            this.pictTwitter.Location = new System.Drawing.Point(167, 333);
+            this.pictTwitter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictTwitter.Name = "pictTwitter";
+            this.pictTwitter.Size = new System.Drawing.Size(29, 31);
+            this.pictTwitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictTwitter.TabIndex = 41;
+            this.pictTwitter.TabStop = false;
+            // 
+            // pictFacebook
+            // 
+            this.pictFacebook.Image = ((System.Drawing.Image)(resources.GetObject("pictFacebook.Image")));
+            this.pictFacebook.Location = new System.Drawing.Point(123, 333);
+            this.pictFacebook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictFacebook.Name = "pictFacebook";
+            this.pictFacebook.Size = new System.Drawing.Size(31, 32);
+            this.pictFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictFacebook.TabIndex = 40;
+            this.pictFacebook.TabStop = false;
             // 
             // pictTelethon
             // 
             this.pictTelethon.BackColor = System.Drawing.Color.Transparent;
             this.pictTelethon.Image = ((System.Drawing.Image)(resources.GetObject("pictTelethon.Image")));
-            this.pictTelethon.Location = new System.Drawing.Point(99, 14);
-            this.pictTelethon.Margin = new System.Windows.Forms.Padding(4);
+            this.pictTelethon.Location = new System.Drawing.Point(60, 13);
             this.pictTelethon.Name = "pictTelethon";
-            this.pictTelethon.Size = new System.Drawing.Size(274, 113);
-            this.pictTelethon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictTelethon.Size = new System.Drawing.Size(233, 89);
+            this.pictTelethon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictTelethon.TabIndex = 39;
             this.pictTelethon.TabStop = false;
+            this.pictTelethon.Click += new System.EventHandler(this.pictTelethon_Click);
             // 
             // btnAnnuler
             // 
@@ -87,10 +119,9 @@ namespace systemeTelethon
             this.btnAnnuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnnuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnnuler.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAnnuler.Location = new System.Drawing.Point(288, 285);
-            this.btnAnnuler.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAnnuler.Location = new System.Drawing.Point(187, 263);
             this.btnAnnuler.Name = "btnAnnuler";
-            this.btnAnnuler.Size = new System.Drawing.Size(136, 42);
+            this.btnAnnuler.Size = new System.Drawing.Size(102, 34);
             this.btnAnnuler.TabIndex = 38;
             this.btnAnnuler.Text = "Annuler";
             this.btnAnnuler.UseVisualStyleBackColor = false;
@@ -103,10 +134,9 @@ namespace systemeTelethon
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnOk.Location = new System.Drawing.Point(120, 285);
-            this.btnOk.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOk.Location = new System.Drawing.Point(77, 263);
             this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(138, 42);
+            this.btnOk.Size = new System.Drawing.Size(104, 34);
             this.btnOk.TabIndex = 37;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = false;
@@ -115,10 +145,10 @@ namespace systemeTelethon
             // txtBxMoPass
             // 
             this.txtBxMoPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxMoPass.Location = new System.Drawing.Point(229, 216);
-            this.txtBxMoPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBxMoPass.Location = new System.Drawing.Point(187, 197);
+            this.txtBxMoPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBxMoPass.Name = "txtBxMoPass";
-            this.txtBxMoPass.Size = new System.Drawing.Size(195, 30);
+            this.txtBxMoPass.Size = new System.Drawing.Size(147, 26);
             this.txtBxMoPass.TabIndex = 36;
             this.txtBxMoPass.Text = "Don@2021";
             this.txtBxMoPass.TextChanged += new System.EventHandler(this.txtBxMoPass_TextChanged);
@@ -126,10 +156,10 @@ namespace systemeTelethon
             // txtBxNomUt
             // 
             this.txtBxNomUt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxNomUt.Location = new System.Drawing.Point(229, 166);
-            this.txtBxNomUt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBxNomUt.Location = new System.Drawing.Point(187, 154);
+            this.txtBxNomUt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtBxNomUt.Name = "txtBxNomUt";
-            this.txtBxNomUt.Size = new System.Drawing.Size(197, 30);
+            this.txtBxNomUt.Size = new System.Drawing.Size(147, 26);
             this.txtBxNomUt.TabIndex = 35;
             this.txtBxNomUt.Text = "téléthon 2021";
             this.txtBxNomUt.TextChanged += new System.EventHandler(this.txtBxNomUt_Leave);
@@ -140,9 +170,10 @@ namespace systemeTelethon
             this.lbMotPasse.BackColor = System.Drawing.Color.Transparent;
             this.lbMotPasse.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMotPasse.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbMotPasse.Location = new System.Drawing.Point(37, 221);
+            this.lbMotPasse.Location = new System.Drawing.Point(33, 197);
+            this.lbMotPasse.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbMotPasse.Name = "lbMotPasse";
-            this.lbMotPasse.Size = new System.Drawing.Size(150, 24);
+            this.lbMotPasse.Size = new System.Drawing.Size(120, 19);
             this.lbMotPasse.TabIndex = 34;
             this.lbMotPasse.Text = "Mot de passe :";
             // 
@@ -152,61 +183,32 @@ namespace systemeTelethon
             this.lbNomUtilisateur.BackColor = System.Drawing.Color.Transparent;
             this.lbNomUtilisateur.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNomUtilisateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbNomUtilisateur.Location = new System.Drawing.Point(35, 169);
+            this.lbNomUtilisateur.Location = new System.Drawing.Point(33, 154);
+            this.lbNomUtilisateur.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbNomUtilisateur.Name = "lbNomUtilisateur";
-            this.lbNomUtilisateur.Size = new System.Drawing.Size(183, 24);
+            this.lbNomUtilisateur.Size = new System.Drawing.Size(148, 19);
             this.lbNomUtilisateur.TabIndex = 33;
             this.lbNomUtilisateur.Text = "Nom d\'utilisateur :";
             // 
-            // pictFacebook
-            // 
-            this.pictFacebook.Image = ((System.Drawing.Image)(resources.GetObject("pictFacebook.Image")));
-            this.pictFacebook.Location = new System.Drawing.Point(182, 376);
-            this.pictFacebook.Name = "pictFacebook";
-            this.pictFacebook.Size = new System.Drawing.Size(32, 35);
-            this.pictFacebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictFacebook.TabIndex = 40;
-            this.pictFacebook.TabStop = false;
-            // 
-            // pictTwitter
-            // 
-            this.pictTwitter.Image = ((System.Drawing.Image)(resources.GetObject("pictTwitter.Image")));
-            this.pictTwitter.Location = new System.Drawing.Point(229, 378);
-            this.pictTwitter.Name = "pictTwitter";
-            this.pictTwitter.Size = new System.Drawing.Size(29, 33);
-            this.pictTwitter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictTwitter.TabIndex = 41;
-            this.pictTwitter.TabStop = false;
-            // 
-            // pictInstagram
-            // 
-            this.pictInstagram.Image = ((System.Drawing.Image)(resources.GetObject("pictInstagram.Image")));
-            this.pictInstagram.Location = new System.Drawing.Point(271, 378);
-            this.pictInstagram.Name = "pictInstagram";
-            this.pictInstagram.Size = new System.Drawing.Size(29, 33);
-            this.pictInstagram.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictInstagram.TabIndex = 42;
-            this.pictInstagram.TabStop = false;
-            // 
             // SystèmeTelethon
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(471, 418);
+            this.ClientSize = new System.Drawing.Size(361, 380);
             this.Controls.Add(this.pnlLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SystèmeTelethon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Système Tèlèthon STE";
             this.Load += new System.EventHandler(this.SystèmeTelethon_Load);
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictTelethon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictFacebook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictTwitter)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictInstagram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictTwitter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictFacebook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictTelethon)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -97,5 +97,10 @@ namespace systemeTelethon
         {
 
         }
+
+        private void pictTelethon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
