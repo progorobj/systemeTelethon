@@ -672,10 +672,10 @@ namespace systemeTelethon
             // pictTeleviseur
             // 
             this.pictTeleviseur.Image = ((System.Drawing.Image)(resources.GetObject("pictTeleviseur.Image")));
-            this.pictTeleviseur.Location = new System.Drawing.Point(18, 372);
+            this.pictTeleviseur.Location = new System.Drawing.Point(19, 372);
             this.pictTeleviseur.Margin = new System.Windows.Forms.Padding(2);
             this.pictTeleviseur.Name = "pictTeleviseur";
-            this.pictTeleviseur.Size = new System.Drawing.Size(145, 114);
+            this.pictTeleviseur.Size = new System.Drawing.Size(152, 114);
             this.pictTeleviseur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictTeleviseur.TabIndex = 15;
             this.pictTeleviseur.TabStop = false;
