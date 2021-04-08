@@ -20,7 +20,7 @@ namespace BibliothequeTelethon
 
         public override string ToString()
         {
-            return "Commanditaire #"+x+" : "+" Id Commanditaire : "+this.IDCommanditaire+" "+base.ToString();
+            return "Commanditaire #"+x+" : "+" Id Commanditaire : "+IDCommanditaire+" "+base.ToString();
         }
 
        

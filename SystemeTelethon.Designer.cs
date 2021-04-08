@@ -52,7 +52,7 @@ namespace systemeTelethon
             this.textNumeroCarte = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textAdresse = new System.Windows.Forms.TextBox();
+            this.textEmail = new System.Windows.Forms.TextBox();
             this.textNom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textPrenom = new System.Windows.Forms.TextBox();
@@ -233,7 +233,7 @@ namespace systemeTelethon
             this.gBxDonnateur.Controls.Add(this.label1);
             this.gBxDonnateur.Controls.Add(this.groupBox1);
             this.gBxDonnateur.Controls.Add(this.label2);
-            this.gBxDonnateur.Controls.Add(this.textAdresse);
+            this.gBxDonnateur.Controls.Add(this.textEmail);
             this.gBxDonnateur.Controls.Add(this.textNom);
             this.gBxDonnateur.Controls.Add(this.label3);
             this.gBxDonnateur.Controls.Add(this.textPrenom);
@@ -401,14 +401,14 @@ namespace systemeTelethon
             this.label2.TabIndex = 16;
             this.label2.Text = "Nom :";
             // 
-            // textAdresse
+            // textEmail
             // 
-            this.textAdresse.BackColor = System.Drawing.Color.White;
-            this.textAdresse.ForeColor = System.Drawing.Color.Black;
-            this.textAdresse.Location = new System.Drawing.Point(164, 171);
-            this.textAdresse.Name = "textAdresse";
-            this.textAdresse.Size = new System.Drawing.Size(174, 26);
-            this.textAdresse.TabIndex = 17;
+            this.textEmail.BackColor = System.Drawing.Color.White;
+            this.textEmail.ForeColor = System.Drawing.Color.Black;
+            this.textEmail.Location = new System.Drawing.Point(164, 171);
+            this.textEmail.Name = "textEmail";
+            this.textEmail.Size = new System.Drawing.Size(174, 26);
+            this.textEmail.TabIndex = 17;
             // 
             // textNom
             // 
@@ -426,9 +426,9 @@ namespace systemeTelethon
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(29, 174);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 19);
+            this.label3.Size = new System.Drawing.Size(57, 19);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Adresse :";
+            this.label3.Text = "Email:";
             // 
             // textPrenom
             // 
@@ -1020,7 +1020,7 @@ namespace systemeTelethon
         private System.Windows.Forms.TextBox textPrenom;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textNom;
-        private System.Windows.Forms.TextBox textAdresse;
+        private System.Windows.Forms.TextBox textEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TabPage tabCommanditaire;
         private System.Windows.Forms.Button btnAjouterDonateur;
