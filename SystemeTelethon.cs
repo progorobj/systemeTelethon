@@ -26,7 +26,7 @@ namespace systemeTelethon
         private void BtnAjouterDonateur_Click(object sender, EventArgs e)
         {
 
-            DateTime date1 = DateTime.Parse(dateTimePicker1.Value.ToString("yyyy-MM-dd"));
+            DateTime date1 = DateTime.Parse(dateTimeCarte.Value.ToString("yyyy-MM-dd"));
             DateTime date2 = DateTime.Now;
 
             if (textIDonateur.Text.Equals("") || textPrenom.Text.Equals("") || textNom.Text.Equals("") || textEmail.Text.Equals("") || textPhone.Text.Equals("") || textNumeroCarte.Text.Equals(""))
@@ -69,7 +69,7 @@ namespace systemeTelethon
                 String adresse = textEmail.Text;
                 String telephone = textPhone.Text;
                 String numero = textNumeroCarte.Text;
-                String date = dateTimePicker1.Value.ToString("yyyy-MM-dd");
+                String date = dateTimeCarte.Value.ToString("yyyy-MM-dd");
                 char type = 'A';
                 if (rbtnVisa.Checked)
                 {
