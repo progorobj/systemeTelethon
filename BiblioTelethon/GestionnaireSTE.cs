@@ -15,11 +15,11 @@ namespace BibliothequeTelethon
 
         public GestionnaireSTE()
         {
-            Prix Televiseur = new Prix("1","téléviseur",120,5,"radioshack");
-            Prix Calendrier = new Prix("2", "calendrier", 10, 5,  "dollorama");
-            Prix Repas = new Prix("3", "repas pour 2", 30, 5,  "Paul patate");
-            Prix Bbq = new Prix("4", "BBQ", 100, 5,  "Canadiantire");
-            Commanditaire Canadiantire = new Commanditaire("Bob", "Marley", "Catire");
+            Prix Televiseur = new Prix("1","téléviseur",120,5, "CanTire");
+            Prix Calendrier = new Prix("2", "calendrier", 10, 5, "CanTire");
+            Prix Repas = new Prix("3", "repas pour 2", 30, 5, "CanTire");
+            Prix Bbq = new Prix("4", "BBQ", 100, 5, "CanTire");
+            Commanditaire Canadiantire = new Commanditaire("Marley", "Bob", "CanTire");
             commanditaires.Add(Canadiantire);
             listePrix.Add(Televiseur);
             listePrix.Add(Calendrier);

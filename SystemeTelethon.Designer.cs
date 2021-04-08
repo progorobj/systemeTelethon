@@ -288,6 +288,7 @@ namespace systemeTelethon
             // 
             // picAmerExpr
             // 
+            this.picAmerExpr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picAmerExpr.Image = ((System.Drawing.Image)(resources.GetObject("picAmerExpr.Image")));
             this.picAmerExpr.Location = new System.Drawing.Point(247, 49);
             this.picAmerExpr.Margin = new System.Windows.Forms.Padding(2);
@@ -309,11 +310,12 @@ namespace systemeTelethon
             // 
             // picVisa
             // 
-            this.picVisa.Image = ((System.Drawing.Image)(resources.GetObject("picVisa.Image")));
-            this.picVisa.Location = new System.Drawing.Point(64, 45);
+            this.picVisa.BackgroundImage = global::systemeTelethon.Properties.Resources.pngegg;
+            this.picVisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picVisa.Location = new System.Drawing.Point(55, 45);
             this.picVisa.Margin = new System.Windows.Forms.Padding(2);
             this.picVisa.Name = "picVisa";
-            this.picVisa.Size = new System.Drawing.Size(26, 29);
+            this.picVisa.Size = new System.Drawing.Size(46, 29);
             this.picVisa.TabIndex = 37;
             this.picVisa.TabStop = false;
             // 
