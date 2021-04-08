@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using BibliothequeTelethon;
@@ -290,6 +291,18 @@ namespace systemeTelethon
         private void btnQuitterDon_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textEmail_Enter(object sender, EventArgs e)
+        {
+            textEmail.Text = string.Empty;
+            textEmail.ForeColor = Color.Black;
+        }
+
+        private void textPhone_Enter(object sender, EventArgs e)
+        {
+            textPhone.Text = string.Empty;
+            textPhone.ForeColor = Color.Black;
         }
     }
 }
