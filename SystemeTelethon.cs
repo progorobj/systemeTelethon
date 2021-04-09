@@ -100,7 +100,7 @@ namespace systemeTelethon
             {
                 DialogResult = MessageBox.Show("L'id du don existe déja dans la liste", "Attention");
             }
-            else if (!myRegexMontant.IsMatch(textMontantDon.Text) || textMontantDon.Text[0]=='0')
+            else if (!myRegexMontant.IsMatch(textMontantDon.Text) || textMontantDon.Text[0] == '0')
             {
                 DialogResult = MessageBox.Show("Erreur le montant du don dois être supérieur à 0 et seul les chiffres de 0-9 sont accepté", "Attention");
             }
@@ -166,6 +166,7 @@ namespace systemeTelethon
 
         private void BtnAjouterComm_Click(object sender, EventArgs e)
         {
+            bool existe = false;
             if (txtBxIdComm.Text.Equals("") || txtPrenomComm.Text.Equals("")
                 || txtNomComm.Text.Equals(""))
             {
@@ -177,8 +178,26 @@ namespace systemeTelethon
                 string idCommand = txtBxIdComm.Text;
                 string prenomCommand = txtPrenomComm.Text;
                 string nomCommand = txtNomComm.Text;
-                galerie1.AjouterCommanditaire(nomCommand, prenomCommand, idCommand);
+                foreach (Commanditaire unCommanditaire in galerie1.GetCommanditaire())
+                {
+                    if (unCommanditaire.GetIDCommanditaire().Equals(idCommand))
+                    {
+                        existe = true;
+                    }
+
+
+
+                }
+                if (existe)
+                    MessageBox.Show("L'id du commanditaire existe déjà ", "Attention", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                    galerie1.AjouterCommanditaire(nomCommand, prenomCommand, idCommand);
+
+
+
             }
+
+
 
         }
 

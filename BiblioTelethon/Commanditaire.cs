@@ -17,7 +17,10 @@ namespace BibliothequeTelethon
             IDCommanditaire = iDCommanditaire;
             x = count++;
         }
-
+          public string GetIDCommanditaire()
+        {
+            return this.IDCommanditaire;
+        }
         public override string ToString()
         {
             return "Commanditaire #"+x+" : "+" Id Commanditaire : "+IDCommanditaire+" "+base.ToString();
