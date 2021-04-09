@@ -38,8 +38,6 @@ namespace systemeTelethon
 
                     this.Close();
 
-
-
                 }
                 else
                 {
