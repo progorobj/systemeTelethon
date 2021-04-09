@@ -76,11 +76,7 @@ namespace systemeTelethon
 
         private void txtBxNomUt_Leave(object sender, EventArgs e)
         {
-            if (txtBxNomUt.Text.Equals(""))
-            {
-                txtBxNomUt.ForeColor = Color.Silver;
-                txtBxNomUt.Text = "Nom d'utilisateur";
-            }
+            
         }
 
         private void txtBxMoPass_TextChanged(object sender, EventArgs e)
@@ -100,6 +96,34 @@ namespace systemeTelethon
 
         private void pictTelethon_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void txtBxNomUt_Enter(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void txtBxNomUt_Click(object sender, EventArgs e)
+        {
+
+            txtBxNomUt.Text = "";
+
+            txtBxNomUt.ForeColor = Color.Black;
+
+
+           
+            
+        }
+
+        private void txtBxNomUt_LocationChanged(object sender, EventArgs e)
+        {
+            if (txtBxNomUt.Text.Equals(""))
+            {
+                txtBxNomUt.ForeColor = Color.Silver;
+                txtBxNomUt.Text = "Nom d'utilisateur ";
+            }
 
         }
     }
