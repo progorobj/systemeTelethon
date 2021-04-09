@@ -62,6 +62,9 @@ namespace systemeTelethon
             {
                 DialogResult = MessageBox.Show("Erreur l'adresse email est invailde, format = xyz@gmail.com ", "Attention");
             }
+            else if (textPhone.Text.Equals("555-555-5555")  || textEmail.Text.Equals("xyz@gmail.com")) {
+                DialogResult = MessageBox.Show("Erreur vous n'avez pas modifié l'email ou le # de téléphone ", "Attention");
+            }
             else
             {
                 String id = textIDonateur.Text;

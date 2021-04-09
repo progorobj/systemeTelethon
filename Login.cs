@@ -76,11 +76,7 @@ namespace systemeTelethon
 
         private void txtBxNomUt_Leave(object sender, EventArgs e)
         {
-            if (txtBxNomUt.Text.Equals(""))
-            {
-                txtBxNomUt.ForeColor = Color.Silver;
-                txtBxNomUt.Text = "Nom d'utilisateur";
-            }
+         
         }
 
         private void txtBxMoPass_TextChanged(object sender, EventArgs e)

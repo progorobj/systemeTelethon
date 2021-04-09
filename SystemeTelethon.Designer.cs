@@ -417,7 +417,7 @@ namespace systemeTelethon
             this.textEmail.Size = new System.Drawing.Size(174, 26);
             this.textEmail.TabIndex = 17;
             this.textEmail.Text = "xyz@gmail.com";
-            this.ToolTipSysteme.SetToolTip(this.textEmail, "Exemple : info@gmail.com");
+            this.ToolTipSysteme.SetToolTip(this.textEmail, "Exemple : xyz@gmail.com");
             this.textEmail.Enter += new System.EventHandler(this.textEmail_Enter);
             // 
             // textNom
@@ -458,7 +458,7 @@ namespace systemeTelethon
             this.textPhone.Size = new System.Drawing.Size(174, 26);
             this.textPhone.TabIndex = 19;
             this.textPhone.Text = "555-555-5555";
-            this.ToolTipSysteme.SetToolTip(this.textPhone, "\r\n");
+            this.ToolTipSysteme.SetToolTip(this.textPhone, "555-555-5555");
             this.textPhone.Enter += new System.EventHandler(this.textPhone_Enter);
             // 
             // lbIdDonateur
