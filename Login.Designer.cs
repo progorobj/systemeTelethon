@@ -150,7 +150,7 @@ namespace systemeTelethon
             this.txtBxMoPass.Name = "txtBxMoPass";
             this.txtBxMoPass.Size = new System.Drawing.Size(147, 26);
             this.txtBxMoPass.TabIndex = 36;
-            this.txtBxMoPass.Text = "Don@2021";
+            this.txtBxMoPass.UseSystemPasswordChar = true;
             this.txtBxMoPass.TextChanged += new System.EventHandler(this.txtBxMoPass_TextChanged);
             // 
             // txtBxNomUt
@@ -161,7 +161,6 @@ namespace systemeTelethon
             this.txtBxNomUt.Name = "txtBxNomUt";
             this.txtBxNomUt.Size = new System.Drawing.Size(147, 26);
             this.txtBxNomUt.TabIndex = 35;
-            this.txtBxNomUt.Text = "téléthon 2021";
             this.txtBxNomUt.TextChanged += new System.EventHandler(this.txtBxNomUt_Leave);
             // 
             // lbMotPasse
