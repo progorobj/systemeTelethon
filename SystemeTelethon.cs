@@ -211,8 +211,10 @@ namespace systemeTelethon
 
         }
 
+
         private void BtnAjouterPrix_Click(object sender, EventArgs e)
         {
+            bool existe = false;
             if (txtIdPrix.Text.Equals("") || txtBxDescription.Text.Equals("")
                 || txtValeurPrix.Text.Equals("") || txtQuantitePrix.Text.Equals("")
                 || txtBxIdComm.Text.Equals(""))
@@ -227,9 +229,31 @@ namespace systemeTelethon
                 double valeur = Double.Parse(txtValeurPrix.Text);
                 int quantite = int.Parse(txtQuantitePrix.Text);
                 string idCommand = txtBxIdComm.Text;
-                galerie1.AjouterPrix(idPrix, description, valeur, quantite, idCommand);
+
+
+
+                foreach (Prix unPrix in galerie1.GetPrix())
+                {
+                    if (unPrix.IdPrix.Equals(idPrix))
+                        existe = true;
+                }
+                if (existe)
+                    MessageBox.Show("L'id du prix existe déjà ", "Attention",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                else
+                    galerie1.AjouterPrix(idPrix, description, valeur, quantite, idCommand);
+
+
+
             }
         }
+
+
+
+
+
+
+
 
         private void BtnAfficherPri_Click(object sender, EventArgs e)
         {
