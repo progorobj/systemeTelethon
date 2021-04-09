@@ -8,19 +8,25 @@ namespace BibliothequeTelethon
 {
     public class Commanditaire : Personne
     {
-        protected string IDCommanditaire;
+        protected string iDCommanditaire;
         protected int x;
         static int count = 1;
 
-        public Commanditaire(string nom, string prenom, string iDCommanditaire) : base(nom,prenom)
+        public Commanditaire(string nom, string prenom, string iDCommand) : base(nom,prenom)
         {
-            IDCommanditaire = iDCommanditaire;
+            iDCommanditaire = iDCommand;
             x = count++;
         }
 
+
+        public string IDCommanditaire
+        {
+            get { return this.IDCommanditaire; }
+            set { this.iDCommanditaire = value; }
+        }
         public override string ToString()
         {
-            return "Commanditaire #"+x+" : "+" Id Commanditaire : "+IDCommanditaire+" "+base.ToString();
+            return "Commanditaire #"+x+" : "+" Id Commanditaire : "+iDCommanditaire+" "+base.ToString();
         }
 
        

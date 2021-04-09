@@ -141,7 +141,8 @@ namespace systemeTelethon
             this.tabCtrlSysteme.Controls.Add(this.tabCommanditaire);
             this.tabCtrlSysteme.Controls.Add(this.tabInformations);
             this.tabCtrlSysteme.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabCtrlSysteme.Location = new System.Drawing.Point(24, 289);
+            this.tabCtrlSysteme.Location = new System.Drawing.Point(32, 362);
+            this.tabCtrlSysteme.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.tabCtrlSysteme.Name = "tabCtrlSysteme";
             this.tabCtrlSysteme.SelectedIndex = 0;
             this.tabCtrlSysteme.Size = new System.Drawing.Size(747, 572);
