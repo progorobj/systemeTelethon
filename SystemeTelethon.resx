@@ -19308,13 +19308,13 @@ Groupe :
             Alain Gionet
             Zied Hajji
 
-La première partie du projet nous permet de remplir les informations du donateur et 
-d'afficher ses informations.
+La première partie du projet nous permet de remplir les informations du donateur avec sa carte de crédit et d'afficher ses informations.
  
 La deuxième partie nous permet de remplir les informations du don et de l'afficher.
+(un donateur dois êtres ajouté avant d'être en mesure d'ajouter un don, un donateur peut faire plusieurs don en autant que l'id du don change.)
 
-La troisième partie nous permet d'attribuer et d'afficher le ou les prix gagner par 
-le donateur.
+La troisième partie nous permet d'attribuer et d'afficher le ou les prix gagner par le donateur. 
+(Chaque points equivault à 10$ de prix exp : 12 points = 120$ de prix sois la television) les prix sont distribué jusqu'à ce que les points sois = 0 (bonus haha?) et quand on click sur afficher toutes les case sont réinitialisé
 
 La quatrième partie nous permet de remplir les informations d'un commandiatire 
 et de les affichées.

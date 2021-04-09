@@ -98,7 +98,6 @@ namespace systemeTelethon
             this.txtBxIdComm = new System.Windows.Forms.TextBox();
             this.tabInformations = new System.Windows.Forms.TabPage();
             this.pnlInformation = new System.Windows.Forms.Panel();
-            this.btnQuitterInfo = new System.Windows.Forms.Button();
             this.textInfornations = new System.Windows.Forms.TextBox();
             this.ToolTipSysteme = new System.Windows.Forms.ToolTip(this.components);
             this.pnlInterface2.SuspendLayout();
@@ -130,7 +129,7 @@ namespace systemeTelethon
             this.pnlInterface2.Controls.Add(this.tabCtrlSysteme);
             this.pnlInterface2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlInterface2.Location = new System.Drawing.Point(0, -282);
-            this.pnlInterface2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlInterface2.Margin = new System.Windows.Forms.Padding(2);
             this.pnlInterface2.Name = "pnlInterface2";
             this.pnlInterface2.Size = new System.Drawing.Size(796, 882);
             this.pnlInterface2.TabIndex = 0;
@@ -157,7 +156,7 @@ namespace systemeTelethon
             this.tabDonateur.Controls.Add(this.gBxDon);
             this.tabDonateur.Location = new System.Drawing.Point(4, 25);
             this.tabDonateur.Name = "tabDonateur";
-            this.tabDonateur.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabDonateur.Padding = new System.Windows.Forms.Padding(3);
             this.tabDonateur.Size = new System.Drawing.Size(739, 543);
             this.tabDonateur.TabIndex = 0;
             this.tabDonateur.Text = "Donateur";
@@ -186,9 +185,9 @@ namespace systemeTelethon
             this.gBxPrix.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBxPrix.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gBxPrix.Location = new System.Drawing.Point(380, 323);
-            this.gBxPrix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxPrix.Margin = new System.Windows.Forms.Padding(2);
             this.gBxPrix.Name = "gBxPrix";
-            this.gBxPrix.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxPrix.Padding = new System.Windows.Forms.Padding(2);
             this.gBxPrix.Size = new System.Drawing.Size(339, 177);
             this.gBxPrix.TabIndex = 33;
             this.gBxPrix.TabStop = false;
@@ -248,9 +247,9 @@ namespace systemeTelethon
             this.gBxDonnateur.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBxDonnateur.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gBxDonnateur.Location = new System.Drawing.Point(21, 17);
-            this.gBxDonnateur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxDonnateur.Margin = new System.Windows.Forms.Padding(2);
             this.gBxDonnateur.Name = "gBxDonnateur";
-            this.gBxDonnateur.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxDonnateur.Padding = new System.Windows.Forms.Padding(2);
             this.gBxDonnateur.Size = new System.Drawing.Size(697, 293);
             this.gBxDonnateur.TabIndex = 31;
             this.gBxDonnateur.TabStop = false;
@@ -293,7 +292,7 @@ namespace systemeTelethon
             this.picAmerExpr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picAmerExpr.Image = ((System.Drawing.Image)(resources.GetObject("picAmerExpr.Image")));
             this.picAmerExpr.Location = new System.Drawing.Point(247, 49);
-            this.picAmerExpr.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picAmerExpr.Margin = new System.Windows.Forms.Padding(2);
             this.picAmerExpr.Name = "picAmerExpr";
             this.picAmerExpr.Size = new System.Drawing.Size(34, 24);
             this.picAmerExpr.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -305,7 +304,7 @@ namespace systemeTelethon
             // 
             this.picMC.Image = ((System.Drawing.Image)(resources.GetObject("picMC.Image")));
             this.picMC.Location = new System.Drawing.Point(151, 45);
-            this.picMC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMC.Margin = new System.Windows.Forms.Padding(2);
             this.picMC.Name = "picMC";
             this.picMC.Size = new System.Drawing.Size(36, 29);
             this.picMC.TabIndex = 38;
@@ -317,7 +316,7 @@ namespace systemeTelethon
             this.picVisa.BackgroundImage = global::systemeTelethon.Properties.Resources.pngegg;
             this.picVisa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picVisa.Location = new System.Drawing.Point(55, 45);
-            this.picVisa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picVisa.Margin = new System.Windows.Forms.Padding(2);
             this.picVisa.Name = "picVisa";
             this.picVisa.Size = new System.Drawing.Size(46, 29);
             this.picVisa.TabIndex = 37;
@@ -538,9 +537,9 @@ namespace systemeTelethon
             this.gBxDon.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBxDon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gBxDon.Location = new System.Drawing.Point(21, 323);
-            this.gBxDon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxDon.Margin = new System.Windows.Forms.Padding(2);
             this.gBxDon.Name = "gBxDon";
-            this.gBxDon.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gBxDon.Padding = new System.Windows.Forms.Padding(2);
             this.gBxDon.Size = new System.Drawing.Size(338, 177);
             this.gBxDon.TabIndex = 32;
             this.gBxDon.TabStop = false;
@@ -628,7 +627,7 @@ namespace systemeTelethon
             this.tabCommanditaire.Controls.Add(this.gpBxComma);
             this.tabCommanditaire.Location = new System.Drawing.Point(4, 25);
             this.tabCommanditaire.Name = "tabCommanditaire";
-            this.tabCommanditaire.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabCommanditaire.Padding = new System.Windows.Forms.Padding(3);
             this.tabCommanditaire.Size = new System.Drawing.Size(739, 543);
             this.tabCommanditaire.TabIndex = 1;
             this.tabCommanditaire.Text = "Commanditaire";
@@ -652,7 +651,7 @@ namespace systemeTelethon
             // 
             this.picBBQ.Image = ((System.Drawing.Image)(resources.GetObject("picBBQ.Image")));
             this.picBBQ.Location = new System.Drawing.Point(568, 372);
-            this.picBBQ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBBQ.Margin = new System.Windows.Forms.Padding(2);
             this.picBBQ.Name = "picBBQ";
             this.picBBQ.Size = new System.Drawing.Size(151, 114);
             this.picBBQ.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -663,7 +662,7 @@ namespace systemeTelethon
             // 
             this.pictRepas.Image = ((System.Drawing.Image)(resources.GetObject("pictRepas.Image")));
             this.pictRepas.Location = new System.Drawing.Point(387, 372);
-            this.pictRepas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictRepas.Margin = new System.Windows.Forms.Padding(2);
             this.pictRepas.Name = "pictRepas";
             this.pictRepas.Size = new System.Drawing.Size(151, 114);
             this.pictRepas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -674,7 +673,7 @@ namespace systemeTelethon
             // 
             this.pictCalendrier.Image = ((System.Drawing.Image)(resources.GetObject("pictCalendrier.Image")));
             this.pictCalendrier.Location = new System.Drawing.Point(199, 372);
-            this.pictCalendrier.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictCalendrier.Margin = new System.Windows.Forms.Padding(2);
             this.pictCalendrier.Name = "pictCalendrier";
             this.pictCalendrier.Size = new System.Drawing.Size(152, 114);
             this.pictCalendrier.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -685,7 +684,7 @@ namespace systemeTelethon
             // 
             this.pictTeleviseur.Image = ((System.Drawing.Image)(resources.GetObject("pictTeleviseur.Image")));
             this.pictTeleviseur.Location = new System.Drawing.Point(19, 372);
-            this.pictTeleviseur.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictTeleviseur.Margin = new System.Windows.Forms.Padding(2);
             this.pictTeleviseur.Name = "pictTeleviseur";
             this.pictTeleviseur.Size = new System.Drawing.Size(152, 114);
             this.pictTeleviseur.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -708,9 +707,9 @@ namespace systemeTelethon
             this.gpBxPrix.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpBxPrix.ForeColor = System.Drawing.Color.White;
             this.gpBxPrix.Location = new System.Drawing.Point(387, 36);
-            this.gpBxPrix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpBxPrix.Margin = new System.Windows.Forms.Padding(2);
             this.gpBxPrix.Name = "gpBxPrix";
-            this.gpBxPrix.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpBxPrix.Padding = new System.Windows.Forms.Padding(2);
             this.gpBxPrix.Size = new System.Drawing.Size(331, 301);
             this.gpBxPrix.TabIndex = 14;
             this.gpBxPrix.TabStop = false;
@@ -834,9 +833,9 @@ namespace systemeTelethon
             this.gpBxComma.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpBxComma.ForeColor = System.Drawing.Color.White;
             this.gpBxComma.Location = new System.Drawing.Point(18, 36);
-            this.gpBxComma.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpBxComma.Margin = new System.Windows.Forms.Padding(2);
             this.gpBxComma.Name = "gpBxComma";
-            this.gpBxComma.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpBxComma.Padding = new System.Windows.Forms.Padding(2);
             this.gpBxComma.Size = new System.Drawing.Size(333, 301);
             this.gpBxComma.TabIndex = 13;
             this.gpBxComma.TabStop = false;
@@ -934,7 +933,7 @@ namespace systemeTelethon
             this.tabInformations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(123)))), ((int)(((byte)(181)))));
             this.tabInformations.Controls.Add(this.pnlInformation);
             this.tabInformations.Location = new System.Drawing.Point(4, 25);
-            this.tabInformations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabInformations.Margin = new System.Windows.Forms.Padding(2);
             this.tabInformations.Name = "tabInformations";
             this.tabInformations.Size = new System.Drawing.Size(739, 543);
             this.tabInformations.TabIndex = 2;
@@ -942,39 +941,24 @@ namespace systemeTelethon
             // 
             // pnlInformation
             // 
-            this.pnlInformation.Controls.Add(this.btnQuitterInfo);
             this.pnlInformation.Controls.Add(this.textInfornations);
             this.pnlInformation.Location = new System.Drawing.Point(16, 20);
-            this.pnlInformation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlInformation.Margin = new System.Windows.Forms.Padding(2);
             this.pnlInformation.Name = "pnlInformation";
             this.pnlInformation.Size = new System.Drawing.Size(706, 544);
             this.pnlInformation.TabIndex = 0;
             // 
-            // btnQuitterInfo
-            // 
-            this.btnQuitterInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(157)))), ((int)(((byte)(254)))));
-            this.btnQuitterInfo.FlatAppearance.BorderSize = 0;
-            this.btnQuitterInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuitterInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuitterInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnQuitterInfo.Location = new System.Drawing.Point(583, 513);
-            this.btnQuitterInfo.Name = "btnQuitterInfo";
-            this.btnQuitterInfo.Size = new System.Drawing.Size(118, 28);
-            this.btnQuitterInfo.TabIndex = 26;
-            this.btnQuitterInfo.Text = "Quitter";
-            this.btnQuitterInfo.UseVisualStyleBackColor = false;
-            this.btnQuitterInfo.Click += new System.EventHandler(this.btnQuitterInfo_Click);
-            // 
             // textInfornations
             // 
-            this.textInfornations.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(181)))), ((int)(((byte)(233)))));
+            this.textInfornations.BackColor = System.Drawing.Color.White;
             this.textInfornations.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textInfornations.ForeColor = System.Drawing.Color.White;
-            this.textInfornations.Location = new System.Drawing.Point(9, 22);
-            this.textInfornations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textInfornations.ForeColor = System.Drawing.Color.Black;
+            this.textInfornations.Location = new System.Drawing.Point(13, 22);
+            this.textInfornations.Margin = new System.Windows.Forms.Padding(2);
             this.textInfornations.Multiline = true;
             this.textInfornations.Name = "textInfornations";
-            this.textInfornations.Size = new System.Drawing.Size(678, 465);
+            this.textInfornations.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textInfornations.Size = new System.Drawing.Size(678, 471);
             this.textInfornations.TabIndex = 0;
             this.textInfornations.Text = resources.GetString("textInfornations.Text");
             // 
@@ -987,7 +971,7 @@ namespace systemeTelethon
             this.ClientSize = new System.Drawing.Size(796, 600);
             this.Controls.Add(this.pnlInterface2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Systeme";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Système Téléthon STE";
@@ -1090,7 +1074,6 @@ namespace systemeTelethon
         private System.Windows.Forms.Panel pnlInformation;
         private System.Windows.Forms.TextBox textInfornations;
         private System.Windows.Forms.Button btnQuitterComman;
-        private System.Windows.Forms.Button btnQuitterInfo;
         private System.Windows.Forms.Button btnQuitterDon;
         private System.Windows.Forms.ToolTip ToolTipSysteme;
     }
